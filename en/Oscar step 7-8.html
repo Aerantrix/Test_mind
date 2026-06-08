@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Oscar step 7-8 — Inter-Mind UX report</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Summary</a><span class="sep">·</span><span style="color:var(--muted)">Session: Oscar step 7-8</span><span class="lang-switch"><a href="../Oscar%20step%207-8.html">RU</a> · <strong>EN</strong></span></nav>
+<div class="materials"><strong>📦 Session materials:</strong><a href="../transcripts/Oscar%20step%207-8/transcript.txt">📄 Transcript</a> · <a href="../transcripts/Oscar%20step%207-8/transcript.srt">📝 With timecodes (SRT)</a> · <a href="https://drive.google.com/drive/folders/1s-a4Q5iKy-WY1UdX85dZIjy-TB-Vj6Nr" target="_blank" rel="noopener">📹 Video: <code>Oscar step 7-8.mp4</code> ↗</a></div>
+<header id="title-block-header">
+<h1 class="title">Oscar step 7-8 — Inter-Mind UX report</h1>
+</header>
+<h1
+id="ux-отчёт-oscar-step-7-чат-в-встрече-step-8-постоянный-чат-note-editor">UX
+report: Oscar — Step 7 (In-meeting chat) + Step 8 (Persistent chat +
+Note editor)</h1>
+<table>
+<tbody>
+<tr>
+<td><strong>Tester</strong></td>
+<td>Oscar + EK</td>
+</tr>
+<tr>
+<td><strong>Sections</strong></td>
+<td>§7 In-meeting chat, §8 Persistent team chat + Note editor</td>
+</tr>
+<tr>
+<td><strong>Duration</strong></td>
+<td>~16:02</td>
+</tr>
+<tr>
+<td><strong>Video</strong></td>
+<td><code>Oscar step 7-8.mp4</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="не-работает-странное">❌ Doesn't work / strange</h2>
+<table>
+<thead>
+<tr>
+<th>Timecode</th>
+<th>What happened</th>
+<th>Severity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~10:00</strong></td>
+<td><strong>Limit "message too long for translate, maximum is 1000
+characters"</strong> when pasting a large text from Wikipedia into
+chat. This is a <strong>per-message</strong> limit, not an explicit
+characteristic of the plan. The pricing page promises limits in
+<strong>"10K/200K/3M words"</strong> — this is something else (an
+aggregate per-plan limit). The user doesn't understand the relationship
+and sees "1000 chars max" as a bug. The message arrives in the
+original, without translation.</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>~12:00</strong></td>
+<td><strong>"There are small bugs in chat when looking at the
+translation. In some places it's in Russian, in some in
+English"</strong> — the UI is not consistent: the same feed shows
+different messages in different languages without explicit control.</td>
+<td>🟠 Medium</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-работает">✅ What works</h2>
+<h3 id="чат-внутри-встречи">In-meeting chat</h3>
+<ul>
+<li><strong>Two-way message translation works</strong>: "the first
+message split in two, with Russian on the right and automatically
+translated into English on the left".</li>
+<li><strong>"Everything works well in this part"</strong> (overall
+assessment of translation in chat).</li>
+</ul>
+<h3 id="чат-после-встречи-постоянный-чат">Chat after the meeting /
+persistent chat</h3>
+<ul>
+<li><strong>Chat history is preserved</strong>: "the chat that opens
+during the call is the same as during our chat outside the call, it
+continued".</li>
+</ul>
+<h3 id="создание-канала-после-добавления-контактов">Creating a channel
+after adding contacts</h3>
+<ul>
+<li>Confirmation of the nuance from §3: a channel without contacts
+can't be created, but <strong>from a meeting you can add a participant
+to contacts</strong> via clicking the profile.</li>
+<li>After adding: "now I have a channel with Oscar".</li>
+</ul>
+<h3 id="note-editor">Note Editor ⭐</h3>
+<ul>
+<li><strong>Creating a note</strong> from chat works.</li>
+<li><strong>The note is visible on the other side</strong>: "Try to
+find a note of some kind, if you see it in the chat… Yes, here it
+is".</li>
+<li><strong>Deleting a note</strong> propagates to both sides: "delete
+the note… It has disappeared".</li>
+<li><strong>Translation of the note into the recipient's
+language</strong> works.</li>
+</ul>
+<hr />
+<h2 id="неудобно-продолжение">❓ Inconvenient (continued)</h2>
+<table>
+<thead>
+<tr>
+<th>Timecode</th>
+<th>What was noted</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~07:00</strong></td>
+<td>To create a channel, contacts are needed. Contacts are added only
+from a meeting (via profile). This is <strong>"a bit
+uncomfortable"</strong> — a workaround "enter the meeting to add a
+contact" is required. There should be a direct path "add a contact by
+email" outside a meeting.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-не-покрыто">📋 Not covered</h2>
+<ul>
+<li><strong>File attachments</strong> in chat (mentioned in passing,
+but not shown as a test).</li>
+<li><strong>Emoji in chat</strong>.</li>
+<li><strong>Forwarding messages / copy link / mention</strong>.</li>
+<li><strong>Search in messages</strong>.</li>
+<li><strong>Creating a meeting from chat</strong> (new §8 feature) —
+Oscar mentioned "button for join", but didn't clarify.</li>
+<li><strong>Notifications</strong> about a new message when out of
+focus.</li>
+</ul>
+<hr />
+<h2 id="приоритеты">🚦 Priorities</h2>
+<ol type="1">
+<li><strong>🟠 1000-character per-message limit</strong> + the
+mismatch with the pricing promise (10K/200K/3M words): explain to the
+user what these numbers mean and why there's currently a stop at 1000
+chars.</li>
+<li><strong>🟠 Translation inconsistency in the chat feed</strong> —
+one feed, different languages in different bubbles.</li>
+<li><strong>🟡 Add contact outside the meeting</strong> — add a direct
+path.</li>
+<li><strong>✅ Note editor — works exemplarily</strong> end-to-end.</li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Oscar Step 11-15 — Inter-Mind UX report</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Summary</a><span class="sep">·</span><span style="color:var(--muted)">Session: Oscar Step 11-15</span><span class="lang-switch"><a href="../Oscar%20Step%2011-15.html">RU</a> · <strong>EN</strong></span></nav>
+<div class="materials"><strong>📦 Session materials:</strong><a href="../transcripts/Oscar%20Step%2011-15/transcript.txt">📄 Transcript</a> · <a href="../transcripts/Oscar%20Step%2011-15/transcript.srt">📝 With timecodes (SRT)</a> · <a href="https://drive.google.com/drive/folders/1s-a4Q5iKy-WY1UdX85dZIjy-TB-Vj6Nr" target="_blank" rel="noopener">📹 Video: <code>Oscar Step 11-15.mp4</code> ↗</a></div>
+<header id="title-block-header">
+<h1 class="title">Oscar Step 11-15 — Inter-Mind UX report</h1>
+</header>
+<h1
+id="ux-отчёт-oscar-steps-11-15-интеграции-документыai-безопасность-поддержка-мобильный">UX
+report: Oscar — Steps 11-15 (Integrations, Documents/AI, Security,
+Support, Mobile)</h1>
+<table>
+<tbody>
+<tr>
+<td><strong>Tester</strong></td>
+<td>Oscar + EK</td>
+</tr>
+<tr>
+<td><strong>Sections</strong></td>
+<td>§11–§15</td>
+</tr>
+<tr>
+<td><strong>Duration</strong></td>
+<td>~14:15</td>
+</tr>
+<tr>
+<td><strong>Video</strong></td>
+<td><code>Oscar Step 11-15.mp4</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="не-работает-отсутствует">❌ Doesn't work / missing</h2>
+<table>
+<thead>
+<tr>
+<th>Timecode</th>
+<th>What happened</th>
+<th>Severity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~05:00</strong></td>
+<td><strong>Document is accessible via the direct link without
+authentication</strong>: "It opens the link, the whole document is
+opened on a separate page… I'll log out from my account on another
+browser, try to open the same link, looks like I still have access to
+this document". <strong>Anyone with the link</strong> can open the
+document without signing in. This is a security/privacy bug (if
+documents were intended as "team only").</td>
+<td>🔴 High (security)</td>
+</tr>
+<tr>
+<td><strong>~04:30</strong></td>
+<td><strong>When trying to send a document link to chat — the message
+becomes blank on both sides</strong>: "I'm not sure if that's shown up
+on your end. On my end it's just a blank message. Yeah, I also see the
+empty message from you". Confirmation of the finding from EK 11-16,
+now it's clear the bug is on <strong>both</strong> sides, not just the
+sender's.</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>~02:30</strong></td>
+<td><strong>Domain Management — not available</strong>: "Create your
+own corporate domain — there is no feature for that right now". This
+option is not in the Integrations UI. Per docs, it should be there
+for paid plans.</td>
+<td>🟠 Medium (gap)</td>
+</tr>
+<tr>
+<td><strong>~02:45</strong></td>
+<td><strong>Google Drive integration — not available</strong>:
+"Connect Google Drive to your account through OOS — there is no
+feature for that right now".</td>
+<td>🟠 Medium (gap)</td>
+</tr>
+<tr>
+<td><strong>~07:00</strong></td>
+<td><strong>AI editor completion — feature missing / not
+found</strong>: "AI-supporting editor. We don't have a file
+editor".</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>~06:00</strong></td>
+<td><strong>Expanded/collapsed/hidden toggle for transcription doesn't
+work</strong> (confirmation of EK 11-16): "It doesn't seem to change
+anything".</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>~06:30</strong></td>
+<td><strong>Standalone Translate page</strong> (<code>/translate</code>)
+not found: "Open Translate as a separate tool. Type any text, I think
+it's a chat feature". Oscar didn't realize it was standalone, looked
+for it in chat.</td>
+<td>🟡 Low</td>
+</tr>
+<tr>
+<td><strong>~12:00</strong></td>
+<td>After processing the document, <strong>the error visualization
+changes</strong>: "this XML file does not appear to have any style
+information… code: no such key, the specified key does not exist" —
+again the S3 XML error (same as EK 11-16).</td>
+<td>🟠 Medium (UX + security info leak)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-работает">✅ What works</h2>
+<h3 id="интеграции">Integrations</h3>
+<ul>
+<li><strong>Calendar (Google) confirmed</strong> — via
+<code>Scheduled Meeting → Add to calendar</code> (not from the
+Integrations page).</li>
+<li><strong>Backup &amp; Restore</strong> — mentioned as something
+existing in Integrations: "and Backup and Restore". Not clear what
+exactly it does.</li>
+</ul>
+<h3 id="документы">Documents</h3>
+<ul>
+<li><strong>Document upload to chat works</strong>.</li>
+<li><strong>After delete, document becomes unavailable via the
+link</strong> (see error above, but the revoke fact does fire).</li>
+</ul>
+<h3 id="mobile">Mobile</h3>
+<ul>
+<li><strong>Join meeting via link from phone works without full
+login</strong>: "So I joined the meeting without signing in on my
+phone. This part works well".</li>
+</ul>
+<hr />
+<h2 id="что-не-покрыто-большая-часть-1315">📋 Not covered (most of
+§13–§15)</h2>
+<h3 id="безопасность">§13 Security</h3>
+<ul>
+<li><strong>SSO / SAML</strong> — needs a Business/Enterprise account,
+no access: "need external access from a manager".</li>
+<li><strong>Privacy Zones</strong> — not checked.</li>
+</ul>
+<h3 id="поддержка">§14 Support</h3>
+<ul>
+<li><strong>Live chat support</strong> — not checked: "yeah, I think
+it also requires other account with enterprise and business tariff".
+Debatable — per scenario, live chat is on <strong>all</strong> plans,
+not just Business.</li>
+</ul>
+<h3 id="мобильный">§15 Mobile</h3>
+<ul>
+<li>Opening a meeting via link — yes.</li>
+<li>Translation on mobile — no.</li>
+<li>iOS Safari separately, Android Chrome separately — no.</li>
+<li>Wi-Fi → 4G switching — no.</li>
+<li>Background mode — no.</li>
+</ul>
+<hr />
+<h2 id="приоритеты">🚦 Priorities</h2>
+<ol type="1">
+<li><strong>🔴 Documents are accessible via direct link without
+login</strong> — serious security/privacy bug. If documents are
+team-internal — this is a leak. Right now the link works as "public,
+anyone with link".</li>
+<li><strong>🟠 Domain Management missing from Integrations</strong> —
+gap between what was promised and reality.</li>
+<li><strong>🟠 Google Drive / OneDrive missing</strong> — same
+thing.</li>
+<li><strong>🟠 AI editor completion not found /
+missing</strong>.</li>
+<li><strong>🟠 Empty message on copy/paste of a link</strong> —
+rendering broken on both sides.</li>
+<li><strong>🟠 XML error</strong> on revoke (confirmation of EK
+11-16).</li>
+<li><strong>🟡 Live chat support — clarify plan</strong>: is it for
+everyone or only Business+? Right now the testers aren't sure.</li>
+<li><strong>🟡 Standalone Translate (/translate)</strong> — add an
+explicit UI entry point so it's not confused with the chat feature.</li>
+</ol>
+</body>
+</html>

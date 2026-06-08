@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>EK 2 — Inter-Mind UX report</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Summary</a><span class="sep">·</span><span style="color:var(--muted)">Session: EK 2</span><span class="lang-switch"><a href="../EK%202.html">RU</a> · <strong>EN</strong></span></nav>
+<div class="materials"><strong>📦 Session materials:</strong><a href="../transcripts/EK%202/transcript.txt">📄 Transcript</a> · <a href="../transcripts/EK%202/transcript.srt">📝 With timecodes (SRT)</a> · <a href="https://drive.google.com/drive/folders/1s-a4Q5iKy-WY1UdX85dZIjy-TB-Vj6Nr" target="_blank" rel="noopener">📹 Video: <code>EK 2.mp4</code> ↗</a></div>
+<header id="title-block-header">
+<h1 class="title">EK 2 — Inter-Mind UX report</h1>
+</header>
+<h1 id="ux-отчёт-ek-step-2-регистрация-и-онбординг">UX report: EK — Step
+2 (Registration and onboarding)</h1>
+<table>
+<tbody>
+<tr>
+<td><strong>Tester</strong></td>
+<td>EK</td>
+</tr>
+<tr>
+<td><strong>Scenario section</strong></td>
+<td>§2 Registration and onboarding</td>
+</tr>
+<tr>
+<td><strong>Duration</strong></td>
+<td>~16:24</td>
+</tr>
+<tr>
+<td><strong>Video</strong></td>
+<td><code>EK 2.mp4</code></td>
+</tr>
+<tr>
+<td><strong>Transcript</strong></td>
+<td><code>EK 2_mic.wav.txt</code> (transcribed cleanly)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="не-работает-функциональные-баги">❌ Doesn't work (functional
+bugs)</h2>
+<table>
+<thead>
+<tr>
+<th>Timecode</th>
+<th>What happened</th>
+<th>Severity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>00:00–02:30</strong></td>
+<td>Visiting <code>intermind.com</code> from <strong>Microsoft
+Edge</strong> automatically opens the <strong>German</strong> version
+of the site, even though the user is English-speaking. Reproduced twice in a row.
+EK suspected a VPN, checked — none. Resolved manually via the language switcher
+in the header. → locale auto-detect in Edge is broken (likely
+accept-language / browser system settings, not geolocation).</td>
+<td>🟠 Medium</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="неудобно">⚠️ Inconvenient</h2>
+<table>
+<thead>
+<tr>
+<th>Timecode</th>
+<th>What was noted</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~04:30</strong></td>
+<td>On the main page of a logged-in user <strong>there is no "Sign in /
+Register"</strong> — there's only "Join Meeting" and "Open App". If you visited
+again — it's unclear where to click to get into the right flow. After
+logout, the button appeared: "Now it's Sign in. That's a lot clearer".</td>
+</tr>
+<tr>
+<td><strong>~08:00–10:00</strong></td>
+<td>EK looked for "change password" in Settings → didn't find it. Went into Help →
+the AI assistant explained that <strong>there are no passwords</strong>, login is by
+one-time code. The Settings UI does not explain this itself — it's empty there.
+The user logically looks for "change password", doesn't find it, wastes
+time.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="непонятно">❓ Unclear</h2>
+<table>
+<thead>
+<tr>
+<th>Timecode</th>
+<th>What wasn't understood</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~02:30</strong></td>
+<td>Where "Sign in" disappears from the main page — at first EK didn't guess
+that the reason was the already logged-in session. Only realized after logout.</td>
+</tr>
+<tr>
+<td><strong>~10:30</strong></td>
+<td>After delete + repeated login with the same email: EK is not sure — is this
+a <strong>new account or restoration of the old one</strong>. Had to do a second
+run with notes to make sure the account was actually deleted, not
+"suspended".</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-работает-хорошо">✅ What works well</h2>
+<h3 id="регистрация-через-email-one-time-code">Registration via email +
+one-time code</h3>
+<ul>
+<li>Email code arrives <strong>"very quick"</strong>.</li>
+<li>"My code with your intermind sign-in code expires in 10 minutes or
+click the button to sign-in directly" — the email wording is clear.</li>
+<li>The "sign-in directly" button works — no need to enter the code
+manually.</li>
+</ul>
+<h3 id="sso">SSO</h3>
+<ul>
+<li>Google login: "worked perfectly fine on both website and phone"
+(used before).</li>
+<li>Google / Microsoft / SSO are clearly shown as options in the UI.</li>
+</ul>
+<h3 id="help-ai-assistant">Help / AI assistant</h3>
+<ul>
+<li>When EK didn't understand that there are no passwords, <strong>the AI assistant
+in Help responded quickly and clearly</strong>: "Intermind does not use passwords for
+email logins. You receive a one-time six-digit code…". This saved the
+scenario.</li>
+</ul>
+<h3 id="delete-account-образцовый-flow">Delete account — exemplary flow
+⭐</h3>
+<p>EK praises each step in detail: - <strong>"Very clear red
+text"</strong>, use of trash icon — "universal symbol, very
+easy to understand". - Clear statement about irreversibility: <strong>"very
+clear statement that it is permanent"</strong>. - <strong>Double
+confirmation</strong> — second pop-up with a warning (important against
+misclicks). - <strong>Email validation on confirmation</strong>: when the
+email is incorrect — "email does not match" (EK checked deliberately). -
+<strong>Big red warning</strong> before the final delete: "This
+will permanently delete your account and all data including meetings,
+messages, files, team ownership and subscription. This cannot be
+undone". - <strong>Real verification after deletion</strong>: EK created
+data → deleted → logged back in with the same email → "the stuff that I
+added before isn't there. So that does seem to be working". Deletion
+actually wipes data.</p>
+<h3 id="логин-повторно-тем-же-email-после-delete">Logging in again with the
+same email after delete</h3>
+<ul>
+<li>The account is <strong>successfully re-created</strong> with the same email
+— this is correct behavior.</li>
+<li>What was there before deletion doesn't come back (correct).</li>
+</ul>
+<hr />
+<h2 id="что-не-покрыто">📋 Not covered</h2>
+<ul>
+<li><strong>Password recovery via "Forgot password"</strong> —
+scenario item §2; EK didn't do it because there are no passwords. The
+item can be struck from the instructions.</li>
+<li><strong>Expired / invalid link</strong> on the
+<code>/confirm</code> page — partially checked (clicked the link from
+the email), but no repeated transition (on a "used link") and no
+"open after an hour" scenario.</li>
+<li><strong>Registration via Microsoft SSO</strong> — not tried
+(used Google and email).</li>
+<li><strong>Inability to register with an already-used
+email</strong> — partially touched on, but without an explicit "tried again and
+got an error".</li>
+</ul>
+<hr />
+<h2 id="приоритеты">🚦 Priorities</h2>
+<ol type="1">
+<li><strong>🟠 Language auto-detect in Edge leads to DE locale</strong>
+(00:00). Fix either the detection logic, or show a banner "We
+detected DE — switch to EN?" instead of a forced redirect.</li>
+<li><strong>🟠 Settings → no "Sign-in method" block</strong> (~08:00).
+Add explicit text "You sign in with one-time codes — passwords are
+not used" right in settings, don't hide in Help.</li>
+<li><strong>🟡 Main page for a logged-in user — no obvious entry
+point</strong> (~04:30). When the user is already signed in, the main page should not
+look like a landing.</li>
+<li><strong>🟡 Update tester instructions</strong>: strike
+"password recovery" from §2 scenarios, since there are no passwords in the product
+— replace with "repeated one-time login".</li>
+</ol>
+<hr />
+<h2 id="что-особенно-хорошо">🎉 What's especially good</h2>
+<p><strong>Delete account — the best part of Inter-Mind according to
+EK.</strong> This is rare: delete flows are usually designed sloppily.
+Here it looks carefully worked through — double confirmation,
+validation, explicit warnings, real data cleanup.</p>
+</body>
+</html>

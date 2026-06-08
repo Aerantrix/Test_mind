@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Inter-Mind — UX Summary Report</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<nav class="topbar"><strong>Inter-Mind UX testing</strong><span class="sep">·</span><a href="#key-takeaways">Jump to takeaways</a><span class="lang-switch"><a href="../index.html">RU</a> · <strong>EN</strong></span></nav>
+<header id="title-block-header">
+<h1 class="title">Inter-Mind — UX Summary Report</h1>
+</header>
+<div class="materials">
+<strong>📘 Methodology:</strong>
+<a href="tester-guide.html">How we tested: recording + processing</a> ·
+<a href="test-scenarios.html">What we tested: scenarios list</a>
+</div>
+<h1 id="summary-ux-report-inter-mind-alpha">Summary UX Report — Inter-Mind (alpha)</h1>
+<p><strong>Date:</strong> 2026-06-08 · <strong>Testers:</strong>
+Oscar, EK · <strong>Videos:</strong> 16 (≈3.5 h of audio) ·
+<strong>Method:</strong> OBS + Whisper large-v3-turbo + VAD</p>
+<blockquote>
+<p><strong>How to read.</strong> The "📂 Details" column links to a
+per-session report where the bug was found. Each session report has
+timecodes and exact tester quotes. If a bug was seen by multiple
+sessions, all sources are listed.</p>
+</blockquote>
+<hr />
+<h2 id="top-bugs-critical">🔴 Top bugs (critical)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Bug</th>
+<th>Section</th>
+<th>📂 Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Infinite loop on screen sharing in demo</strong></td>
+<td>§1</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a> · <a
+href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>All recordings 14 seconds long</strong> regardless of
+actual length</td>
+<td>§10</td>
+<td><a href="Oscar%20step%209-10.html">Oscar step 9-10</a> · <a
+href="EK%209-10.html">EK 9-10</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Recording shows up for the participant, not the
+creator</strong></td>
+<td>§10</td>
+<td><a href="Oscar%20step%209-10.html">Oscar step 9-10</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Deleted meeting is reachable via same link without
+approval</strong></td>
+<td>§4</td>
+<td><a href="EK%203.html">EK 3</a> · <a
+href="Oscar%20step%203-4.html">Oscar step 3-4</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Document accessible via direct link without
+auth</strong></td>
+<td>§12 (security)</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Raw S3 XML error (<code>NoSuchKey</code>)</strong> instead of
+"no access" after document revoke</td>
+<td>§12</td>
+<td><a href="EK%2011-16.html">EK 11-16</a> · <a
+href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>UI language switcher cannot be found</strong>
+(AI assistant gives wrong instructions)</td>
+<td>§3</td>
+<td><a href="EK%203.html">EK 3</a> · <a
+href="Oscar%20step%203-4.html">Oscar step 3-4</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>"End Meeting for Everyone" works on the 3rd try or with
+large delay</strong></td>
+<td>§4</td>
+<td><a href="Oscar%20Step%204.html">Oscar Step 4</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>5-sec transcript lag</strong> + <strong>voice cloning
+replaces the voice</strong> + <strong>garbage phrases in
+translation</strong></td>
+<td>§5</td>
+<td><a href="Oscar%20step%205-6.html">Oscar step 5-6</a> · <a
+href="EK%205-6.html">EK 5-6</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Edge → autodetect routes to DE site</strong> without user
+choice</td>
+<td>§0</td>
+<td><a href="EK%202.html">EK 2</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="top-important-medium">🟠 Top important (medium)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Bug</th>
+<th>Section</th>
+<th>📂 Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11</td>
+<td><strong>Assigning roles / admin / kick cannot be found</strong></td>
+<td>§3</td>
+<td><a href="EK%203.html">EK 3</a> · <a
+href="Oscar%20step%203-4.html">Oscar step 3-4</a> · <a
+href="Oscar%20Step%204.html">Oscar Step 4</a></td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>Reset in Theme colors</strong> does nothing</td>
+<td>§3</td>
+<td><a href="EK%203.html">EK 3</a></td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>"Translation language" vs "Display language"</strong> —
+confusing naming</td>
+<td>§3</td>
+<td><a href="EK%203.html">EK 3</a> · <a
+href="Oscar%20step%203-4.html">Oscar step 3-4</a></td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>Message goes blank</strong> when pasting a link (on both
+sides)</td>
+<td>§8</td>
+<td><a href="EK%2011-16.html">EK 11-16</a> · <a
+href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>15</td>
+<td><strong>1000-char/message limit</strong> in chat — not explained,
+conflicts with pricing</td>
+<td>§8</td>
+<td><a href="Oscar%20step%207-8.html">Oscar step 7-8</a></td>
+</tr>
+<tr>
+<td>16</td>
+<td><strong>Domain Management missing</strong> from Integrations
+UI</td>
+<td>§11</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>17</td>
+<td><strong>Google Drive / OneDrive — not exposed</strong> in UI</td>
+<td>§11</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>18</td>
+<td><strong>AI editor completion cannot be found</strong></td>
+<td>§12</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>19</td>
+<td><strong>Add contact only available from meeting</strong> (circular
+dep)</td>
+<td>§8</td>
+<td><a href="EK%207-8.html">EK 7-8</a> · <a
+href="Oscar%20step%207-8.html">Oscar step 7-8</a></td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>Meeting summary in email — empty</strong></td>
+<td>§10</td>
+<td><a href="Oscar%20step%209-10.html">Oscar step 9-10</a></td>
+</tr>
+<tr>
+<td>21</td>
+<td><strong>Text/background contrast + tiny font + off-centered
+digits</strong> on Sovereignty (also on mobile)</td>
+<td>§0</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a> · <a
+href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td>22</td>
+<td><strong>Duplicate "Methodology" item</strong> in Sovereignty
+navigation</td>
+<td>§0</td>
+<td><a href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td>23</td>
+<td><strong>Toggle expanded/collapsed/hidden for transcriptions</strong>
+does not work</td>
+<td>§7</td>
+<td><a href="EK%2011-16.html">EK 11-16</a> · <a
+href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>24</td>
+<td><strong>Message disappears for sender after
+translation</strong></td>
+<td>§7</td>
+<td><a href="EK%207-8.html">EK 7-8</a></td>
+</tr>
+<tr>
+<td>25</td>
+<td><strong>Inconsistent translation in chat feed</strong> — different
+bubbles in different languages</td>
+<td>§7</td>
+<td><a href="Oscar%20step%207-8.html">Oscar step 7-8</a></td>
+</tr>
+<tr>
+<td>26</td>
+<td><strong>Home page for logged-in user</strong> — no obvious entry
+point (only Join Meeting / Open App)</td>
+<td>§2</td>
+<td><a href="EK%202.html">EK 2</a> · <a
+href="Oscar%20step%202.html">Oscar step 2</a></td>
+</tr>
+<tr>
+<td>27</td>
+<td><strong>Change password never explained</strong> — user looks,
+doesn't find it, goes to AI assistant</td>
+<td>§2</td>
+<td><a href="EK%202.html">EK 2</a> · <a
+href="Oscar%20step%202.html">Oscar step 2</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="cosmetics-and-ux-friction">🟡 Cosmetics and UX friction</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Issue</th>
+<th>Section</th>
+<th>📂 Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>28</td>
+<td>Monthly/yearly toggle on Pricing — small, non-obvious</td>
+<td>§0</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a> · <a
+href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td>29</td>
+<td>"I see myself on both sides of the screen" in demo — bug or
+feature?</td>
+<td>§1</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a> · <a
+href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td>30</td>
+<td>Reaction to own synthesized voice ("weird, but cool")</td>
+<td>§1</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a> · <a
+href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td>31</td>
+<td>"Kick" missing — only "Remove" available (naming question)</td>
+<td>§4</td>
+<td><a href="Oscar%20Step%204.html">Oscar Step 4</a></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Light/Dark switcher buried in Application Preferences</td>
+<td>§3</td>
+<td><a href="EK%203.html">EK 3</a></td>
+</tr>
+<tr>
+<td>33</td>
+<td>Odd letter spacing on Demo CTA</td>
+<td>§1</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a> · <a
+href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td>34</td>
+<td>After restarting demo the language changes with no explicit
+control</td>
+<td>§1</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a></td>
+</tr>
+<tr>
+<td>35</td>
+<td>Standalone Translate (<code>/translate</code>) cannot be found,
+confused with chat feature</td>
+<td>§12</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>36</td>
+<td>Inconsistent transcribing state between participants after disabling
+translation</td>
+<td>§10</td>
+<td><a href="Oscar%20step%209-10.html">Oscar step 9-10</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="what-works-great-gems">✅ What works great (gem features)</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>📂 Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Delete account flow</strong> — double confirmation, email
+validation, actual cleanup ⭐</td>
+<td><a href="EK%202.html">EK 2</a> · <a
+href="Oscar%20step%202.html">Oscar step 2</a></td>
+</tr>
+<tr>
+<td><strong>One-time code login</strong> + "no passwords" (via
+AI assistant)</td>
+<td><a href="EK%202.html">EK 2</a> · <a
+href="Oscar%20step%202.html">Oscar step 2</a></td>
+</tr>
+<tr>
+<td><strong>Google SSO consolidates by email</strong></td>
+<td><a href="Oscar%20step%202.html">Oscar step 2</a></td>
+</tr>
+<tr>
+<td><strong>Calendar (Google) end-to-end</strong> via Schedule Meeting
+→ Add to calendar</td>
+<td><a href="EK%204.html">EK 4</a> · <a
+href="Oscar%20Step%204.html">Oscar Step 4</a></td>
+</tr>
+<tr>
+<td><strong>Laser pointer</strong> — both participants can draw on the
+shared screen</td>
+<td><a href="Oscar%20step%209-10.html">Oscar step 9-10</a></td>
+</tr>
+<tr>
+<td><strong>Pre-Join Setup</strong> with calming music</td>
+<td><a href="EK%203.html">EK 3</a> · <a
+href="Oscar%20step%203-4.html">Oscar step 3-4</a> · <a
+href="Oscar%20Step%204.html">Oscar Step 4</a></td>
+</tr>
+<tr>
+<td><strong>Note editor in chat</strong> — create, share, translate,
+delete from both sides</td>
+<td><a href="Oscar%20step%207-8.html">Oscar step 7-8</a></td>
+</tr>
+<tr>
+<td><strong>Pricing / FAQ / use-case landings</strong> — clear,
+concise</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a> · <a
+href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td><strong>Approval flow</strong> (host admits guest) — clear
+pop-up</td>
+<td><a href="EK%203.html">EK 3</a></td>
+</tr>
+<tr>
+<td><strong>Message edit history</strong> in chat</td>
+<td><a href="EK%2011-16.html">EK 11-16</a></td>
+</tr>
+<tr>
+<td><strong>Multi-language auto-detection</strong> in meeting</td>
+<td><a href="EK%205-6.html">EK 5-6</a> · <a
+href="Oscar%20step%205-6.html">Oscar step 5-6</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="not-covered">📋 Not covered</h2>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>What was not done</th>
+<th>Where mentioned</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>§3</td>
+<td>Bulk invites via file; 17 UI languages; full roles flow</td>
+<td><a href="EK%203.html">EK 3</a> · <a
+href="Oscar%20step%203-4.html">Oscar step 3-4</a></td>
+</tr>
+<tr>
+<td>§4</td>
+<td>40-min Basic plan limit; pin / layout / volume; hand raise; full
+emoji set</td>
+<td><a href="EK%204.html">EK 4</a> · <a
+href="Oscar%20Step%204.html">Oscar Step 4</a></td>
+</tr>
+<tr>
+<td>§5–6</td>
+<td>Rare languages; mixed speech; whispering; standalone Subtitles</td>
+<td><a href="EK%205-6.html">EK 5-6</a> · <a
+href="Oscar%20step%205-6.html">Oscar step 5-6</a></td>
+</tr>
+<tr>
+<td>§9</td>
+<td>Sharing a single window / tab with audio; iOS/Android</td>
+<td><a href="Oscar%20step%209-10.html">Oscar step 9-10</a></td>
+</tr>
+<tr>
+<td>§10</td>
+<td>Local recording; storage limits; download/share/delete</td>
+<td><a href="Oscar%20step%209-10.html">Oscar step 9-10</a> · <a
+href="EK%209-10.html">EK 9-10</a></td>
+</tr>
+<tr>
+<td>§13</td>
+<td>SSO/SAML, Privacy Zones (Business+ needed)</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>§14</td>
+<td>Live chat support (verify plan)</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>§15</td>
+<td>Translation on mobile; iOS Safari specifically; wi-fi → 4G;
+background mode</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="key-takeaways">🧭 Key takeaways</h2>
+<p>The product is <strong>strikingly uneven</strong>. In some places you can see careful engineering; in others a feature was shipped to marketing before it was actually built.</p>
+
+<h3>What is encouraging</h3>
+<p>Several parts of the product are done genuinely well:</p>
+<ul>
+<li><strong>Delete account flow</strong> — double confirmation, email validation, real cleanup. EK spent five minutes specifically praising it — in most products this is slapped together.</li>
+<li><strong>Onboarding</strong> — one-time code login, <strong>calming music in Pre-Join Setup</strong>, <strong>Google SSO email consolidation</strong>. These are the small things that rarely get attention. Here they got it.</li>
+<li><strong>Laser pointer</strong> on the shared screen where both participants can draw — genuinely nice feature that isn't marketed anywhere.</li>
+<li><strong>Note editor in chat</strong> works cleanly end-to-end (create → share → translate → delete from both sides).</li>
+</ul>
+<p>This shows the team <strong>has someone who thinks about UX at the level of details</strong>.</p>
+
+<h3>What is seriously broken</h3>
+<p>The same product breaks on flagship features:</p>
+<ul>
+<li><strong>Cloud recording is broken in several places at once</strong>: 14 seconds regardless of actual length, the file goes to the participant instead of the creator, the email summary is empty. This is one of the key pricing points — and exactly the one that doesn't work, on several levels.</li>
+<li><strong>Documents are accessible via direct link without auth</strong> — this is a security bug, not UX. After delete it returns raw S3 XML with the key, which only the server should see.</li>
+<li><strong>Translation — the flagship feature</strong> — gives a 5-second lag, sometimes replaces the voice with someone else's, sometimes inserts garbage phrases. The very thing users come for is what suffers most.</li>
+<li><strong>"Find the UI language switcher"</strong> — both testers spent 5 minutes unable to find it. The AI assistant gave instructions that <strong>do not lead to success</strong>. This is doubly bad: a problem plus a broken lifeline.</li>
+</ul>
+
+<h3>Systemic pattern</h3>
+<p>There's a gap between <strong>pricing-page promises</strong> and <strong>product reality</strong>:</p>
+<ul>
+<li>Domain Management — advertised, missing from UI.</li>
+<li>Google Drive / OneDrive integration — advertised, missing from UI.</li>
+<li>AI editor completion — advertised, cannot be found.</li>
+<li>"17 languages" in docs vs "14 languages" in marketing comparisons — internal contradiction.</li>
+</ul>
+<p>The team <strong>ships marketing faster than UI</strong>. For alpha that's forgivable, but if a paid plan launches tomorrow, this gap turns into chargebacks.</p>
+
+<h3>On testing methodology</h3>
+<ul>
+<li><strong>Voice-narrated slicing works.</strong> Marker words "doesn't work / inconvenient / unclear" — simple and robust categorization. Testers managed without special training.</li>
+<li><strong>Cross-tester verification was key.</strong> When the same bug is independently seen by two people — it immediately removes "maybe I imagined it" and bumps priority.</li>
+<li><strong>Whisper hallucinations were the most expensive part of the pipeline.</strong> 9 out of 16 files on the first pass were unusable. VAD saved us. Without it we would have spent time on "hallucination reports".</li>
+<li><strong>Coverage is uneven.</strong> §2–4 (registration, profile, meetings) — deep. §10 (recording), §13 (security), §15 (mobile) — shallow: either testers hit a feature they couldn't access (Business+ required) or silently clicked (silent video is useless).</li>
+</ul>
+
+<hr />
+<h2 id="recommendations-to-the-team">🚦 Recommendations to the team</h2>
+<ol type="1">
+<li><strong>Urgent</strong> — the top-10 critical bugs above (especially
+recording, document access, deleted meeting reachability).</li>
+<li><strong>Sprint</strong> — medium bugs (XML error, blank message,
+language switcher).</li>
+<li><strong>Testers</strong> — 3 targeted follow-up sessions: §10 (Recording),
+§13 (Security, Business+ needed), §15 (Mobile, properly).</li>
+<li><strong>Tester guide updates</strong> — strike out
+"password recovery" (no passwords); call out that §13–14 require
+Business+.</li>
+</ol>
+<hr />
+<footer>Summary report. Click the links in the "Details" column to open the per-session report with timecodes and quotes.</footer>
+</body>
+</html>

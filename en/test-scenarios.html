@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Inter-Mind — Test scenarios</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Summary</a><span class="sep">·</span><span style="color:var(--muted)">Test scenarios: what we check</span><span class="lang-switch"><a href="../test-scenarios.html">RU</a> · <strong>EN</strong></span></nav>
+<header id="title-block-header">
+<h1 class="title">Test scenarios: what we check — Inter-Mind</h1>
+</header>
+<h1 id="сценарии-ручной-проверки-inter-mind">Inter-Mind manual test
+scenarios</h1>
+<blockquote>
+<p>This is a list of <strong>user tasks</strong> that need to be walked
+through by hand and recorded on video (see <a
+href="./inter-mind-tester-guide.md">the recording workflow</a>). Each
+task is what a real user wants to accomplish. It is not a step-by-step
+instruction: how to perform each task is up to the tester, because
+exactly «how will a new user figure it out / fail to figure it out» is
+what we are testing.</p>
+<p>The source of the feature list is the page <a
+href="https://intermind.com/pricing">intermind.com/pricing</a>.</p>
+</blockquote>
+<hr />
+<h2 id="первый-контакт-лендинг">0. First contact (landing page)</h2>
+<p>A real user comes to the site <strong>not for the pricing</strong>.
+They want to understand in 30 seconds what this is, and in a minute —
+try it, before reading any price tags.</p>
+<ul>
+<li>Open <code>intermind.com</code> for the first time and
+<strong>within 30 seconds</strong> understand: what product this is and
+who it is for.</li>
+<li>Find on the homepage <strong>how to try the product right
+now</strong>, without registering. Count how many clicks to the trial.</li>
+<li>Find <strong>where to ask a question</strong> before purchasing
+(live chat, contacts, FAQ).</li>
+<li>Read a couple of sections of the landing (what is promised, case
+studies, testimonials) — does a coherent picture of «why I need this»
+form.</li>
+</ul>
+<hr />
+<h2 id="demo-комната-проба-без-регистрации">1. Demo room (try without
+registering)</h2>
+<p>The key entry point. On the task «see how well this works for me» the
+decision «register or not» is made in 1–2 minutes. The product feature
+list explicitly mentions <strong>«Demo mode with auto-cleanup
+(TTL)»</strong> — so this is a real entity.</p>
+<ul>
+<li>From the homepage find and click the CTA that leads to <strong>demo
+without registration</strong> («Try demo», «Try it now», etc.). Measure
+how many clicks from the homepage to the first spoken line in the demo.</li>
+<li>Enter the demo room. From the first second understand: <strong>I am
+inside a meeting, translation is on, what is happening</strong>.</li>
+<li>Speak out loud — <strong>hear the translation of your own
+speech</strong> or see the transcription.</li>
+<li>Understand what is <strong>available</strong> in the demo and what
+is <strong>blocked</strong> / labeled «available after registration».</li>
+<li>Try <strong>all the key features in the demo</strong>, if they are
+open: camera, microphone, screen sharing, chat, reactions, recording.</li>
+<li>Change the translation language on the fly.</li>
+<li>Exit the demo. See <strong>which CTA the product shows on
+exit</strong> (push to registration, to pricing, to the next step).</li>
+<li>Open the <strong>demo result report</strong>
+(<code>/demo/report</code>, if there is a link to it from the exit).
+Understand what exactly was shown: transcript, translation, any call
+quality metrics.</li>
+<li>Return to the same demo room <strong>an hour later</strong> — is it
+still alive or has <strong>TTL deleted it</strong>.</li>
+<li>Create a <strong>second demo room</strong> back-to-back — does the
+product allow this without limits, or does it ask to register.</li>
+<li>Try the demo from a <strong>mobile device</strong> (iOS Safari,
+Android Chrome).</li>
+</ul>
+<hr />
+<h2 id="регистрация-и-онбординг">2. Registration and onboarding</h2>
+<ul>
+<li>Register from scratch as a new user (new email).</li>
+<li>Receive the confirmation email, <strong>follow the link to the
+<code>/confirm</code> page</strong> and verify that the confirmation
+went through; understand where the product takes you next.</li>
+<li>Open an <strong>expired/invalid</strong> confirmation link (for
+example, after following it a second time) — see what the
+<code>/confirm</code> page shows.</li>
+<li>Go through the initial onboarding up to the point where it is clear
+«what to do next».</li>
+<li>Try to register with an email that is already in use — see what the
+product responds.</li>
+<li>Register via SSO / Google (if available).</li>
+<li>Reset the password via «Forgot password».</li>
+<li>Sign out and sign back in.</li>
+<li>Delete your account (if such an action exists in the UI).</li>
+</ul>
+<hr />
+<h2 id="профиль-и-команда">3. Profile and team</h2>
+<ul>
+<li>Fill out the profile (name, avatar, interface language).</li>
+<li>Change the interface language to one of the 17 advertised.</li>
+<li><strong>Create a team</strong> (Team).</li>
+<li><strong>Invite a single participant</strong> to the team by
+email.</li>
+<li><strong>Bulk-invite participants</strong> via file (txt / csv /
+json — if such a feature exists).</li>
+<li>Accept a team invitation from a second account — follow the
+invitation link (page <code>/invite/[token]</code>): see what is shown
+to a new user, and what to an already logged-in user.</li>
+<li>Open an <strong>expired / already used / invalid</strong>
+invitation — see what error and what next-step.</li>
+<li>Change a participant's role (admin / member).</li>
+<li>Remove a participant from the team.</li>
+<li>Leave the team yourself.</li>
+</ul>
+<hr />
+<h2 id="встречи-ядро-продукта">4. Meetings (core of the product)</h2>
+<h3 id="базовая-видеоконференция">Basic video conferencing</h3>
+<ul>
+<li><strong>Create a meeting</strong> right now (instant meeting).</li>
+<li><strong>Schedule a meeting</strong> for a future time (if a
+scheduler exists).</li>
+<li>Share the <strong>meeting link</strong> with another person.</li>
+<li>Join the meeting <strong>as the host</strong>.</li>
+<li>Join the meeting <strong>as a guest via the link</strong>, without
+an account (if allowed).</li>
+<li>Join the meeting <strong>from a second account</strong> in another
+browser at the same time.</li>
+<li>Turn the <strong>microphone</strong> on / off.</li>
+<li>Turn the <strong>camera</strong> on / off.</li>
+<li>Switch the microphone / camera device on the fly.</li>
+<li>Check <strong>FHD video &amp; audio</strong>: picture and sound
+quality in a 1:1 meeting.</li>
+<li><strong>Leave</strong> the meeting.</li>
+<li><strong>End</strong> the meeting as the host (kick everyone out).</li>
+</ul>
+<h3 id="pre-join-setup">Pre-Join Setup</h3>
+<ul>
+<li>Before entering a meeting, land on the <strong>Pre-Join
+Setup</strong> screen — preview of camera and microphone. Understand
+what is shown.</li>
+<li>On Pre-Join — choose the camera/microphone/speaker device, turn the
+camera off before joining, turn the microphone off before joining. Join.
+Verify that the states were preserved.</li>
+<li>In <code>Settings → Meeting preferences</code> turn off the
+<strong>«Show Pre-Join Dialog»</strong> toggle → join the next meeting
+without Pre-Join. Turn it back on — Pre-Join returns.</li>
+</ul>
+<h3 id="управление-встречей-и-раскладка">Meeting controls and
+layout</h3>
+<ul>
+<li><strong>Pin</strong> a participant — pin someone's video to the
+main screen.</li>
+<li>Switch the <strong>layout</strong>: grid / speaker view (and any
+others the product offers).</li>
+<li>Per-participant <strong>volume</strong> — is there an individual
+slider.</li>
+<li>Make another participant a <strong>co-host</strong> (if such a role
+exists) and check their permissions.</li>
+<li>Kick a participant out of the meeting (as host).</li>
+<li>Force-mute a participant as host.</li>
+</ul>
+<h3 id="лимиты-тарифа-basic">Basic plan limits</h3>
+<ul>
+<li>Reach the <strong>40-minute limit</strong> on a meeting on the Basic
+plan. See what the product shows before the end, at the moment of the
+end, and after.</li>
+</ul>
+<h3 id="реакции-и-взаимодействие">Reactions and interaction</h3>
+<ul>
+<li>Send an <strong>emoji reaction</strong> during a meeting. Verify
+that exactly the emojis advertised are available (per the docs —
+<code>👍 ❤️ 😂 😮 😢 🙏</code> + those mentioned in reactions.md).
+Compare the set with what was promised.</li>
+<li>«Raise hand» — send hand_raise, see the indicator on another
+participant, lower it.</li>
+<li>See reactions and raised hands of other participants.</li>
+</ul>
+<hr />
+<h2 id="перевод-речи-в-реальном-времени">5. Real-time speech
+translation</h2>
+<ul>
+<li>In a two-way call (RU ↔︎ EN) <strong>turn on translation</strong>.</li>
+<li>Hear the translation of the other party into your language.</li>
+<li>Change the language on the fly.</li>
+<li>On Basic — verify that only <strong>1 language pair</strong> is
+available at a time.</li>
+<li>Try <strong>multiple language pairs simultaneously</strong>, as far
+as the number of participants allows (3 people speaking 3 languages is
+already 3 pairs).</li>
+<li>Reach the <strong>translation hours limit</strong> on the plan
+(Basic — 1 hour). See what the app shows before the end and at the
+moment of exhaustion.</li>
+<li>Check the translation of a <strong>rare language</strong> out of the
+17 advertised (not RU, not EN).</li>
+<li>Check translation of <strong>mixed speech</strong> within a single
+phrase (RU + EN interleaved).</li>
+<li>Check <strong>fast speech</strong> and <strong>whispering</strong> —
+what happens to the translation.</li>
+<li>Join a meeting where translation has already been running for 5
+minutes — will it catch up.</li>
+</ul>
+<hr />
+<h2 id="субтитры-и-транскрипция">6. Subtitles and transcription</h2>
+<p>The meeting cockpit has <strong>three separate buttons</strong>:
+Translation, Subtitles, Transcription. These are different entities and
+must be tested separately.</p>
+<h3 id="субтитры-subtitles">Subtitles</h3>
+<ul>
+<li>Turn on the <strong>«Subtitles» button</strong> in the meeting
+cockpit — see <strong>live subtitles</strong> overlaid on the video.</li>
+<li>Turn off subtitles — verify that they disappear, while
+translation/transcription keep working (if they were on).</li>
+<li>Check subtitles <strong>in the second language</strong> (if they are
+sourced from the translation).</li>
+<li>Check how subtitles <strong>overlay on different layouts</strong>
+(grid / speaker view) — whether they cover any important elements.</li>
+<li>The «on/off» state of subtitles is <strong>remembered between
+meetings</strong> — verify.</li>
+</ul>
+<h3 id="транскрипция">Transcription</h3>
+<ul>
+<li>During a meeting turn on <strong>transcription display</strong> on
+screen — this is a <strong>different button</strong>, not Subtitles.</li>
+<li>Read the transcription of your own speech and the other party's
+speech.</li>
+<li>Download / save the transcript after the meeting (if such an option
+exists).</li>
+<li>Check transcription for a <strong>rare language</strong>.</li>
+<li>The «on/off» state of transcription is <strong>remembered between
+meetings</strong> — verify.</li>
+</ul>
+<hr />
+<h2 id="чат-внутри-встречи">7. In-meeting chat</h2>
+<ul>
+<li>Write a message in the chat <strong>during a meeting</strong>.</li>
+<li>Attach a <strong>file</strong> to the chat during a meeting.</li>
+<li>Send an <strong>emoji</strong>.</li>
+<li>Copy a link / forward a message.</li>
+</ul>
+<hr />
+<h2 id="постоянный-командный-чат-вне-встречи">8. Persistent team chat
+(outside a meeting)</h2>
+<h3 id="сообщения-и-история">Messages and history</h3>
+<ul>
+<li>Open the <strong>chat history</strong> with the team.</li>
+<li>Write a message in the chat <strong>outside a meeting</strong>.</li>
+<li>Receive a notification about a new message.</li>
+<li>Open a thread a week old — see the <strong>history</strong> in
+full.</li>
+<li>Search across messages.</li>
+<li>Translate messages (text translation — limit «10K / 200K / 3M
+words»).</li>
+</ul>
+<h3 id="создание-встречи-из-чата">Starting a meeting from the chat</h3>
+<ul>
+<li>In a persistent team chat click <strong>«start a meeting»</strong>
+/ «call» / a similar button — launch a meeting <strong>straight from
+the conversation</strong>.</li>
+<li>Verify that the chat <strong>automatically receives the
+link</strong> to this meeting, and other chat members can join in one
+click.</li>
+<li>End the meeting — see what remains in the chat after it ends
+(recording, transcript, link to summary).</li>
+<li>Start a meeting from a <strong>1:1 chat</strong> and from a
+<strong>group chat</strong> — the behavior and UI may differ.</li>
+<li>Create a meeting from a chat that <strong>includes a person from
+outside the team</strong> (external participant) — will they be let in,
+and what permissions.</li>
+</ul>
+<h3 id="заметки-в-чате-note-editor">Notes in the chat (Note editor)</h3>
+<ul>
+<li>Create a <strong>note</strong> right from the chat (Note editor —
+button/command that should be part of the chat).</li>
+<li>Edit the note, format the text.</li>
+<li>Share the note with another chat member — see what they see on
+their side.</li>
+<li>Close and reopen the note — state and contents preserved.</li>
+<li>Delete the note.</li>
+</ul>
+<hr />
+<h2 id="шаринг-экрана">9. Screen sharing</h2>
+<ul>
+<li><strong>Share the entire screen</strong> with another meeting
+participant.</li>
+<li><strong>Share a single window</strong>.</li>
+<li><strong>Share a browser tab with audio</strong>.</li>
+<li>Use the <strong>laser pointer</strong> on the shared screen (if the
+feature exists).</li>
+<li>Stop sharing.</li>
+<li>Share the screen on <strong>Safari</strong> (there are caveats
+there — Safari 17+ is required).</li>
+<li>Try to share from <strong>iOS / Android</strong> — see what the
+product shows (per the docs — not available).</li>
+</ul>
+<hr />
+<h2 id="запись-recording">10. Recording</h2>
+<h3 id="cloud-recording">Cloud recording</h3>
+<ul>
+<li><strong>Start recording</strong> to the cloud during a meeting.</li>
+<li>Stop recording.</li>
+<li>Find the ready recording in the personal account / team cloud.</li>
+<li>Download the recording.</li>
+<li>Share a link to the recording.</li>
+<li>Delete the recording.</li>
+</ul>
+<h3 id="local-recording">Local recording</h3>
+<ul>
+<li><strong>Start a local recording</strong> (video + tab audio +
+microphone, as in README).</li>
+<li>Stop the recording, locate the file.</li>
+<li>Compare quality: cloud vs local.</li>
+</ul>
+<h3 id="лимиты-хранилища">Storage limits</h3>
+<ul>
+<li>Understand <strong>how much space is used</strong> in team storage
+(1 GB / 30 GB / 1 TB / 10 TB).</li>
+<li>Upload files up to the limit — see what the product shows.</li>
+<li>Delete old recordings / files to free up space.</li>
+</ul>
+<hr />
+<h2 id="интеграции">11. Integrations</h2>
+<p>Reached from the <code>/integrations</code> page. Card visibility
+depends on role and plan.</p>
+<h3 id="календарь">Calendar</h3>
+<ul>
+<li>Open <strong>Calendar Integration</strong>, choose <strong>Google
+Calendar</strong> or <strong>Outlook Calendar</strong>.</li>
+<li>Create a meeting → click «add to calendar» → verify that the
+chosen calendar shows an event with the correct time, link, and
+description.</li>
+<li>Switch the calendar provider and verify that new creations go to the
+other calendar.</li>
+<li>Disconnect the calendar — see what happens to already-created
+events.</li>
+</ul>
+<h3 id="управление-доменом">Domain management</h3>
+<ul>
+<li>Add <strong>your corporate domain</strong> in Domain Management.</li>
+<li>Copy the DNS TXT and <strong>add the record to real DNS</strong>
+(access to the domain registrar is required).</li>
+<li>Click «Verify» — see the status transition pending → verified.</li>
+<li>Add a <strong>deliberately invalid domain</strong> or enter an
+incorrect TXT — see the invalid status and a clear error.</li>
+<li>Delete a verified domain.</li>
+</ul>
+<h3 id="облачные-хранилища-google-drive-onedrive">Cloud storage (Google
+Drive / OneDrive)</h3>
+<ul>
+<li>Connect <strong>Google Drive</strong> to the account via OAuth.</li>
+<li>Upload a file from Inter-Mind to Google Drive (if the feature
+exists in the UI).</li>
+<li>Attach a file <strong>from Google Drive</strong> into a chat / a
+document.</li>
+<li>Disconnect Google Drive.</li>
+<li>Same for <strong>OneDrive</strong>.</li>
+</ul>
+<hr />
+<h2 id="документы-заметки-и-ai-инструменты">12. Documents, notes, and
+AI tools</h2>
+<h3 id="standalone-переводчик">Standalone translator</h3>
+<ul>
+<li>Open <code>/translate</code> — a standalone text translation tool,
+<strong>outside</strong> of a conference.</li>
+<li>Enter a paragraph of text → choose the target language → get the
+translation.</li>
+<li>Copy the translation. Share it.</li>
+<li>Check how the «10K / 200K / 3M words» limit is reflected on this
+page (if the counter is shared).</li>
+</ul>
+<h3 id="документы-общие-документы-с-правами-доступа">Documents (shared
+documents with access rights)</h3>
+<ul>
+<li>Create a <strong>document</strong> inside the product.</li>
+<li>Share the document with a team member — verify that they have
+access.</li>
+<li>Share with someone <strong>outside the team</strong> — see what
+happens.</li>
+<li>Revoke access — the user can no longer open it.</li>
+<li>Open the document via a direct link without authentication — see
+what is shown.</li>
+<li>Delete the document.</li>
+</ul>
+<h3 id="ai-помощник-в-редакторе">AI assistant in the editor</h3>
+<ul>
+<li>Inside a document / note invoke <strong>AI completion</strong>
+(presumably «continue the text», «summarize», «translate»).</li>
+<li>Get the model's response — evaluate quality and speed.</li>
+<li>See what the product shows <strong>when the AI does not
+respond</strong> (timeout, error).</li>
+<li>Is there a <strong>limit</strong> on AI calls per plan — find it,
+reach it, see what is said.</li>
+</ul>
+<hr />
+<h2 id="безопасность-business-enterprise">13. Security (Business /
+Enterprise)</h2>
+<ul>
+<li><strong>Configure SSO / SAML</strong> for team sign-in.</li>
+<li>Sign in via corporate SSO.</li>
+<li>Configure <strong>Privacy Zones</strong> (whatever this is in the
+product — find it and understand it).</li>
+<li>Verify the claim about <strong>«Private translation
+infrastructure»</strong> — find where it is described / where it is
+enabled.</li>
+</ul>
+<hr />
+<h2 id="поддержка">14. Support</h2>
+<ul>
+<li>Open <strong>Live chat</strong> with support (on all plans) — ask a
+question, get an answer.</li>
+<li>On Business / Enterprise — try <strong>Live chat &amp;
+video</strong> (video call with support).</li>
+<li>Find the <strong>documentation</strong> / help center and resolve a
+typical question on your own.</li>
+</ul>
+<hr />
+<h2 id="мобильный-опыт">15. Mobile experience</h2>
+<ul>
+<li>Open <code>intermind.com</code> on <strong>iPhone
+(Safari)</strong>. Sign in to the account.</li>
+<li>Join a meeting from an iPhone, talk to a participant who is on
+desktop.</li>
+<li>Turn on <strong>translation</strong> on mobile.</li>
+<li>Verify that <strong>screen sharing from iOS is not available</strong>
+and the product explains this.</li>
+<li>Same on <strong>Android (Chrome)</strong>.</li>
+<li>Go to background / lock the phone during a meeting — see what
+happens to the audio (per the docs — Safari cuts off background
+tabs).</li>
+<li>Catch a network switch <strong>wi-fi → 4G → wi-fi</strong> during
+a meeting on mobile.</li>
+</ul>
+<hr />
+<h2 id="сквозные-реальные-сценарии">16. End-to-end «real» scenarios</h2>
+<p>These are «full run-throughs», as if you were living inside the
+product. One such run-through is worth more than ten point checks.</p>
+<ul>
+<li><strong>«Freelancer's first day»</strong>: register → create a
+meeting → invite a colleague → run a 10-minute call with translation
+→ record it → find the recording → sign out.</li>
+<li><strong>«Small team»</strong>: set up a team of 3 → invite all of
+them → arrange a meeting via chat → run it → share the screen →
+end it.</li>
+<li><strong>«Hitting the Basic limit»</strong>: on the free plan run a
+meeting up to the 40-minute limit → see how the product behaves at the
+cut-off and which upgrade CTA it shows.</li>
+<li><strong>«Guest without an account»</strong>: ask a colleague on
+another device to join via the link without registering → run a
+meeting with them.</li>
+<li><strong>«Long meeting»</strong>: a 2-hour meeting with translation
+and recording — verify that nothing falls off.</li>
+<li><strong>«Broken internet»</strong>: in the middle of a meeting
+switch wi-fi → 4G → wi-fi. See how long the connection lasts and how
+it recovers.</li>
+</ul>
+<hr />
+<h2 id="что-не-входит-в-этот-список">What is not in this list</h2>
+<ul>
+<li><strong>Billing and payment</strong> (Stripe, upgrade/downgrade,
+invoices, subscription cancellation) — a separate task that requires a
+Stripe test environment; we will not run it on live production.</li>
+<li><strong>Scenarios with large numbers of participants</strong> (51+
+on Basic, 100+ on Pro, 300+ on Business, 1500 on Enterprise) —
+impossible to verify with 3 people; this requires either load testing
+or a group of volunteers.</li>
+<li><strong>Technical security scenarios</strong> (XSS, SQL injection,
+etc.) — a separate security review task.</li>
+<li><strong>Point edge cases</strong> (broken UTF-8 files, RTL
+languages, zero-width chars) — we will add them as a separate list if
+the main scenarios pass cleanly.</li>
+</ul>
+</body>
+</html>

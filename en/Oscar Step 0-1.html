@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Oscar Step 0-1 — Inter-Mind UX report</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Summary</a><span class="sep">·</span><span style="color:var(--muted)">Session: Oscar Step 0-1</span><span class="lang-switch"><a href="../Oscar%20Step%200-1.html">RU</a> · <strong>EN</strong></span></nav>
+<div class="materials"><strong>📦 Session materials:</strong><a href="../transcripts/Oscar%20Step%200-1/transcript.txt">📄 Transcript</a> · <a href="../transcripts/Oscar%20Step%200-1/transcript.srt">📝 With timecodes (SRT)</a> · <a href="https://drive.google.com/drive/folders/1s-a4Q5iKy-WY1UdX85dZIjy-TB-Vj6Nr" target="_blank" rel="noopener">📹 Video: <code>Oscar Step 0-1.mp4</code> ↗</a></div>
+<header id="title-block-header">
+<h1 class="title">Oscar Step 0-1 — Inter-Mind UX report</h1>
+</header>
+<h1 id="ux-отчёт-oscar-step-0-лендинг-и-step-1-demo">UX report: Oscar —
+Step 0 (Landing) and Step 1 (Demo)</h1>
+<table>
+<tbody>
+<tr>
+<td><strong>Tester</strong></td>
+<td>Oscar</td>
+</tr>
+<tr>
+<td><strong>Session date</strong></td>
+<td>2026-06-08</td>
+</tr>
+<tr>
+<td><strong>Duration</strong></td>
+<td>20:34</td>
+</tr>
+<tr>
+<td><strong>Video</strong></td>
+<td><code>Oscar Step 0-1.mp4</code></td>
+</tr>
+<tr>
+<td><strong>Transcripts</strong></td>
+<td><code>Oscar Step 0-1_mic.wav.{txt,srt,vtt}</code> +
+<code>_system.wav.{txt,srt,vtt}</code></td>
+</tr>
+<tr>
+<td><strong>Sections covered</strong></td>
+<td>§0 Landing, §1 Demo room (per <a
+href="../inter-mind-test-scenarios.md">scenarios</a>)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Recording disclaimer.</strong> In the source video both
+audio tracks turned out to be identical — <code>Mic</code> and
+<code>System</code> were not split in OBS (Step 3 of the instructions).
+This did not affect the analysis: the material is complete, but it's
+impossible to separate "who said what". All quotes below are attributed
+by context.</p>
+<p><strong>Transcript disclaimer.</strong> From ~11:24 Whisper switched
+to Dutch, because Oscar activated translation to Dutch in the demo
+room, and a double audio stream entered the frame (English original +
+Dutch translation). This is normal — the Dutch lines duplicate the
+English ones.</p>
+</blockquote>
+<hr />
+<h2 id="не-работает-функциональные-баги">❌ Doesn't work (functional
+bugs)</h2>
+<table>
+<thead>
+<tr>
+<th>Timecode</th>
+<th>What happened</th>
+<th>Severity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>14:00–14:07</strong></td>
+<td><strong>"What is creating an infinite loop?"</strong> — when
+attempting to share screen in the demo room, an infinite visual loop
+appears (probably the window containing the meeting itself was shared).
+Oscar immediately stopped sharing. This is a <strong>critical UX
+bug</strong>: in Zoom/Meet, in this case a warning is shown or an
+anti-mirror is used.</td>
+<td>🔴 High</td>
+</tr>
+<tr>
+<td><strong>07:38–07:52</strong></td>
+<td>On the home page (intermind.com) <strong>part of the text almost
+blends into the background</strong> — "some of the text is almost the
+same colour as the background, so it's a bit hard to read". Contrast
+below WCAG. Reproduced on both desktop and mobile.</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>08:01–08:10</strong></td>
+<td>On the <strong>Sovereignty</strong> page "some of the numbers are
+not in the center of the circle" — numbers inside circular elements
+are off-center. Reproduced on iPhone too (19:48–20:03).</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>13:09–13:34</strong></td>
+<td>Transcription in demo: <strong>"full transcription of what I'm
+saying in English"</strong> is visible, but <strong>"not sure if there
+should be a transcription of what I'm saying in Dutch — it's empty
+there"</strong>. Either the second-language transcription is not
+shown, or the UI doesn't explain what should be displayed and
+where.</td>
+<td>🟠 Medium</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="неудобно">⚠️ Inconvenient</h2>
+<table>
+<thead>
+<tr>
+<th>Timecode</th>
+<th>What was noted</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>02:38–02:58</strong></td>
+<td>The <strong>monthly / yearly</strong> toggle on the Pricing page
+"is maybe slightly smaller, unclear". The toggle is small, not
+readable at first glance.</td>
+<td>Micro-UX</td>
+</tr>
+<tr>
+<td><strong>07:52–08:01</strong></td>
+<td>On the Sovereignty page <strong>"some of the text is extremely
+small"</strong> — unreadable font size. On mobile (19:48–20:03) —
+same thing: "text is a bit small".</td>
+<td>Typography</td>
+</tr>
+<tr>
+<td><strong>18:42–19:00</strong></td>
+<td>On iPhone after <strong>login via Google</strong>, the user lands
+on the "meetings page" and <strong>doesn't understand where they
+are</strong> relative to the landing: "I'm not on the actual forum page
+of the website where I can try the demo". A jump into the authenticated
+part without an explicit indicator "you're signed in as X, this is your
+home".</td>
+<td>Navigation after login</td>
+</tr>
+<tr>
+<td><strong>18:46–19:27</strong></td>
+<td>From the same place <strong>the way back to demo is not
+obvious</strong> — Oscar ended up manually typing
+<code>intermind.com</code> in the address bar.</td>
+<td>Navigation</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="непонятно">❓ Unclear</h2>
+<table>
+<thead>
+<tr>
+<th>Timecode</th>
+<th>What was unclear</th>
+<th>Context</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>10:21–10:33</strong></td>
+<td>On the Demo screen "space between letters on some of the demo mode
+is a bit strange". Marked it himself as "nitpicking", but perceived it
+as <strong>visual noise that distracts at the start</strong>.</td>
+<td>Demo-CTA typography</td>
+</tr>
+<tr>
+<td><strong>11:18</strong></td>
+<td>In demo "<strong>I see myself on both sides of the
+screen</strong>" — Oscar sees his own video on both the left and the
+right. Didn't understand if that's intentional (preview + simulated
+counterpart) or a bug. The UI doesn't explain this.</td>
+<td>Self-view duplicated</td>
+</tr>
+<tr>
+<td><strong>11:34–11:46</strong></td>
+<td>Listening to his own translation back in headphones: "I can hear
+it in my own voice — that is very strange… actually that's pretty
+cool". At first <strong>discomfort from his own synthesized
+voice</strong>, then interest. Worth showing the user in advance what
+they will hear.</td>
+<td>Expectations onboarding</td>
+</tr>
+<tr>
+<td><strong>16:48–17:14</strong></td>
+<td>After exiting the demo and <strong>re-entering</strong>,
+transcription started in German (although it had just been Dutch).
+"Has the language changed?" — <strong>unclear why the language
+switched</strong>, whether the product remembers the setting, what it
+chooses by default.</td>
+<td>Demo: state persistence</td>
+</tr>
+<tr>
+<td><strong>15:00–15:50</strong></td>
+<td>When trying to test translation to Russian, Oscar couldn't: "I
+cannot speak Russian". <strong>Translation can't be tested
+alone</strong> — a real conference is needed. Decided to defer to the
+next step.</td>
+<td>Demo limitation: solo use</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-работает-хорошо-позитивные-сигналы">✅ What works well
+(positive signals)</h2>
+<p>An important part of the report — confirmation that the happy path
+isn't broken.</p>
+<h3 id="pricing">Pricing</h3>
+<ul>
+<li><strong>"Pricing plans clearly sected"</strong> — the structure of
+the plans is readable.</li>
+<li><strong>"Text is bold, clear, very easy to
+understand"</strong>.</li>
+<li><strong>"Features… how each plan affects what you'll have access to
+— quite clear, I like the use of tick symbols"</strong>.</li>
+</ul>
+<h3 id="faq">FAQ</h3>
+<ul>
+<li><strong>"Drop-down menus very easy to navigate"</strong>.</li>
+<li><strong>"Questions you've chosen are very relevant"</strong>.</li>
+<li><strong>"Answers are good, concise"</strong>.</li>
+<li><strong>"Before you pick a plan" — allows people to decide for
+themselves</strong>.</li>
+</ul>
+<h3 id="use-cases">Use cases</h3>
+<ul>
+<li><strong>"Easy to navigate"</strong>, <strong>"clear and
+concise"</strong>, <strong>"symbols aesthetically
+pleasing"</strong>.</li>
+</ul>
+<h3 id="landing-intermind.com">Landing (intermind.com)</h3>
+<ul>
+<li><strong>"Very clear slogan straight away"</strong> ("Stop running
+meetings in someone else's language").</li>
+<li><strong>"Very simple, clear description of what the service
+provides"</strong>.</li>
+<li><strong>"Live demo — very clear button, contrast between light blue
+and dark background makes it easy to find"</strong>.</li>
+<li>All feature pages (real-time translation, collaborative workspace,
+privacy &amp; security) — <strong>"opens successfully, no
+bugs"</strong>.</li>
+</ul>
+<h3 id="demo-счастливый-путь">Demo (happy path)</h3>
+<ul>
+<li>Permissions popup works cleanly.</li>
+<li>Translation to Dutch <strong>works</strong>.</li>
+<li>Mute — works.</li>
+<li><strong>"Was vrij eenvoudig te navigeren"</strong> — it was fairly
+simple to navigate.</li>
+<li>Re-entry into demo — <strong>"everything seems pretty much exactly
+the same, it's loading up again"</strong>.</li>
+</ul>
+<h3 id="mobile-iphone-safari">Mobile (iPhone, Safari)</h3>
+<ul>
+<li>Landing <strong>"properly formatted for iPhone"</strong> —
+responsive works.</li>
+<li>Google login <strong>works</strong>.</li>
+<li>Same UI as on desktop.</li>
+</ul>
+<hr />
+<h2
+id="что-нужно-дополнительно-проверить-выпало-или-нельзя-в-одиночку">📋
+Not covered (missed or can't be done solo)</h2>
+<ul>
+<li><strong>RU ↔︎ EN translation</strong> in a real meeting with two
+people (Oscar noted himself: "we'll check translation in the meeting
+room when we'll be together").</li>
+<li><strong>Mobile demo for real</strong> — Oscar mentioned that he
+would try it from iPhone, but there is no mobile demo in this
+recording.</li>
+<li><strong>Demo room TTL after an hour</strong> (§1 of scenarios) —
+not checked.</li>
+<li><strong>"Several demos in a row"</strong> — partially checked (2
+runs, different language behavior), but not taken to the point of "the
+product asks to register".</li>
+<li><strong>Pre-Join Setup screen</strong> before entering demo —
+Oscar didn't mention it, most likely skipped past it.</li>
+</ul>
+<hr />
+<h2 id="приоритеты-на-следующий-шаг">🚦 Priorities for the next
+step</h2>
+<ol type="1">
+<li><strong>🔴 Fix infinite loop when sharing screen in
+demo</strong> (14:00) — the most serious finding.</li>
+<li><strong>🟠 Audit contrast and font size</strong> on the
+Sovereignty page (desktop + mobile, 07:38–08:10 and 19:48).</li>
+<li><strong>🟠 "Off-centred" numbers in circles</strong> — on
+Sovereignty (07:52, 19:53).</li>
+<li><strong>🟠 Second-language transcription</strong> in demo —
+either show it, or explicitly explain what and where (13:09).</li>
+<li><strong>🟡 monthly/yearly toggle</strong> — enlarge, add visual
+emphasis (02:38).</li>
+<li><strong>🟡 Expectations onboarding in demo</strong> — that you'll
+see "self on both sides", that you'll hear your own voice in
+translation (11:18, 11:34).</li>
+<li><strong>🟡 Behavior after login from mobile</strong> — where it
+leads, how to come back (18:42).</li>
+</ol>
+<hr />
+<h2 id="заметка-о-методологии-записи-для-следующих-сессий">📝 Note on
+recording methodology (for next sessions)</h2>
+<p>Before starting OBS recording, <strong>check Step 3 in the tester
+instructions</strong>: - ⚙ next to <code>Mic</code> → "Advanced audio
+properties" → track <strong>1</strong> only - ⚙ next to
+<code>System</code> → "Advanced audio properties" → track
+<strong>2</strong> only</p>
+<p>Right now both tracks merged — this didn't affect content analysis,
+but in future sessions it won't be possible to separate "what the
+tester said" from "what was audible in the app itself".</p>
+<p>I'll add the track-identity check directly into
+<code>process-session.sh</code>, so the script complains right away
+rather than after transcription.</p>
+</body>
+</html>
