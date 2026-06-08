@@ -1,0 +1,22 @@
+{
+  "headers": [
+    {
+      "source": "/transcripts/(.*)\\.txt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/transcripts/(.*)\\.srt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+      ]
+    },
+    {
+      "source": "/transcripts/(.*)\\.vtt",
+      "headers": [
+        { "key": "Content-Type", "value": "text/vtt; charset=utf-8" }
+      ]
+    }
+  ]
+}

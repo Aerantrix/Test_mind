@@ -1,4 +1,4 @@
- Alright, this is step number four, Meetings, the core of a product.
+﻿ Alright, this is step number four, Meetings, the core of a product.
  What do we need to create?
  We need to create a meeting.
  We already done it in a previous step.

@@ -1,4 +1,4 @@
-1
+﻿1
 00:00:46,110 --> 00:00:52,370
  I'm joining the meeting and it's set up.
 

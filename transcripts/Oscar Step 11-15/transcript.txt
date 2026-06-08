@@ -1,4 +1,4 @@
- part number 11: "Integrations".
+﻿ part number 11: "Integrations".
  So we open the main page, we open "Integrations",
  and we need "Calendar Integration",
  so I can choose between "Google Calendar" and "Outlook Calendar",

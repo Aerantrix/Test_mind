@@ -1,4 +1,4 @@
- Субтитры делал DimaTorzok
+﻿ Субтитры делал DimaTorzok
  Субтитры сделал DimaTorzok
  And it seems to be cutting off after a second.
  It says there's 14 seconds, but yeah, it seems to be getting into like a fraction of a second and then stopping.

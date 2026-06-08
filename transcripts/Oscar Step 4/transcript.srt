@@ -1,4 +1,4 @@
-1
+﻿1
 00:00:02,150 --> 00:00:06,980
  Alright, this is step number four, Meetings, the core of a product.
 
