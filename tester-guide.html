@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Методика тестирования: запись и обработка — Inter-Mind</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Сводный отчёт</a><span class="sep">·</span><span style="color:var(--muted)">Методика тестирования: запись и обработка</span></nav>
+<header id="title-block-header">
+<h1 class="title">Методика тестирования: запись и обработка —
+Inter-Mind</h1>
+</header>
+<h1 id="инструкция-для-ручной-проверки-inter-mind">Инструкция для ручной
+проверки Inter-Mind</h1>
+<blockquote>
+<p>Это инструкция про <strong>технологию</strong> тестирования: как
+писать, чем писать, куда репортить. Конкретные сценарии (что именно
+тестировать) — в отдельном документе.</p>
+</blockquote>
+<hr />
+<h2 id="что-нужно-подготовить-заранее">1. Что нужно подготовить
+заранее</h2>
+<p><strong>Среда и URL</strong></p>
+<p>Тестируем <strong>на проде</strong>:
+<strong>https://intermind.com</strong> Других сред нет — всё, что ты
+делаешь, происходит на реальной системе. Поэтому <strong>не вводи
+реальные платёжные данные</strong>, если иное не оговорено отдельно.</p>
+<p><strong>Аккаунты</strong></p>
+<p>Все аккаунты ты заводишь <strong>сам</strong>, под себя. Никто их
+тебе заранее не выдаёт. Конкретные задачи, которые требуют проверки,
+описаны в отдельном документе — здесь только общие технические
+правила.</p>
+<ul>
+<li><strong>Новый email на каждую попытку, требующую “чистого”
+пользователя</strong> (регистрация, восстановление пароля и т.п.). Если
+переиспользовать адрес, система ответит «уже зарегистрирован».</li>
+<li><strong>Где брать свежие адреса:</strong> Gmail-трюк с плюсом —
+<code>твой.email+test1@gmail.com</code>, <code>+test2@gmail.com</code> и
+т.д. Gmail считает их разными, письма всё равно приходят на основной
+ящик. Бесконечный бесплатный источник. На крайний случай — временные
+ящики (mail.tm, 10minutemail), но их домены часто блокируются на
+проде.</li>
+<li><strong>Несколько участников одновременно</strong> — открывай 2+
+браузерных сессии: основное окно + приватное окно / другой браузер /
+другое устройство. Либо тестируй с живым человеком на другой
+стороне.</li>
+<li><strong>Тестовые карты Stripe</strong> для проверок оплаты. На проде
+боевой Stripe может не принять тестовые номера — уточни заранее,
+заведена ли тестовая среда оплат. Если не уверен — биллинг не
+трогай.</li>
+<li><strong>После сессии не удаляй</strong> созданные учётки сразу. Они
+пригодятся, если по баг-репорту нужно будет вернуться и
+воспроизвести.</li>
+</ul>
+<p><strong>Браузеры</strong></p>
+<p>Inter-Mind официально поддерживает:</p>
+<table>
+<thead>
+<tr>
+<th>Браузер</th>
+<th>Минимум</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chrome</td>
+<td>90+</td>
+</tr>
+<tr>
+<td>Edge</td>
+<td>90+ (Chromium)</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>15+ (screen-sharing — 17+)</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>100+</td>
+</tr>
+<tr>
+<td>Opera, Brave, Arc</td>
+<td>Chromium 90+</td>
+</tr>
+<tr>
+<td>iOS Safari</td>
+<td>актуальная</td>
+</tr>
+<tr>
+<td>Android Chrome</td>
+<td>актуальная</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Правила:</strong> - Версия браузера — всегда
+<strong>последняя стабильная</strong>. - Открывай в <strong>обычном
+окне</strong>, не в инкогнито (там вылетают разрешения и куки между
+сессиями). - Не используй расширения-блокировщики во время сессии —
+Inter-Mind на этот счёт даёт явное предупреждение в <a
+href="https://intermind.com/en/troubleshooting/browsers">docs/browsers</a>:
+NordVPN, Ghostery, suspender-плагины ломают WebRTC. - Перед сложной
+сессией прогони <a
+href="https://intermind.com/browser-test">browser-test</a> —
+30-секундная самопроверка микрофона/камеры/сети/кодеков.</p>
+<p><strong>Оборудование</strong> - <strong>Гарнитура или наушники с
+микрофоном.</strong> Записывать без них нельзя — будет эхо. - Микрофон
+близко ко рту, в тихой комнате. - Хорошо, если есть второй монитор — на
+одном тестируешь, на другом ведёшь заметки.</p>
+<p><strong>Системные разрешения macOS</strong>
+(<code>Системные настройки → Конфиденциальность и безопасность</code>):
+- ✅ Запись экрана — для QuickTime / Screenshot - ✅ Микрофон — для
+браузера и для QuickTime - ✅ Камера — для браузера</p>
+<hr />
+<h2 id="как-настроить-запись-со-звуком">2. Как настроить запись со
+звуком</h2>
+<p>Нам нужно записывать одновременно: 1. <strong>Экран</strong> — что
+видно в браузере и системе 2. <strong>Твой голос</strong> (микрофон) —
+ты вслух комментируешь действия 3. <strong>Звук собеседников</strong>
+(системный звук) — иначе непонятно, что было сказано «за экраном»</p>
+<p>macOS по умолчанию <strong>не пишет системный звук</strong>. Поэтому
+ставим бесплатный «виртуальный аудио-кабель» —
+<strong>BlackHole</strong>.</p>
+<h3 id="шаг-1.-установить-blackhole">Шаг 1. Установить BlackHole</h3>
+<p>В терминале:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install blackhole-2ch</span></code></pre></div>
+<p>Если нет <code>brew</code> — установи с <a
+href="https://brew.sh">brew.sh</a>.</p>
+<h3 id="шаг-2.-создать-multi-output-device-чтобы-и-слышать-и-писать">Шаг
+2. Создать Multi-Output Device (чтобы и слышать, и писать)</h3>
+<ol type="1">
+<li>Открой <strong>«Настройка Audio-MIDI»</strong>
+(<code>/Applications/Utilities/Audio MIDI Setup.app</code> или через
+Spotlight: <code>Audio MIDI</code>).</li>
+<li>Слева снизу <code>+</code> → <strong>«Создать многовыходное
+устройство»</strong>.</li>
+<li>Поставь галочки:
+<ul>
+<li>твои <strong>наушники</strong> (или динамики)</li>
+<li><strong>BlackHole 2ch</strong></li>
+</ul></li>
+<li>Назови, например, <code>Speakers + BlackHole</code>.</li>
+</ol>
+<h3 id="шаг-3.-переключить-системный-выход">Шаг 3. Переключить системный
+выход</h3>
+<p><code>Системные настройки → Звук → Выход</code> → выбери
+<strong><code>Speakers + BlackHole</code></strong>. Теперь весь звук
+системы (голоса участников конференции) идёт и тебе в наушники, и в
+BlackHole — откуда его подхватит OBS.</p>
+<p>После сессии верни выход на обычные наушники, иначе следующая встреча
+будет звучать «не туда».</p>
+<hr />
+<h2 id="как-записывать-сессию-obs">3. Как записывать сессию (OBS)</h2>
+<p>Используем <strong>OBS Studio</strong> — единственный метод. Он пишет
+видео + <strong>две отдельные аудио-дорожки</strong> (микрофон и
+системный звук) в один файл. Это критично: на обработке мы их разделим и
+поймём, кто что сказал.</p>
+<h3 id="шаг-1.-установить-obs">Шаг 1. Установить OBS</h3>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> obs</span></code></pre></div>
+<p>Или скачай с <a href="https://obsproject.com">obsproject.com</a>
+(бесплатно).</p>
+<p>При первом запуске OBS попросит разрешение на запись экрана —
+<strong>выдай его</strong>
+(<code>Системные настройки → Конфиденциальность → Запись экрана</code>).</p>
+<h3 id="шаг-2.-настроить-сцену-один-раз">Шаг 2. Настроить сцену (один
+раз)</h3>
+<p>В пустой сцене жми <code>+</code> под «Источники» и добавь по
+очереди:</p>
+<ol type="1">
+<li><strong><code>macOS Screen Capture</code></strong> (или «Захват
+экрана») → выбери основной дисплей.</li>
+<li><strong><code>Audio Input Capture</code></strong> → устройство:
+<strong>твой микрофон</strong>. Назови <code>Mic</code>.</li>
+<li><strong><code>Audio Input Capture</code></strong> → устройство:
+<strong>BlackHole 2ch</strong>. Назови <code>System</code>.</li>
+</ol>
+<h3 id="шаг-3.-разнести-аудио-по-дорожкам">Шаг 3. Разнести аудио по
+дорожкам</h3>
+<p>Это ключевой шаг — без него обе дорожки смешаются.</p>
+<ol type="1">
+<li>В «Микшере аудио» (внизу OBS) у каждой дорожки есть иконка ⚙ →
+<strong>«Расширенные параметры аудио»</strong>.</li>
+<li>Найди строку <code>Mic</code> → в столбце «Дорожки» оставь галочку
+только на <strong>1</strong>.</li>
+<li>Найди строку <code>System</code> → оставь галочку только на
+<strong>2</strong>.</li>
+<li>Закрой.</li>
+</ol>
+<h3 id="шаг-4.-настроить-запись">Шаг 4. Настроить запись</h3>
+<p><code>Настройки → Вывод</code>: - Режим вывода:
+<strong>Простой</strong> (хватает). - Качество записи: <strong>Высокое
+качество, средний размер</strong>. - Формат записи: <strong>MP4</strong>
+(или <strong>MKV</strong> — безопаснее при сбоях, но потом нужно «remux»
+в MP4 через <code>Файл → Remux</code>). - <strong>Кодировщик: Apple VT
+H264 Hardware</strong> (быстро, не нагружает машину). -
+<strong>Аудиодорожка:</strong> отметь <strong>обе</strong> — 1 и 2.</p>
+<p><code>Настройки → Аудио</code>: - Частота дискретизации: <strong>48
+kHz</strong>.</p>
+<h3 id="шаг-5.-записать">Шаг 5. Записать</h3>
+<ol type="1">
+<li>Жми <strong>«Начать запись»</strong> в OBS.</li>
+<li>Сворачивай OBS, иди в Chrome / Inter-Mind, тестируй.</li>
+<li>По окончании — <strong>«Остановить запись»</strong> в OBS.</li>
+<li>Файл лежит в папке, указанной в
+<code>Настройки → Вывод → Путь записи</code> (по умолчанию
+<code>~/Movies</code>).</li>
+</ol>
+<p>В получившемся <code>.mp4</code> будут две независимые аудио-дорожки.
+QuickTime по умолчанию играет только первую (твой голос) — это
+<strong>нормально</strong>, файл рабочий. Чтобы услышать дорожку 2 в
+QuickTime: <code>Окно → Показать звуковые дорожки</code>.</p>
+<h3 id="как-проверить-что-в-файле-действительно-2-дорожки">Как
+проверить, что в файле действительно 2 дорожки</h3>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ffprobe</span> <span class="at">-hide_banner</span> recording.mp4 <span class="dv">2</span><span class="op">&gt;&amp;</span><span class="dv">1</span> <span class="kw">|</span> <span class="fu">grep</span> <span class="at">-i</span> audio</span></code></pre></div>
+<p>Должно быть две строчки <code>Audio:</code>. Если одна — настройка
+аудио-дорожек в OBS не сохранилась, перепроверь Шаг 3.</p>
+<h3 id="длительность">Длительность</h3>
+<ul>
+<li><strong>15–30 минут на одну сессию.</strong> Дольше — устаёшь,
+начинаешь забывать комментировать.</li>
+<li>Если задача большая — разбей на несколько записей, в названии укажи
+<code>part1</code>, <code>part2</code>.</li>
+</ul>
+<h3 id="что-говорить-во-время-записи">Что говорить во время записи</h3>
+<p><strong>Это самая важная часть всего теста. Ничего руками во время
+сессии записывать не надо — всё голосом.</strong> Текстовый отчёт
+построится потом, из транскрипта твоей речи. Молчаливый скринкаст
+бесполезен.</p>
+<p>Говори вслух <strong>что делаешь, что ожидаешь, что
+чувствуешь</strong>:</p>
+<blockquote>
+<p>«Сейчас я хочу пригласить нового участника… ищу кнопку… не вижу её
+сверху… полез в меню профиля, тоже нет… полез в настройки команды, тоже
+нет… ага, оказывается она внутри списка участников, это неочевидно…»</p>
+</blockquote>
+<p>Чтобы потом легче было раскладывать по полкам, <strong>проговаривай
+тип проблемы явно</strong>. Используй три ключевых слова:</p>
+<table>
+<thead>
+<tr>
+<th>Слово</th>
+<th>Когда говорить</th>
+<th>Пример</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>«не работает»</strong> / «баг»</td>
+<td>Когда что-то реально сломано, ошибка, не то поведение</td>
+<td>«Не работает — нажал „Отправить“, прошла минута, письмо не
+пришло»</td>
+</tr>
+<tr>
+<td><strong>«неудобно»</strong></td>
+<td>Когда работает, но требует лишних действий или раздражает</td>
+<td>«Неудобно — чтобы пригласить человека, нужно 4 клика, кнопка
+спрятана»</td>
+</tr>
+<tr>
+<td><strong>«не понятно»</strong></td>
+<td>Когда не догадался, не разобрался, текст невнятный</td>
+<td>«Не понятно — что значит надпись „Demo TTL“ на главной?»</td>
+</tr>
+</tbody>
+</table>
+<p>Не обязательно каждый раз. Но <strong>хотя бы раз в начале каждого
+замечания</strong> — обработка по этим словам разложит всё в правильные
+категории.</p>
+<p>Ещё одно: <strong>называй то, что видишь на экране словами</strong>.
+«Сейчас нажимаю синюю кнопку „Создать встречу“ в верхнем правом углу»
+лучше, чем просто клик. Тогда транскрипт можно сопоставить с кадрами
+видео даже без курсора.</p>
+<h3
+id="комментируй-абсолютно-всё-в-том-числе-успешные-действия">Комментируй
+абсолютно всё, в том числе успешные действия</h3>
+<p>Это важно: <strong>не только проблемы</strong>. Каждый клик, каждый
+шаг, каждое успешное действие — проговаривай вслух.</p>
+<p>Почему:</p>
+<ul>
+<li><strong>Контекст для проблем.</strong> Чтобы понять, что баг на шаге
+5, нужно знать, что шаги 1–4 прошли нормально. Молчание двусмысленно: то
+ли всё ок, то ли ты забыл сказать про проблему.</li>
+<li><strong>Покрытие сценария.</strong> По транскрипту видно, какие шаги
+ты реально прошёл, а какие пропустил. Без озвучки кажется, что
+протестировано всё, а на деле — половина.</li>
+<li><strong>Косвенные UX-сигналы.</strong> «Создал встречу — получилось
+с первой попытки, всё интуитивно» — это тоже ценная информация, она
+подтверждает, что happy path работает.</li>
+<li><strong>Скорость и плавность.</strong> «Загружается долго, секунд 6»
+или «пришлось ждать, пока появится кнопка» — это не баг и не
+«непонятно», но это важный сигнал для команды.</li>
+</ul>
+<p>Как звучит правильный комментарий:</p>
+<blockquote>
+<p>«Открываю intermind.com… главная загрузилась за секунду, выглядит
+нормально… жму „Sign up“ справа сверху… открылась форма регистрации,
+поля Email и Password, всё стандартно… ввожу email, ввожу пароль, жму
+„Continue“… пришло письмо с подтверждением за 10 секунд, всё хорошо…
+перехожу по ссылке… »</p>
+</blockquote>
+<p>Сравни с молчаливым видео тех же действий — там нет ничего, что можно
+проанализировать. <strong>Если в кадре что-то происходит, а ты молчишь —
+этой минуты как будто не было.</strong></p>
+<p>Правило: <strong>«Снят, но молчал» = «не снимал».</strong></p>
+<hr />
+<h2 id="куда-репортить-баги">4. Куда репортить баги</h2>
+<h3
+id="функциональные-баги-встроенная-кнопка-report-a-bug">Функциональные
+баги — встроенная кнопка «Report a Bug»</h3>
+<p>Если поймал что-то <strong>реально сломанное</strong> (ошибка,
+неработающая функция) — <strong>сразу</strong> жми кнопку «Report a Bug»
+в самом приложении.</p>
+<p><strong>Что сделать:</strong> 1. Жми «Report a Bug» прямо в
+интерфейсе. 2. Опиши <strong>одной-двумя фразами</strong>, что
+произошло. 3. Отправь. 4. <strong>Проговори вслух</strong> в микрофон:
+«отправил баг-репорт через кнопку» — чтобы потом по транскрипту было
+видно, что эта проблема уже в Sentry.</p>
+<p><strong>Что прицепится автоматически:</strong> - Видео-replay сессии
+за последние минуты (Sentry Session Replay) - Стек ошибки, версия
+приложения, твой email - Событие в PostHog</p>
+<h3 id="ux-замечания-только-голосом">UX-замечания — только голосом</h3>
+<p>Если что-то <em>работает, но неудобно/непонятно</em> — кнопку «Report
+a Bug» <strong>не используй</strong>. Там нет ошибки, Sentry это не
+примет за баг. Просто <strong>проговори вслух</strong> в микрофон:
+«неудобно — …» или «не понял — …». Этого достаточно. Текстовый лог из
+этого будет собран автоматически на этапе обработки.</p>
+<hr />
+<h2 id="что-получится-в-итоге-для-понимания-не-для-заполнения">5. Что
+получится в итоге (для понимания, не для заполнения)</h2>
+<p>Из твоего видео автоматически соберётся вот такой отчёт. Тебе
+<strong>не нужно</strong> его писать — он строится из транскрипта твоей
+речи + кадров видео. Показываю просто чтобы ты понимал, под какой формат
+говорить:</p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># UX-отчёт: &lt;фича или область&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>Тестировщик: &lt;имя&gt;</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>Дата: 2026-05-18</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>Видео: session-2026-05-18.mp4</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>Браузер / OS: Chrome 124 / macOS 15.2</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## Не работает (функциональные баги)</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Таймкод <span class="pp">|</span> Что произошло <span class="pp">|</span> В Sentry? <span class="pp">|</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="pp">|---------|---------------|-----------|</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 03:14   <span class="pp">|</span> Нажал «Пригласить», письмо не пришло за 5 минут <span class="pp">|</span> да <span class="pp">|</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 12:08   <span class="pp">|</span> Расшарил экран — у второго участника чёрный квадрат <span class="pp">|</span> да <span class="pp">|</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Неудобно</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Таймкод <span class="pp">|</span> Описание <span class="pp">|</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="pp">|---------|----------|</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 05:40   <span class="pp">|</span> Чтобы пригласить участника, нужно 4 клика — кнопка спрятана в подменю <span class="pp">|</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 18:22   <span class="pp">|</span> После оплаты нет подтверждения, что подписка активна <span class="pp">|</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Непонятно</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Таймкод <span class="pp">|</span> Описание <span class="pp">|</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="pp">|---------|----------|</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 02:10   <span class="pp">|</span> Надпись «Demo TTL» — непонятно, что значит <span class="pp">|</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 09:55   <span class="pp">|</span> Иконка «🔴» — принял за «offline», оказалось «идёт запись» <span class="pp">|</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> 21:30   <span class="pp">|</span> Текст ошибки «Failed to fetch» — не объясняет, что делать <span class="pp">|</span></span></code></pre></div>
+<p>Чем чётче в видео ты проговариваешь «не работает / неудобно / не
+понятно» — тем точнее эта таблица получится без ручного
+вмешательства.</p>
+<hr />
+<h2 id="после-сессии-как-сдать-результат">6. После сессии — как сдать
+результат</h2>
+<p>В одну папку с именем <code>session-YYYY-MM-DD-твоё_имя/</code>
+сложи:</p>
+<ol type="1">
+<li><code>screencast.mp4</code> — видеозапись с двумя аудио-дорожками
+(или несколько <code>partN.mp4</code>)</li>
+<li><code>notes.md</code> — если уже после сессии вспомнил что-то
+важное, чего не успел сказать вслух (опционально, обычно не нужно)</li>
+</ol>
+<p><strong>Куда передать:</strong> Google Drive / общая папка
+(договоримся отдельно).</p>
+<p><strong>Не нужно:</strong> - Вести параллельный текстовый лог во
+время сессии — всё голосом. - Делать скриншоты отдельно — они уже в
+видео. - Расшифровывать аудио вручную — это автоматически. - Писать
+описания багов, которые ты уже отправил кнопкой «Report a Bug» — они в
+Sentry, и ты вслух сказал, что отправил.</p>
+<hr />
+<h2 id="возможные-проблемы">7. Возможные проблемы</h2>
+<p><strong>В файле только одна аудио-дорожка</strong> → В OBS →
+«Расширенные параметры аудио» → у <code>Mic</code> должна стоять только
+галочка «1», у <code>System</code> — только «2». И в
+<code>Настройки → Вывод → Аудиодорожка</code> отмечены
+<strong>обе</strong>.</p>
+<p><strong>В скринкасте нет моего голоса (дорожка 1 тихая)</strong> → В
+OBS источник <code>Mic</code> указывает на ошибочное устройство
+(например, на BlackHole вместо реального микрофона). Перепроверь в
+свойствах источника.</p>
+<p><strong>В скринкасте нет голосов участников (дорожка 2
+тихая)</strong> → Системный звук идёт мимо BlackHole. Проверь:
+<code>Системные настройки → Звук → Выход</code> =
+<code>Speakers + BlackHole</code> <strong>до начала</strong>
+конференции.</p>
+<p><strong>Не слышу собеседников в наушниках во время записи</strong> →
+В Multi-Output Device забыл отметить наушники. Открой Audio-MIDI Setup,
+поставь галочку.</p>
+<p><strong>OBS не пишет звук BlackHole</strong> → В macOS 14+ нужно дать
+OBS разрешение на микрофон (даже если BlackHole — это «системный звук»,
+macOS видит его как input):
+<code>Системные настройки → Конфиденциальность → Микрофон → OBS ✅</code>.</p>
+<p><strong>Запись остановилась сама</strong> → Кончилось место на диске
+или Mac ушёл в сон. Перед сессией: <code>caffeinate -d &amp;</code> в
+терминале (Mac не уснёт, пока команда работает).</p>
+<p><strong>Размер файла большой (&gt;1 GB за 30 мин)</strong> → Это
+нормально для full HD. Не сжимай вручную — теряется качество
+распознавания текста на экране.</p>
+<p><strong>Браузер просит разрешения посреди записи</strong> → Раздай
+микрофон/камеру/уведомления заранее, до старта OBS.</p>
+<p><strong>QuickTime играет только одну дорожку</strong> → Это
+нормально. Файл рабочий, обе дорожки внутри. Проверь через
+<code>ffprobe recording.mp4 2&gt;&amp;1 | grep Audio</code>.</p>
+<hr />
+<h2 id="чек-лист-перед-стартом-сессии">8. Чек-лист перед стартом
+сессии</h2>
+<ul class="task-list">
+<li><label><input type="checkbox" />Гарнитура подключена, микрофон
+проверен</label></li>
+<li><label><input
+type="checkbox" /><code>Системные настройки → Звук → Выход</code> =
+<code>Speakers + BlackHole</code></label></li>
+<li><label><input type="checkbox" />OBS открыт, сцена настроена (Mic →
+дорожка 1, System → дорожка 2)</label></li>
+<li><label><input type="checkbox" />В
+<code>Настройки → Вывод → Аудиодорожка</code> отмечены
+<strong>обе</strong> (1 и 2)</label></li>
+<li><label><input type="checkbox" />Браузер открыт в обычном окне, не в
+инкогнито</label></li>
+<li><label><input type="checkbox" />Свободное место на диске ≥ 5
+ГБ</label></li>
+<li><label><input type="checkbox" /><code>caffeinate -d &amp;</code>
+запущен, Mac не уснёт</label></li>
+<li><label><input type="checkbox" />Уведомления macOS в режиме «Не
+беспокоить» (<code>Ctrl + ⌥ + Z</code> в Mission Control)</label></li>
+<li><label><input type="checkbox" />Настроился говорить вслух «не
+работает / неудобно / не понятно» при каждом замечании</label></li>
+<li><label><input type="checkbox" />Тестовая 30-секундная запись сделана
+и проверена <code>ffprobe</code> (две дорожки на месте)</label></li>
+</ul>
+</body>
+</html>
