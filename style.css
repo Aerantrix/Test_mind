@@ -69,6 +69,8 @@ th, td {
   padding: 8px 12px;
   text-align: left;
   vertical-align: top;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 th {
   background: #f4f6f8;
@@ -87,9 +89,8 @@ table:has(th:nth-child(4)) td:nth-child(1) {
 }
 table:has(th:nth-child(4)) th:nth-child(3),
 table:has(th:nth-child(4)) td:nth-child(3) {
-  width: 90px;
+  width: 110px;
   text-align: center;
-  white-space: nowrap;
 }
 table:has(th:nth-child(4)) th:nth-child(4),
 table:has(th:nth-child(4)) td:nth-child(4) {
@@ -104,16 +105,14 @@ table:has(th:nth-child(4)) td:nth-child(4) {
 table:has(th:nth-child(3)):not(:has(th:nth-child(4))) { table-layout: fixed; }
 table:has(th:nth-child(3)):not(:has(th:nth-child(4))) th:nth-child(1),
 table:has(th:nth-child(3)):not(:has(th:nth-child(4))) td:nth-child(1) {
-  width: 100px;
-  white-space: nowrap;
+  width: 110px;
   text-align: center;
   color: var(--muted);
   font-weight: 600;
 }
 table:has(th:nth-child(3)):not(:has(th:nth-child(4))) th:nth-child(3),
 table:has(th:nth-child(3)):not(:has(th:nth-child(4))) td:nth-child(3) {
-  width: 130px;
-  white-space: nowrap;
+  width: 150px;
   text-align: center;
   font-size: 13px;
 }
