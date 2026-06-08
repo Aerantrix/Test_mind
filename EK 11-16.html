@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>EK 11-16 — Inter-Mind UX-отчёт</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Сводный отчёт</a><span class="sep">·</span><span style="color:var(--muted)">Сессия: EK 11-16</span></nav>
+<div class="materials"><strong>📦 Материалы сессии:</strong><a href="transcripts/EK%2011-16/transcript.txt">📄 Транскрипт</a> · <a href="transcripts/EK%2011-16/transcript.srt">📝 С таймкодами (SRT)</a> · <a href="#" class="placeholder" data-needs-url="1">📹 Видео — добавить ссылку Google Drive</a></div>
+<header id="title-block-header">
+<h1 class="title">EK 11-16 — Inter-Mind UX-отчёт</h1>
+</header>
+<h1 id="ux-отчёт-ek-steps-11-16-чат-документы-ai-инструменты">UX-отчёт:
+EK — Steps 11-16 (Чат, Документы, AI-инструменты)</h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Тестировщик</strong></td>
+<td>EK + Oscar</td>
+</tr>
+<tr>
+<td><strong>Разделы</strong></td>
+<td>Конец §7–8 (Чат) + §11 (Интеграции) + §12 (Документы и AI)</td>
+</tr>
+<tr>
+<td><strong>Длительность</strong></td>
+<td>~14:18</td>
+</tr>
+<tr>
+<td><strong>Видео</strong></td>
+<td><code>EK 11-16.mp4</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="не-работает-функциональные-баги">❌ Не работает (функциональные
+баги)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что произошло</th>
+<th>Серьёзность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~07:00</strong></td>
+<td>После того, как доступ к документу был <strong>отозван</strong>
+(revoked), при попытке открыть его пользователь получает <strong>сырой
+XML-вывод браузера</strong> с сообщением <strong>«this XML file does not
+appear to have any style information… document tree is shown below…
+code: no such key, the specified key does not exist»</strong>. То есть
+вместо нормальной странички «У вас нет доступа / документ удалён» —
+техническая XML-ошибка S3. Серьёзный UX-промах + потенциально утечка
+деталей backend (key, structure).</td>
+<td>🔴 High</td>
+</tr>
+<tr>
+<td><strong>~05:30</strong></td>
+<td>После отправки чего-то в чат: <strong>«On my end, it’s just a blank
+message»</strong>. Отправитель видит <strong>пустое сообщение</strong> в
+своей ленте. На другой стороне видно нормально.</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>~02:00</strong></td>
+<td>В чате с переводом есть переключатель <strong>«transcriptions:
+expanded / collapsed / hidden»</strong> — но он <strong>не
+работает</strong>: «when I change the transcriptions to expanded or
+collapsed or hidden, it doesn’t seem to change anything».</td>
+<td>🟠 Medium</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-работает-хорошо">✅ Что работает хорошо</h2>
+<ul>
+<li><strong>Edit history сообщений в чате</strong>: «I see the edit
+updates» — после редактирования видна история.</li>
+<li><strong>Toggle original / translated</strong> для сообщения
+работает: «toggling the Russian part on and off».</li>
+<li><strong>Загрузка файла-документа в чат</strong>: «Text file, I load
+it, it comes up with the instructions. Seems to be working».</li>
+<li><strong>Открытие документа по прямой ссылке</strong> в новой вкладке
+— пока есть доступ — работает: «I can still see the document when I post
+the link into a separate tab».</li>
+</ul>
+<hr />
+<h2 id="что-не-покрыто">📋 Что не покрыто</h2>
+<ul>
+<li>Фактически §11 (Интеграции — Calendar, Google Drive, OneDrive,
+Domain Management) <strong>не пройдено</strong>.</li>
+<li>§12 (Documents с правами — частично затронут через revoke; AI editor
+completion — не упомянут; Translate page standalone — нет).</li>
+<li>§13 (Security) — нет.</li>
+<li>§14 (Support) — нет.</li>
+<li>§15 (Mobile) — нет в этой сессии.</li>
+</ul>
+<hr />
+<h2 id="приоритеты">🚦 Приоритеты</h2>
+<ol type="1">
+<li><strong>🔴 Сырая XML-ошибка вместо «нет доступа»</strong> (~07:00).
+Двойной риск:
+<ul>
+<li>UX: пользователь не понимает, что произошло.</li>
+<li>Security: страница раскрывает backend-детали (S3 key, ошибка
+<code>NoSuchKey</code>).</li>
+</ul></li>
+<li><strong>🟠 Сообщение видно как blank у отправителя</strong>
+(~05:30). Похоже на проблему с rendering attachment / link на стороне
+sender.</li>
+<li><strong>🟠 Toggle expanded/collapsed/hidden у
+transcriptions</strong> (~02:00) — функция не работает, нужно либо
+чинить, либо убирать.</li>
+</ol>
+</body>
+</html>

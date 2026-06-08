@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>EK 3 — Inter-Mind UX-отчёт</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Сводный отчёт</a><span class="sep">·</span><span style="color:var(--muted)">Сессия: EK 3</span></nav>
+<div class="materials"><strong>📦 Материалы сессии:</strong><a href="transcripts/EK%203/transcript.txt">📄 Транскрипт</a> · <a href="transcripts/EK%203/transcript.srt">📝 С таймкодами (SRT)</a> · <a href="#" class="placeholder" data-needs-url="1">📹 Видео — добавить ссылку Google Drive</a></div>
+<header id="title-block-header">
+<h1 class="title">EK 3 — Inter-Mind UX-отчёт</h1>
+</header>
+<h1
+id="ux-отчёт-ek-step-3-профиль-и-команда-начало-step-4-встречи">UX-отчёт:
+EK — Step 3 (Профиль и команда) + начало Step 4 (Встречи)</h1>
+<table>
+<tbody>
+<tr>
+<td><strong>Тестировщик</strong></td>
+<td>EK (плюс Oscar на второй стороне)</td>
+</tr>
+<tr>
+<td><strong>Разделы сценария</strong></td>
+<td>§3 Профиль и команда, частично §4 Встречи</td>
+</tr>
+<tr>
+<td><strong>Длительность</strong></td>
+<td>~16:39</td>
+</tr>
+<tr>
+<td><strong>Видео</strong></td>
+<td><code>EK 3.mp4</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="не-работает-функциональные-баги">❌ Не работает (функциональные
+баги)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что произошло</th>
+<th>Серьёзность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~03:30–06:30</strong></td>
+<td><strong>Невозможно найти переключатель языка интерфейса</strong> в
+авторизованной части. EK искал ~5 минут. Прошёл Settings → Translation
+language (не то — это перевод в встречах), Meeting Preferences (нет),
+Integrations / Billing (нет). Полез в AI-ассистент: «How do I change the
+language of the website?» Ответ: «Selected from the Language Switcher
+located in the App Header». EK: «Where is that?» — не нашёл и после
+подсказки. На лендинге кнопка есть, в приложении — нет / невидима.</td>
+<td>🔴 High</td>
+</tr>
+<tr>
+<td><strong>~10:00</strong></td>
+<td>После того, как EK <strong>удалил митинг</strong>
+(<code>Delete for everyone</code>), Oscar <strong>смог зайти в него по
+той же ссылке</strong> и <strong>без approval</strong>: «I’m joining the
+meeting. I joined it without permission». При повторной попытке тот же
+эффект. Удалённый митинг не должен быть достижим.</td>
+<td>🔴 High</td>
+</tr>
+<tr>
+<td><strong>~12:30</strong></td>
+<td>EK <strong>не нашёл, как назначить admin role</strong> другому
+участнику: «Next part is change role. I will give role admin to Oscar.
+But I can’t find him anymore. Let’s check in the meeting settings… I’m
+not going to grant admin role». Бросил сценарий.</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>~02:30</strong></td>
+<td>Кнопка <strong>«Reset» в Theme colors</strong> ничего видимо не
+делает: «What happens if I click reset? Okay, it doesn’t change».</td>
+<td>🟡 Low</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="неудобно">⚠️ Неудобно</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что отметил</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~02:00</strong></td>
+<td>На вкладке «Themes» EK сначала <strong>не нашёл переключатель
+Light/Dark</strong>: «How do I change to the dark theme?… I can change
+the colors on it» — менял только цвета акцентов, не базовый. Нашёл
+только позже, в Application Preferences («Ah, you can change the colors.
+There’s light theme and dark theme»). Light/Dark надо вынести
+наверх.</td>
+</tr>
+<tr>
+<td><strong>~07:30</strong></td>
+<td>Чтобы создать чат / канал, <strong>нужны контакты</strong>, но у
+нового пользователя контактов ещё нет: «I can’t create a channel without
+contacts». Это circular dep — нет очевидной точки входа «сначала
+пригласи человека». EK решил отправить ссылку по email вручную.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="непонятно">❓ Непонятно</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что не понял</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~01:00</strong></td>
+<td>«Translation language, same as interface language» — EK сначала
+<strong>не понял</strong>, что это поле задаёт <strong>только дефолт
+перевода в встречах</strong>, а не язык интерфейса: «So this is so I can
+have the display language be one and then I can set a default
+translation language if I’m in a meeting». Догадался путём toggle.
+Названия двух понятий слишком похожи.</td>
+</tr>
+<tr>
+<td><strong>~03:00</strong></td>
+<td>Pre-Join Dialog toggle: «All the buttons seem to work. I mean,
+obviously I can’t see what this is doing until I join a meeting». UI не
+даёт preview / описания <strong>что отключится</strong>.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-работает-хорошо">✅ Что работает хорошо</h2>
+<h3 id="профиль">Профиль</h3>
+<ul>
+<li><strong>Имя и аватар обновляются в реальном времени</strong>: «Seems
+to update very quickly in real-time».</li>
+<li>Аватар как фото — работает.</li>
+</ul>
+<h3 id="pre-join-setup-вышли-через-создание-встречи">Pre-Join Setup
+(вышли через создание встречи)</h3>
+<ul>
+<li>Oscar описывает на своей стороне: «Start with camera set up. The
+same calming music in the background. Microphone set up working. Speaker
+test, I can hear the music. Language Russian. Join me».</li>
+<li>✅ <strong>Calming music на фоне Pre-Join</strong> — приятная
+деталь, отдельно отмечена.</li>
+</ul>
+<h3 id="approval-flow-host-admits-guest">Approval flow (host admits
+guest)</h3>
+<ul>
+<li>Host-side: «See a pop-up in the top left, Evgeny Karalev wants to
+join. Deny or admit». Понятная формулировка.</li>
+<li>Срабатывает корректно при первой попытке (см. БАГ выше — только до
+удаления митинга).</li>
+</ul>
+<h3 id="меню-settings-пункты-в-целом">Меню Settings — пункты в
+целом</h3>
+<ul>
+<li>«Translation language», «Meeting preferences», «Themes»,
+«Integrations», «Billing» — найдены EK без подсказок.</li>
+<li>Хотя содержание Translation language путает (см. ❓).</li>
+</ul>
+<h3 id="help-ai-ассистент">Help → AI-ассистент</h3>
+<ul>
+<li>Когда EK не понял про язык интерфейса, <strong>AI-ассистент дал
+быстрый ответ</strong>. Проблема не в нём — проблема в том, что элемент,
+который он описывает («App Header Language Switcher»), на практике не
+находится.</li>
+</ul>
+<hr />
+<h2 id="что-не-покрыто">📋 Что не покрыто</h2>
+<ul>
+<li><strong>Массовое приглашение через файл</strong> (txt/csv/json) —
+даже не пробовали.</li>
+<li><strong>Назначение admin/member role</strong> — не доведено до конца
+(упёрлись).</li>
+<li><strong>Удаление участника из команды</strong>, <strong>выход из
+команды самостоятельно</strong> — не было.</li>
+<li><strong>Pre-Join Setup toggle включить/выключить и проверить эффект
+на следующем входе</strong> — не делали, EK как раз и сказал «I can’t
+see what this is doing until I join».</li>
+<li><strong>17 языков интерфейса</strong> — не проверены (даже одного не
+сменили).</li>
+</ul>
+<hr />
+<h2 id="приоритеты">🚦 Приоритеты</h2>
+<ol type="1">
+<li><strong>🔴 Language switcher в авторизованной части</strong>
+(~03:30). Сейчас элемент либо отсутствует, либо абсолютно не находится.
+Если он реально в App Header — пометить иконкой 🌐, увеличить контраст,
+добавить tooltip. AI-ассистент даёт инструкцию, которая не приводит к
+успеху — это ломает доверие к Help.</li>
+<li><strong>🔴 Удалённый митинг доступен по той же ссылке без
+approval</strong> (~10:00). При delete митинга ссылка должна возвращать
+404 или «meeting was cancelled».</li>
+<li><strong>🟠 Управление ролями в команде не находится</strong>
+(~12:30). Самый базовый team-management не найден за минуты.</li>
+<li><strong>🟠 Light/Dark переключатель вынести из Application
+Preferences наверх</strong> в Themes (~02:00).</li>
+<li><strong>🟡 Чёткое разделение «Display language» и «Translation
+language»</strong> (~01:00). Сейчас формулировка «Translation language,
+same as interface language» путает — это разные вещи.</li>
+<li><strong>🟡 Reset в Theme colors</strong> — либо чинить, либо убирать
+(~02:30).</li>
+<li><strong>🟡 «Create channel without contacts»</strong> — добавить
+empty-state CTA «Invite first contact» (~07:30).</li>
+</ol>
+</body>
+</html>

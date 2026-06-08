@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Oscar step 9-10 — Inter-Mind UX-отчёт</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Сводный отчёт</a><span class="sep">·</span><span style="color:var(--muted)">Сессия: Oscar step 9-10</span></nav>
+<div class="materials"><strong>📦 Материалы сессии:</strong><a href="transcripts/Oscar%20step%209-10/transcript.txt">📄 Транскрипт</a> · <a href="transcripts/Oscar%20step%209-10/transcript.srt">📝 С таймкодами (SRT)</a> · <a href="#" class="placeholder" data-needs-url="1">📹 Видео — добавить ссылку Google Drive</a></div>
+<header id="title-block-header">
+<h1 class="title">Oscar step 9-10 — Inter-Mind UX-отчёт</h1>
+</header>
+<h1 id="ux-отчёт-oscar-step-9-шаринг-экрана-step-10-запись">UX-отчёт:
+Oscar — Step 9 (Шаринг экрана) + Step 10 (Запись)</h1>
+<table>
+<tbody>
+<tr>
+<td><strong>Тестировщик</strong></td>
+<td>Oscar + EK</td>
+</tr>
+<tr>
+<td><strong>Разделы</strong></td>
+<td>§9 Шаринг, §10 Запись</td>
+</tr>
+<tr>
+<td><strong>Длительность</strong></td>
+<td>~13:13</td>
+</tr>
+<tr>
+<td><strong>Видео</strong></td>
+<td><code>Oscar step 9-10.mp4</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="не-работает-функциональные-баги">❌ Не работает (функциональные
+баги)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что произошло</th>
+<th>Серьёзность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~07:00</strong></td>
+<td><strong>Все записи получаются длительностью 14 секунд</strong>
+независимо от реальной длины. Воспроизведено <strong>в обеих
+сессиях</strong> (Oscar и EK): «Скажите, это 14 секунд? Это будет долго,
+да?» — у Oscar; «It says there’s 14 seconds, but it seems to be getting
+into like a fraction of a second» — у EK. Критичный баг записи.</td>
+<td>🔴 High</td>
+</tr>
+<tr>
+<td><strong>~07:30</strong></td>
+<td><strong>Запись не появляется в личном кабинете создателя</strong>:
+«Я не вижу никаких [записей] на мою сайт, на мой аккаунт». При этом
+<strong>она появилась у второго участника</strong>: «when I stopped
+recording, the record started downloaded on Oscar page».
+Owner-permission на recording перевёрнут.</td>
+<td>🔴 High</td>
+</tr>
+<tr>
+<td><strong>~08:00</strong></td>
+<td><strong>Meeting summary в email — пустой</strong>: «I have a lot of
+messages with the meeting summary… I opened a few links with the meeting
+summary and they are empty. I see only meeting summary, date and that’s
+all». То есть письмо с summary приходит, в нём ссылка → но контента
+нет.</td>
+<td>🟠 Medium</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-работает">✅ Что работает</h2>
+<h3 id="шаринг-экрана">Шаринг экрана</h3>
+<ul>
+<li><strong>Сам шаринг работает на двоих</strong> (но в этой записи не
+сильно проговаривается).</li>
+</ul>
+<h3 id="laser-pointer">Laser pointer ⭐</h3>
+<ul>
+<li><strong>«We can paint on a page, me and Oskar… Oscar just painted a
+smile, so we can paint on the screen with dots… laser walks»</strong>.
+Лазерная указка работает в обе стороны, на одном расшаренном экране оба
+могут «рисовать». Это редкая и приятная фича для презентаций.</li>
+</ul>
+<h3 id="старт-recording-ui">Старт recording UI</h3>
+<ul>
+<li>Понятный путь: «To record I need to open the button More and start
+server recording. So now I see the top bottom that recording started».
+Кнопка через More menu, статус-индикатор виден.</li>
+</ul>
+<hr />
+<h2 id="странность">⚠️ Странность</h2>
+<ul>
+<li><strong>«We disabled our translation, but I still see under the
+Oscars that there is button transcribing. Maybe because our language is
+still different for our accounts»</strong> — даже когда translation
+выключен, у другой стороны остаётся transcribing-индикатор. Inconsistent
+state между участниками встречи.</li>
+</ul>
+<hr />
+<h2 id="что-не-покрыто">📋 Что не покрыто</h2>
+<ul>
+<li><strong>Расшарить отдельное окно / вкладку со звуком</strong>.</li>
+<li><strong>Прекратить шаринг и переключаться между
+окнами</strong>.</li>
+<li><strong>Local recording</strong> (видео + tab audio + mic) —
+отдельно от cloud.</li>
+<li><strong>Скачать запись</strong>, поделиться ссылкой, удалить.</li>
+<li><strong>Storage limits</strong> (1 GB / 30 GB / 1 TB).</li>
+<li><strong>Шаринг экрана на iOS / Android</strong> (по докам недоступен
+— должен быть тест объяснения).</li>
+</ul>
+<hr />
+<h2 id="приоритеты">🚦 Приоритеты</h2>
+<ol type="1">
+<li><strong>🔴 Запись = 14 секунд независимо от длины</strong> —
+критичный баг, воспроизводимый, ломает заявленную фичу cloud
+recording.</li>
+<li><strong>🔴 Запись не у создателя, а у другого участника</strong> —
+перевёрнуты owner-permissions.</li>
+<li><strong>🟠 Пустые meeting summary</strong> в email — что-то
+отвалилось в pipeline summary.</li>
+<li><strong>🟡 Inconsistent transcribing state</strong> между
+участниками после disable translation.</li>
+<li><strong>✅ Laser pointer работает классно</strong> — оставить как
+gem-фичу.</li>
+</ol>
+</body>
+</html>

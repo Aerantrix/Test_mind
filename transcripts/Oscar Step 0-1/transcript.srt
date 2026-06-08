@@ -1,0 +1,1728 @@
+1
+00:00:00,000 --> 00:00:14,480
+ So the first step we're creating it's uh which file ah I need I can stop streaming that's
+
+2
+00:00:25,520 --> 00:00:26,880
+ let me check which file is it
+
+3
+00:00:30,000 --> 00:00:44,480
+ looks like looks like I sent it to you
+
+4
+00:00:49,520 --> 00:00:52,240
+ wow okay let's do this one
+
+5
+00:00:55,520 --> 00:00:57,520
+ is it the test scenarios
+
+6
+00:00:59,920 --> 00:01:02,960
+ yeah it's uh intermined manual test scenarios
+
+7
+00:01:14,160 --> 00:01:23,520
+ yeah uh-huh so what we're doing here it's like a real poster going to the website for personal
+
+8
+00:01:24,880 --> 00:01:29,680
+ he's um
+
+9
+00:01:32,320 --> 00:01:37,680
+ ah price list so we're going to the page uh intermine pricing
+
+10
+00:01:47,040 --> 00:01:52,880
+ and for 30 seconds you need to understand uh what uh happens there is it uh
+
+11
+00:01:54,080 --> 00:02:00,480
+ do you understand what's uh what shot there
+
+12
+00:02:00,480 --> 00:02:02,880
+ let me just get on to pricing
+
+13
+00:02:09,040 --> 00:02:10,160
+ okay uh
+
+14
+00:02:13,360 --> 00:02:21,200
+ yeah this seems pretty standard easy to understand you have very clearly sected
+
+15
+00:02:24,320 --> 00:02:25,280
+ pricing plans
+
+16
+00:02:27,440 --> 00:02:29,840
+ uh the text is very
+
+17
+00:02:32,400 --> 00:02:36,240
+ bold clear very easy to understand
+
+18
+00:02:38,320 --> 00:02:46,000
+ the only thing is maybe the monthly to yearly being a toggle or a switch
+
+19
+00:02:47,520 --> 00:02:58,080
+ is is maybe slightly smaller unclear i don't know
+
+20
+00:03:00,080 --> 00:03:01,120
+ i'm just scrolling down
+
+21
+00:03:05,040 --> 00:03:11,760
+ yeah the the the features how it explains how each plan affects
+
+22
+00:03:13,040 --> 00:03:19,600
+ what you'll have access to quite clear i like the the use of the tick symbols
+
+23
+00:03:24,960 --> 00:03:26,560
+ then you have your faq
+
+24
+00:03:28,960 --> 00:03:30,080
+ that's a free trial work
+
+25
+00:03:30,720 --> 00:03:32,720
+ business include a 14 day free trial
+
+26
+00:03:33,280 --> 00:03:36,160
+ that's hard to start nothing is charged until the trial ends
+
+27
+00:03:37,280 --> 00:03:40,640
+ i like the the little drop down menus are very easy to navigate
+
+28
+00:03:42,240 --> 00:03:49,040
+ um i think the questions that you've chosen are very very uh relevant
+
+29
+00:03:50,240 --> 00:03:50,400
+ is
+
+30
+00:03:53,280 --> 00:03:55,680
+ the answers are good concise
+
+31
+00:03:59,360 --> 00:04:02,880
+ and before you pick a plan yeah i like this as well
+
+32
+00:04:04,160 --> 00:04:06,400
+ uh just
+
+33
+00:04:09,440 --> 00:04:12,080
+ that it allows people to
+
+34
+00:04:14,080 --> 00:04:16,720
+ kind of decide for themselves and see
+
+35
+00:04:18,320 --> 00:04:21,200
+ which part of of the service they'd use the most
+
+36
+00:04:26,640 --> 00:04:29,360
+ just taking a look at use cases
+
+37
+00:04:30,080 --> 00:04:32,800
+ use cases built around multi-lingual collaboration
+
+38
+00:04:35,040 --> 00:04:37,120
+ international exhibitions and conferences
+
+39
+00:04:38,560 --> 00:04:40,560
+ multi-lingual global town halls
+
+40
+00:04:42,480 --> 00:04:43,440
+ yeah i would say
+
+41
+00:04:44,560 --> 00:04:45,840
+ it's very easy to navigate
+
+42
+00:04:46,880 --> 00:04:48,800
+ uh very clear and concise
+
+43
+00:04:50,080 --> 00:04:53,760
+ all the symbols are quite aesthetically pleasing
+
+44
+00:04:57,680 --> 00:04:59,120
+ okay perfect
+
+45
+00:05:01,120 --> 00:05:07,840
+ uh now we are going to the main page uh you need to understand uh what's happened there is it how
+
+46
+00:05:08,720 --> 00:05:16,320
+ how uh how much time it will take you to find the demo button uh without uh registration
+
+47
+00:05:18,320 --> 00:05:24,320
+ uh oh you're already you're already done the faq uh live chat
+
+48
+00:05:25,040 --> 00:05:29,520
+ uh and read some uh landing uh parts
+
+49
+00:05:30,720 --> 00:05:32,000
+ with the case and reviews
+
+50
+00:05:33,600 --> 00:05:33,920
+ and
+
+51
+00:05:33,920 --> 00:05:34,400
+ uh
+
+52
+00:05:37,280 --> 00:05:38,560
+ your comments about it
+
+53
+00:05:42,160 --> 00:05:44,240
+ oh sorry so where do i where am i going now
+
+54
+00:05:46,400 --> 00:05:47,600
+ uh give me a second
+
+55
+00:05:48,640 --> 00:05:54,000
+ yeah now you're going to the intermind.com without slash and into the main page can you just
+
+56
+00:05:54,560 --> 00:05:57,600
+ remove the last part in the browser just leave it to mind.com
+
+57
+00:06:02,640 --> 00:06:07,680
+ yeah and the same thing describe what you're seeing just growing the page
+
+58
+00:06:10,640 --> 00:06:15,920
+ very clear slogan straight away stop running meetings in your in someone else's language
+
+59
+00:06:17,680 --> 00:06:22,960
+ intermind translates voice chat and share docs live so each person speaks and reads their own
+
+60
+00:06:22,960 --> 00:06:26,160
+ on a sovereign eu engine that you can audit
+
+61
+00:06:27,200 --> 00:06:32,960
+ uh yeah i have a very simple clear description of what the service provides what it does
+
+62
+00:06:36,320 --> 00:06:43,600
+ then i mean the the live demo the very clear button there's the contrast between the light
+
+63
+00:06:43,600 --> 00:06:49,760
+ blue and the dark background to make it easier to find and there's the benchmarks as well
+
+64
+00:06:53,600 --> 00:07:02,880
+ where your daughter lives translation translation photo uh okay i see there's a blog here uh that's
+
+65
+00:07:05,840 --> 00:07:11,200
+ interesting i'm not is there is there certain parts you want me to go through first or just
+
+66
+00:07:11,200 --> 00:07:19,840
+ kind of how i would go through the the website all right uh okay i'll track try with my parts what
+
+67
+00:07:19,840 --> 00:07:28,960
+ what i'm seeing um on the main page intramind.com uh i'm seeing that uh slogan is very clear uh i see the
+
+68
+00:07:28,960 --> 00:07:38,880
+ first uh uh first links to the sovereignty research methodology release methodology architecture now there's
+
+69
+00:07:38,880 --> 00:07:52,000
+ uh i see that uh some of the text is almost uh uh same color as a background so it's a bit hard to read
+
+70
+00:07:52,000 --> 00:08:01,200
+ and some of the text is extremely small yeah i don't see i see that on the sovereignty page uh some of the
+
+71
+00:08:01,200 --> 00:08:07,360
+ the numbers are a bit uh not in the center of the circle
+
+72
+00:08:11,040 --> 00:08:18,000
+ what i see here why intertwined i scrolled a bit lower uh it shows very clearly and let's check
+
+73
+00:08:18,000 --> 00:08:20,880
+ how it works translate voice charts this page it works
+
+74
+00:08:22,960 --> 00:08:32,400
+ uh real time translation end to end uh everything here looks very clearly uh page opens uh successfully
+
+75
+00:08:36,000 --> 00:08:38,800
+ see here i'm scrolling down and everything is perfect
+
+76
+00:08:43,920 --> 00:08:49,680
+ yeah everything is pretty clear next one collaborative meeting workspace
+
+77
+00:08:54,240 --> 00:08:56,720
+ page opened everything looks clear
+
+78
+00:08:58,960 --> 00:09:02,000
+ no bugs okay to the next one
+
+79
+00:09:05,200 --> 00:09:07,440
+ privacy and security page opened
+
+80
+00:09:12,080 --> 00:09:14,960
+ yeah everything looks clear in this part
+
+81
+00:09:17,120 --> 00:09:17,840
+ so with um
+
+82
+00:09:21,520 --> 00:09:23,440
+ i'm scrolling down the main page
+
+83
+00:09:26,400 --> 00:09:28,560
+ and i see that everything is fine here
+
+84
+00:09:31,920 --> 00:09:35,440
+ okay what's next demo let's try a demo
+
+85
+00:09:40,080 --> 00:09:44,960
+ yeah you can uh yeah just uh check the demo by yourself
+
+86
+00:09:44,960 --> 00:09:48,160
+ for a few minutes what you see what's how it works
+
+87
+00:09:52,160 --> 00:09:54,240
+ uh let's try and into my demo
+
+88
+00:09:54,800 --> 00:09:56,480
+ page opens successfully
+
+89
+00:09:57,600 --> 00:09:59,440
+ all the standard formatting is correct
+
+90
+00:10:00,880 --> 00:10:01,360
+ there's the
+
+91
+00:10:03,200 --> 00:10:12,080
+ okay okay i'm just gonna click on start demo
+
+92
+00:10:12,080 --> 00:10:13,280
+ i do notice that um
+
+93
+00:10:15,440 --> 00:10:21,120
+ on the description where it says you'll be asked to allow camera and microphone access
+
+94
+00:10:21,680 --> 00:10:28,640
+ i think there's a space between the the spacing between the letters on some of the demo mode is a bit
+
+95
+00:10:29,760 --> 00:10:33,040
+ strange but that that's just a bit nitpicking nitpicking
+
+96
+00:10:34,560 --> 00:10:34,560
+ um
+
+97
+00:10:36,640 --> 00:10:38,960
+ so i'll just click on start demo is that good
+
+98
+00:10:40,160 --> 00:10:43,200
+ yep okay requesting permissions
+
+99
+00:10:44,000 --> 00:10:46,480
+ the pop-up shows up use your microphones use your cameras
+
+100
+00:10:46,480 --> 00:10:47,040
+ i'll allow
+
+101
+00:10:48,560 --> 00:10:49,280
+ setting up the demo
+
+102
+00:10:50,880 --> 00:10:53,280
+ speak on the left here translation on the right
+
+103
+00:10:54,960 --> 00:10:58,480
+ okay everything seems to be working well it's just loading
+
+104
+00:11:05,440 --> 00:11:13,040
+ okay there you go you can see me my camera's working multiple languages detected participants speak different languages
+
+105
+00:11:14,320 --> 00:11:16,960
+ i see myself on both sides of the screen
+
+106
+00:11:18,720 --> 00:11:20,480
+ let me just see
+
+107
+00:11:24,880 --> 00:11:25,360
+ taalherkenning
+
+108
+00:11:26,240 --> 00:11:28,320
+ deelnemers spreken verschillende talen
+
+109
+00:11:28,720 --> 00:11:30,560
+ ik zie mezelf aan beide kanten van het scherm
+
+110
+00:11:31,760 --> 00:11:34,320
+ ik kan het in mijn stem horen
+
+111
+00:11:34,320 --> 00:11:36,160
+ dat is heel vreemd
+
+112
+00:11:36,160 --> 00:11:37,360
+ dat is eigenlijk best wel cool
+
+113
+00:11:37,360 --> 00:11:39,920
+ ik kan het in mijn stem horen
+
+114
+00:11:39,920 --> 00:11:40,960
+ dat is heel vreemd
+
+115
+00:11:40,960 --> 00:11:41,440
+ dat is eigenlijk best wel cool
+
+116
+00:11:41,440 --> 00:11:42,080
+ ik kan het in mijn stem horen
+
+117
+00:11:42,080 --> 00:11:42,720
+ dat is heel vreemd
+
+118
+00:11:42,720 --> 00:11:43,840
+ dat is eigenlijk best wel cool
+
+119
+00:11:43,840 --> 00:11:44,720
+ ik kan het in mijn stem horen
+
+120
+00:11:44,720 --> 00:11:45,360
+ dat is heel vreemd
+
+121
+00:11:45,360 --> 00:11:46,320
+ dat is eigenlijk best wel cool
+
+122
+00:11:46,320 --> 00:11:47,760
+ ik kan het in mijn stem horen
+
+123
+00:11:47,760 --> 00:11:49,040
+ ik kan het in mijn stem horen
+
+124
+00:11:49,040 --> 00:11:49,600
+ dat is heel vreemd
+
+125
+00:11:49,600 --> 00:12:02,240
+ dat is eigenlijk best wel cool
+
+126
+00:12:02,240 --> 00:12:03,040
+ laat me even enkele van de instellingen bekijken
+
+127
+00:12:03,040 --> 00:12:18,000
+ zodat je de camera kunt uitschakelen
+
+128
+00:12:18,000 --> 00:12:30,560
+ oké, dus de mute werkt
+
+129
+00:12:30,560 --> 00:12:32,560
+ deelnemers tonen
+
+130
+00:12:32,560 --> 00:12:40,960
+ hoe sluit ik dit
+
+131
+00:12:40,960 --> 00:12:55,920
+ dus dat was vrij eenvoudig
+
+132
+00:12:55,920 --> 00:12:56,680
+ te navigeren
+
+133
+00:12:56,680 --> 00:13:09,900
+ dit is dus een volledige transcriptie
+
+134
+00:13:09,900 --> 00:13:11,500
+ van alles wat ik in het Engels zeg
+
+135
+00:13:11,500 --> 00:13:12,960
+ en dus stel ik me voor dat
+
+136
+00:13:12,960 --> 00:13:15,480
+ als ik dat aan de andere kant ook probeer
+
+137
+00:13:15,480 --> 00:13:17,220
+ laten we het afronden
+
+138
+00:13:17,220 --> 00:13:30,920
+ ik ben niet zeker of er een transcriptie
+
+139
+00:13:30,920 --> 00:13:32,080
+ van wat ik hier in Nederland zeg
+
+140
+00:13:32,080 --> 00:13:32,680
+ zou moeten zijn
+
+141
+00:13:32,680 --> 00:13:34,900
+ maar er staat niets
+
+142
+00:13:34,900 --> 00:13:36,100
+ misschien niet
+
+143
+00:13:36,100 --> 00:13:39,300
+ misschien is dat hier gewoon
+
+144
+00:13:39,300 --> 00:13:40,440
+ de chat
+
+145
+00:13:40,440 --> 00:13:42,460
+ als transcriptie
+
+146
+00:13:42,460 --> 00:13:44,880
+ oké
+
+147
+00:13:44,880 --> 00:13:46,880
+ laten we het scherm delen proberen
+
+148
+00:13:46,880 --> 00:13:59,220
+ dit kan een beetje een inleiding zijn
+
+149
+00:13:59,220 --> 00:14:00,880
+ alleen het hele scherm
+
+150
+00:14:00,880 --> 00:14:02,760
+ oké, deel ook het systeemgeluid
+
+151
+00:14:02,760 --> 00:14:03,940
+ oké, oké
+
+152
+00:14:03,940 --> 00:14:05,080
+ ik denk dat dat...
+
+153
+00:14:05,080 --> 00:14:07,100
+ wat is creating a infinite loop?
+
+154
+00:14:07,100 --> 00:14:08,100
+ sorry, sorry...
+
+155
+00:14:08,100 --> 00:14:08,740
+ ah, met video?
+
+156
+00:14:08,740 --> 00:14:09,740
+ oké, sorry...
+
+157
+00:14:09,740 --> 00:14:10,740
+ oké, sorry...
+
+158
+00:14:10,740 --> 00:14:11,380
+ sorry, sorry...
+
+159
+00:14:11,380 --> 00:14:14,560
+ je mentioned dat dat is creating an infinite loop
+
+160
+00:14:14,560 --> 00:14:15,320
+ sorry...
+
+161
+00:14:15,320 --> 00:14:16,380
+ ah, met video?
+
+162
+00:14:16,380 --> 00:14:19,900
+ oké, oké, oké, oké, oké, oké, oké
+
+163
+00:14:19,900 --> 00:14:25,040
+ oké, oké, oké, oké, oké, oké, oké, oké, oké
+
+164
+00:14:25,040 --> 00:14:29,980
+ oké, oké, oké, oké, oké, oké, oké, oké
+
+165
+00:14:29,980 --> 00:14:31,120
+ let's try some emotes...
+
+166
+00:14:31,120 --> 00:14:35,120
+ try to reopen demo...
+
+167
+00:14:35,120 --> 00:14:37,120
+ but change in language...
+
+168
+00:14:37,120 --> 00:14:38,120
+ dat is geen probleem...
+
+169
+00:14:38,120 --> 00:14:39,120
+ eh...
+
+170
+00:14:39,120 --> 00:14:44,680
+ let me open demo by myself...
+
+171
+00:14:44,680 --> 00:14:47,480
+ dus hoe verander ik de...
+
+172
+00:14:47,480 --> 00:14:50,180
+ there should be a button in languages...
+
+173
+00:14:50,180 --> 00:14:51,180
+ eh...
+
+174
+00:14:51,180 --> 00:14:53,180
+ I can disable translation...
+
+175
+00:14:53,180 --> 00:14:55,180
+ eh...
+
+176
+00:15:02,180 --> 00:15:05,580
+ English and Russian...
+
+177
+00:15:05,580 --> 00:15:06,080
+ so...
+
+178
+00:15:06,080 --> 00:15:10,680
+ if I disable translation...
+
+179
+00:15:10,680 --> 00:15:11,680
+ if I disable translation...
+
+180
+00:15:11,680 --> 00:15:14,580
+ yeah, then I can just hear myself in English...
+
+181
+00:15:14,580 --> 00:15:17,580
+ open settings...
+
+182
+00:15:17,580 --> 00:15:22,580
+ open settings...
+
+183
+00:15:22,580 --> 00:15:23,580
+ dot translation language...
+
+184
+00:15:23,580 --> 00:15:24,580
+ dot translation language...
+
+185
+00:15:24,580 --> 00:15:25,580
+ so...
+
+186
+00:15:25,580 --> 00:15:28,580
+ maybe I do...
+
+187
+00:15:28,580 --> 00:15:29,580
+ is there any language...
+
+188
+00:15:29,580 --> 00:15:30,580
+ is there any language...
+
+189
+00:15:30,580 --> 00:15:32,580
+ you want me to...
+
+190
+00:15:32,580 --> 00:15:33,580
+ try to change it to Russian...
+
+191
+00:15:33,580 --> 00:15:34,580
+ maybe I'll hear it...
+
+192
+00:15:34,580 --> 00:15:35,580
+ Russian?
+
+193
+00:15:35,580 --> 00:15:36,580
+ yeah...
+
+194
+00:15:36,580 --> 00:15:37,580
+ oké...
+
+195
+00:15:37,580 --> 00:15:38,580
+ oké...
+
+196
+00:15:38,580 --> 00:15:39,580
+ and then...
+
+197
+00:15:39,580 --> 00:15:40,580
+ let me turn...
+
+198
+00:15:40,580 --> 00:15:41,580
+ enable translation...
+
+199
+00:15:44,480 --> 00:15:45,480
+ hello...
+
+200
+00:15:45,480 --> 00:15:46,480
+ testing...
+
+201
+00:15:46,480 --> 00:15:47,480
+ I cannot speak Russian...
+
+202
+00:15:47,480 --> 00:15:48,480
+ oh...
+
+203
+00:15:48,480 --> 00:15:50,480
+ I think maybe I'm muted...
+
+204
+00:15:50,480 --> 00:15:51,480
+ no...
+
+205
+00:15:51,480 --> 00:15:52,480
+ let's...
+
+206
+00:15:52,480 --> 00:15:54,480
+ we'll check language translation...
+
+207
+00:15:54,480 --> 00:15:55,480
+ in the meeting room...
+
+208
+00:15:55,480 --> 00:15:56,480
+ when we'll be together...
+
+209
+00:15:56,480 --> 00:15:58,480
+ I think that's better...
+
+210
+00:15:58,480 --> 00:15:59,480
+ now...
+
+211
+00:15:59,480 --> 00:16:00,480
+ it's a bit tough...
+
+212
+00:16:00,480 --> 00:16:01,480
+ I understand...
+
+213
+00:16:01,480 --> 00:16:02,480
+ oh...
+
+214
+00:16:02,480 --> 00:16:03,480
+ hello...
+
+215
+00:16:03,480 --> 00:16:04,480
+ testing...
+
+216
+00:16:04,480 --> 00:16:06,480
+ I don't speak Russian...
+
+217
+00:16:06,480 --> 00:16:07,480
+ oh...
+
+218
+00:16:07,480 --> 00:16:08,480
+ I think...
+
+219
+00:16:08,480 --> 00:16:09,480
+ I'll stop...
+
+220
+00:16:09,480 --> 00:16:10,480
+ oké...
+
+221
+00:16:10,480 --> 00:16:11,480
+ let's try again...
+
+222
+00:16:11,480 --> 00:16:12,480
+ it's not happening now...
+
+223
+00:16:12,480 --> 00:16:13,480
+ now...
+
+224
+00:16:13,480 --> 00:16:14,480
+ we'll see...
+
+225
+00:16:14,480 --> 00:16:15,480
+ let's see...
+
+226
+00:16:15,480 --> 00:16:16,480
+ yeah...
+
+227
+00:16:16,480 --> 00:16:17,480
+ leave demo...
+
+228
+00:16:17,480 --> 00:16:18,480
+ and try to reopen it...
+
+229
+00:16:18,480 --> 00:16:19,480
+ for a few minutes...
+
+230
+00:16:19,480 --> 00:16:20,480
+ or...
+
+231
+00:16:20,480 --> 00:16:21,480
+ for a minute...
+
+232
+00:16:21,480 --> 00:16:22,480
+ and check that...
+
+233
+00:16:22,480 --> 00:16:23,480
+ everything opens fine...
+
+234
+00:16:23,480 --> 00:16:24,480
+ ok...
+
+235
+00:16:24,480 --> 00:16:25,480
+ ends demo...
+
+236
+00:16:27,480 --> 00:16:28,480
+ and then...
+
+237
+00:16:28,480 --> 00:16:29,480
+ go back in...
+
+238
+00:16:29,480 --> 00:16:30,480
+ or...?
+
+239
+00:16:30,480 --> 00:16:31,480
+ yeah...
+
+240
+00:16:31,480 --> 00:16:32,480
+ start demo again...
+
+241
+00:16:32,480 --> 00:16:33,480
+ ok...
+
+242
+00:16:33,480 --> 00:16:34,480
+ and what's the process...
+
+243
+00:16:34,480 --> 00:16:36,480
+ what's the difference in the process?
+
+244
+00:16:38,480 --> 00:16:39,480
+ uh...
+
+245
+00:16:39,480 --> 00:16:41,480
+ everything looks pretty much...
+
+246
+00:16:41,480 --> 00:16:42,480
+ exactly the same...
+
+247
+00:16:42,480 --> 00:16:43,480
+ it's loading up again...
+
+248
+00:16:48,480 --> 00:16:49,480
+ this is...
+
+249
+00:16:50,480 --> 00:16:52,480
+ transcribing in German now...
+
+250
+00:16:52,480 --> 00:16:53,480
+ so it's changed the...
+
+251
+00:16:53,480 --> 00:16:54,480
+ the language...
+
+252
+00:16:54,480 --> 00:16:56,480
+ this is...
+
+253
+00:16:56,480 --> 00:16:57,480
+ uh...
+
+254
+00:16:57,480 --> 00:16:58,480
+ everything seems...
+
+255
+00:16:58,480 --> 00:16:59,480
+ pretty much...
+
+256
+00:16:59,480 --> 00:17:00,480
+ now...
+
+257
+00:17:00,480 --> 00:17:01,480
+ it's pretty much...
+
+258
+00:17:01,480 --> 00:17:02,480
+ so...
+
+259
+00:17:02,480 --> 00:17:03,480
+ has the language changed?
+
+260
+00:17:03,480 --> 00:17:04,480
+ yeah...
+
+261
+00:17:04,480 --> 00:17:05,480
+ I mean...
+
+262
+00:17:05,480 --> 00:17:06,480
+ everything seems...
+
+263
+00:17:06,480 --> 00:17:07,480
+ quite exactly the same...
+
+264
+00:17:07,480 --> 00:17:08,480
+ other than the language...
+
+265
+00:17:08,480 --> 00:17:09,480
+ I don't know if that's...
+
+266
+00:17:09,480 --> 00:17:10,480
+ like a...
+
+267
+00:17:10,480 --> 00:17:10,480
+ like a...
+
+268
+00:17:10,480 --> 00:17:11,480
+ like a...
+
+269
+00:17:11,480 --> 00:17:12,480
+ wise thing...
+
+270
+00:17:14,480 --> 00:17:15,480
+ just for the demo...
+
+271
+00:17:15,480 --> 00:17:16,480
+ which...
+
+272
+00:17:16,480 --> 00:17:17,480
+ I don't think...
+
+273
+00:17:17,480 --> 00:17:18,480
+ that something really changed...
+
+274
+00:17:18,480 --> 00:17:19,480
+ except for the language...
+
+275
+00:17:19,480 --> 00:17:20,480
+ I don't know...
+
+276
+00:17:20,480 --> 00:17:21,480
+ I don't know if that is...
+
+277
+00:17:21,480 --> 00:17:22,480
+ it's like a...
+
+278
+00:17:22,480 --> 00:17:25,480
+ just for the demo...
+
+279
+00:17:25,480 --> 00:17:26,480
+ I think...
+
+280
+00:17:26,480 --> 00:17:27,480
+ just for the demo...
+
+281
+00:17:27,480 --> 00:17:28,480
+ I think...
+
+282
+00:17:28,480 --> 00:17:29,480
+ yeah...
+
+283
+00:17:29,480 --> 00:17:31,480
+ is there anything else...
+
+284
+00:17:31,480 --> 00:17:32,480
+ you want me to try...
+
+285
+00:17:32,480 --> 00:17:32,480
+ in the demo...
+
+286
+00:17:32,480 --> 00:17:33,480
+ just like...
+
+287
+00:17:36,480 --> 00:17:37,480
+ it's the last part...
+
+288
+00:17:37,480 --> 00:17:38,480
+ in...
+
+289
+00:17:38,480 --> 00:17:40,480
+ in this section...
+
+290
+00:17:40,480 --> 00:17:41,480
+ in...
+
+291
+00:17:41,480 --> 00:17:42,480
+ in a...
+
+292
+00:17:42,480 --> 00:17:43,480
+ part one...
+
+293
+00:17:43,480 --> 00:17:44,480
+ now...
+
+294
+00:17:44,480 --> 00:17:45,480
+ try to open...
+
+295
+00:17:45,480 --> 00:17:46,480
+ demo room...
+
+296
+00:17:46,480 --> 00:17:47,480
+ from a phone...
+
+297
+00:17:47,480 --> 00:17:49,480
+ if it possible...
+
+298
+00:17:49,480 --> 00:17:50,480
+ yeah...
+
+299
+00:17:50,480 --> 00:17:51,480
+ yeah...
+
+300
+00:17:51,480 --> 00:17:52,480
+ I can do that...
+
+301
+00:17:52,480 --> 00:17:53,480
+ okay...
+
+302
+00:17:55,480 --> 00:17:56,480
+ uh...
+
+303
+00:17:56,480 --> 00:17:57,480
+ should I join...
+
+304
+00:17:57,480 --> 00:17:58,480
+ Discord on my phone...
+
+305
+00:17:58,480 --> 00:17:59,480
+ and a screenshot...
+
+306
+00:17:59,480 --> 00:18:00,480
+ or...
+
+307
+00:18:00,480 --> 00:18:01,480
+ like...
+
+308
+00:18:01,480 --> 00:18:02,480
+ because I can't...
+
+309
+00:18:02,480 --> 00:18:03,480
+ record...
+
+310
+00:18:03,480 --> 00:18:04,480
+ yeah...
+
+311
+00:18:04,480 --> 00:18:05,480
+ now I need to record...
+
+312
+00:18:05,480 --> 00:18:07,480
+ just uh...
+
+313
+00:18:07,480 --> 00:18:08,480
+ yeah...
+
+314
+00:18:08,480 --> 00:18:09,480
+ just say what you...
+
+315
+00:18:09,480 --> 00:18:10,480
+ what you see...
+
+316
+00:18:10,480 --> 00:18:11,480
+ what's wrong...
+
+317
+00:18:11,480 --> 00:18:12,480
+ or what's correct...
+
+318
+00:18:12,480 --> 00:18:13,480
+ or...
+
+319
+00:18:13,480 --> 00:18:14,480
+ like...
+
+320
+00:18:14,480 --> 00:18:15,480
+ because I can't...
+
+321
+00:18:15,480 --> 00:18:16,480
+ take off my phone...
+
+322
+00:18:16,480 --> 00:18:18,480
+ no need to record...
+
+323
+00:18:18,480 --> 00:18:19,480
+ just turn off the...
+
+324
+00:18:19,480 --> 00:18:20,480
+ the...
+
+325
+00:18:20,480 --> 00:18:22,480
+ translation...
+
+326
+00:18:22,480 --> 00:18:23,480
+ or...
+
+327
+00:18:23,480 --> 00:18:24,480
+ let me...
+
+328
+00:18:24,480 --> 00:18:25,480
+ myself...
+
+329
+00:18:25,480 --> 00:18:27,480
+ so I'm not having a...
+
+330
+00:18:27,480 --> 00:18:28,480
+ I'm gonna sit...
+
+331
+00:18:28,480 --> 00:18:30,480
+ the back of my skull...
+
+332
+00:18:34,480 --> 00:18:36,480
+ just logging in...
+
+333
+00:18:36,480 --> 00:18:38,480
+ that's just a standard...
+
+334
+00:18:38,480 --> 00:18:39,480
+ log in with Google...
+
+335
+00:18:39,480 --> 00:18:40,480
+ everything seems to be working...
+
+336
+00:18:40,480 --> 00:18:41,480
+ ok...
+
+337
+00:18:41,480 --> 00:18:42,480
+ I logged in successfully...
+
+338
+00:18:42,480 --> 00:18:43,480
+ I see...
+
+339
+00:18:43,480 --> 00:18:44,480
+ the...
+
+340
+00:18:44,480 --> 00:18:45,480
+ meetings page...
+
+341
+00:18:45,480 --> 00:18:46,480
+ I think...
+
+342
+00:18:46,480 --> 00:18:47,480
+ I'm not on the actual...
+
+343
+00:18:47,480 --> 00:18:48,480
+ I'm not on the actual...
+
+344
+00:18:48,480 --> 00:18:49,480
+ forum...
+
+345
+00:18:49,480 --> 00:18:50,480
+ I'm not on the actual...
+
+346
+00:18:50,480 --> 00:18:51,480
+ forum page...
+
+347
+00:18:51,480 --> 00:18:52,480
+ of the...
+
+348
+00:18:52,480 --> 00:18:53,480
+ the...
+
+349
+00:18:53,480 --> 00:18:54,480
+ the...
+
+350
+00:18:54,480 --> 00:18:55,480
+ meetings page...
+
+351
+00:18:55,480 --> 00:18:56,480
+ I think...
+
+352
+00:18:56,480 --> 00:18:57,480
+ I'm not on the actual...
+
+353
+00:18:57,480 --> 00:18:58,480
+ forum...
+
+354
+00:18:58,480 --> 00:18:59,480
+ I'm not on the actual...
+
+355
+00:18:59,480 --> 00:19:00,480
+ forum...
+
+356
+00:19:00,480 --> 00:19:01,480
+ I'm not on the actual...
+
+357
+00:19:01,480 --> 00:19:02,480
+ forum...
+
+358
+00:19:02,480 --> 00:19:03,480
+ I'm not on the actual...
+
+359
+00:19:03,480 --> 00:19:04,480
+ forum page...
+
+360
+00:19:04,480 --> 00:19:05,480
+ of the...
+
+361
+00:19:05,480 --> 00:19:06,480
+ of the...
+
+362
+00:19:06,480 --> 00:19:07,480
+ the website...
+
+363
+00:19:07,480 --> 00:19:08,480
+ where I can try...
+
+364
+00:19:08,480 --> 00:19:09,480
+ the demo...
+
+365
+00:19:09,480 --> 00:19:10,480
+ on...
+
+366
+00:19:10,480 --> 00:19:11,480
+ like...
+
+367
+00:19:11,480 --> 00:19:12,480
+ the account...
+
+368
+00:19:12,480 --> 00:19:13,480
+ page...
+
+369
+00:19:13,480 --> 00:19:14,480
+ let me try this again...
+
+370
+00:19:14,480 --> 00:19:15,480
+ ok...
+
+371
+00:19:27,480 --> 00:19:28,480
+ I'm just going...
+
+372
+00:19:28,480 --> 00:19:29,480
+ to redo that...
+
+373
+00:19:29,480 --> 00:19:30,480
+ to my own...
+
+374
+00:19:30,480 --> 00:19:31,480
+ dot com...
+
+375
+00:19:31,480 --> 00:19:32,480
+ ok...
+
+376
+00:19:32,480 --> 00:19:33,480
+ I'm seeing the...
+
+377
+00:19:33,480 --> 00:19:36,480
+ exact same things...
+
+378
+00:19:36,480 --> 00:19:37,480
+ that I saw...
+
+379
+00:19:37,480 --> 00:19:38,480
+ on...
+
+380
+00:19:38,480 --> 00:19:39,480
+ the...
+
+381
+00:19:39,480 --> 00:19:40,480
+ web version...
+
+382
+00:19:40,480 --> 00:19:41,480
+ everything seems...
+
+383
+00:19:41,480 --> 00:19:42,480
+ properly formatted...
+
+384
+00:19:42,480 --> 00:19:43,480
+ for...
+
+385
+00:19:43,480 --> 00:19:45,480
+ uh...
+
+386
+00:19:45,480 --> 00:19:48,480
+ for the iPhone...
+
+387
+00:19:48,480 --> 00:19:50,480
+ I can see...
+
+388
+00:19:50,480 --> 00:19:51,480
+ we still have...
+
+389
+00:19:51,480 --> 00:19:52,480
+ some of those same...
+
+390
+00:19:52,480 --> 00:19:53,480
+ formatting issues...
+
+391
+00:19:53,480 --> 00:19:54,480
+ on the...
+
+392
+00:19:54,480 --> 00:19:55,480
+ like...
+
+393
+00:19:55,480 --> 00:19:56,480
+ sovereignty...
+
+394
+00:19:56,480 --> 00:19:57,480
+ and...
+
+395
+00:19:57,480 --> 00:19:58,480
+ uh...
+
+396
+00:19:58,480 --> 00:19:59,480
+ the...
+
+397
+00:19:59,480 --> 00:20:00,480
+ blog posts...
+
+398
+00:20:00,480 --> 00:20:01,480
+ where the text...
+
+399
+00:20:01,480 --> 00:20:02,480
+ is a bit small...
+
+400
+00:20:02,480 --> 00:20:03,480
+ and some of the numbers...
+
+401
+00:20:03,480 --> 00:20:04,480
+ are off-centred...
+
+402
+00:20:04,480 --> 00:20:05,480
+ in those...
+
+403
+00:20:05,480 --> 00:20:06,480
+ dot points...
+
+404
+00:20:06,480 --> 00:20:07,480
+ um...
+
+405
+00:20:07,480 --> 00:20:09,480
+ do you just want me to try...
+
+406
+00:20:09,480 --> 00:20:10,480
+ a live demo...
+
+407
+00:20:10,480 --> 00:20:10,480
+ or...
+
+408
+00:20:10,480 --> 00:20:11,480
+ go through how...
+
+409
+00:20:11,480 --> 00:20:12,480
+ the whole...
+
+410
+00:20:12,480 --> 00:20:13,480
+ side...
+
+411
+00:20:13,480 --> 00:20:14,480
+ yeah...
+
+412
+00:20:14,480 --> 00:20:15,480
+ yeah...
+
+413
+00:20:15,480 --> 00:20:16,480
+ try everything...
+
+414
+00:20:16,480 --> 00:20:17,480
+ that you've not tried...
+
+415
+00:20:17,480 --> 00:20:18,480
+ but...
+
+416
+00:20:18,480 --> 00:20:19,480
+ it's...
+
+417
+00:20:19,480 --> 00:20:20,480
+ uh...
+
+418
+00:20:20,480 --> 00:20:21,480
+ let's finish this part...
+
+419
+00:20:21,480 --> 00:20:22,480
+ I think...
+
+420
+00:20:22,480 --> 00:20:23,480
+ uh...
+
+421
+00:20:23,480 --> 00:20:24,480
+ let's stop recording...
+
+422
+00:20:24,480 --> 00:20:25,480
+ cause...
+
+423
+00:20:25,480 --> 00:20:26,480
+ uh...
+
+424
+00:20:26,480 --> 00:20:26,480
+ it's...
+
+425
+00:20:26,480 --> 00:20:27,480
+ we're finished with a part 1...
+
+426
+00:20:27,480 --> 00:20:28,480
+ part 0...
+
+427
+00:20:28,480 --> 00:20:29,480
+ and part 1...
+
+428
+00:20:29,480 --> 00:20:30,480
+ so...
+
+429
+00:20:30,480 --> 00:20:31,480
+ we...
+
+430
+00:20:31,480 --> 00:20:32,480
+ you'll save this recording...
+
+431
+00:20:32,480 --> 00:20:33,480
+ ok...
+
+432
+00:20:33,480 --> 00:20:34,480
+ stop...
+

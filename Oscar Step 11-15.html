@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Oscar Step 11-15 — Inter-Mind UX-отчёт</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Сводный отчёт</a><span class="sep">·</span><span style="color:var(--muted)">Сессия: Oscar Step 11-15</span></nav>
+<div class="materials"><strong>📦 Материалы сессии:</strong><a href="transcripts/Oscar%20Step%2011-15/transcript.txt">📄 Транскрипт</a> · <a href="transcripts/Oscar%20Step%2011-15/transcript.srt">📝 С таймкодами (SRT)</a> · <a href="#" class="placeholder" data-needs-url="1">📹 Видео — добавить ссылку Google Drive</a></div>
+<header id="title-block-header">
+<h1 class="title">Oscar Step 11-15 — Inter-Mind UX-отчёт</h1>
+</header>
+<h1
+id="ux-отчёт-oscar-steps-11-15-интеграции-документыai-безопасность-поддержка-мобильный">UX-отчёт:
+Oscar — Steps 11-15 (Интеграции, Документы/AI, Безопасность, Поддержка,
+Мобильный)</h1>
+<table>
+<tbody>
+<tr>
+<td><strong>Тестировщик</strong></td>
+<td>Oscar + EK</td>
+</tr>
+<tr>
+<td><strong>Разделы</strong></td>
+<td>§11–§15</td>
+</tr>
+<tr>
+<td><strong>Длительность</strong></td>
+<td>~14:15</td>
+</tr>
+<tr>
+<td><strong>Видео</strong></td>
+<td><code>Oscar Step 11-15.mp4</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="не-работает-отсутствует">❌ Не работает / отсутствует</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что произошло</th>
+<th>Серьёзность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~05:00</strong></td>
+<td><strong>Документ доступен по прямой ссылке без авторизации</strong>:
+«It opens the link, the whole document is opened on a separate page…
+I’ll log out from my account on another browser, try to open the same
+link, looks like I still have access to this document». <strong>Любой, у
+кого есть ссылка</strong>, может открыть документ, не залогинившись. Это
+security/privacy баг (если документы предполагались как «только для
+команды»).</td>
+<td>🔴 High (security)</td>
+</tr>
+<tr>
+<td><strong>~04:30</strong></td>
+<td><strong>При попытке отправить ссылку на документ в чат — сообщение
+становится blank у обеих сторон</strong>: «I’m not sure if that’s shown
+up on your end. On my end it’s just a blank message. Yeah, I also see
+the empty message from you». Подтверждение находки из EK 11-16, теперь
+видно, что баг на <strong>обеих</strong> сторонах, не только у
+sender.</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>~02:30</strong></td>
+<td><strong>Domain Management — недоступно</strong>: «Create your own
+corporate domain — there is no feature for that right now». В UI
+Integrations этой опции нет. По доке должна быть для paid plans.</td>
+<td>🟠 Medium (gap)</td>
+</tr>
+<tr>
+<td><strong>~02:45</strong></td>
+<td><strong>Google Drive integration — недоступно</strong>: «Connect
+Google Drive to your account through OOS — there is no feature for that
+right now».</td>
+<td>🟠 Medium (gap)</td>
+</tr>
+<tr>
+<td><strong>~07:00</strong></td>
+<td><strong>AI editor completion — функция отсутствует / не
+находится</strong>: «AI-supporting editor. У нас нет
+редактор-файлов».</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>~06:00</strong></td>
+<td><strong>Toggle expanded/collapsed/hidden у transcription не
+работает</strong> (подтверждение EK 11-16): «It doesn’t seem to change
+anything».</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>~06:30</strong></td>
+<td><strong>Standalone Translate page</strong> (<code>/translate</code>)
+не нашли: «Open Translate as a separate tool. Type any text, I think
+it’s a chat feature». Oscar не понял, что это standalone, искал в
+чате.</td>
+<td>🟡 Low</td>
+</tr>
+<tr>
+<td><strong>~12:00</strong></td>
+<td>После обработки документа <strong>меняется визуализация
+ошибки</strong>: «this XML file does not appear to have any style
+information… code: no such key, the specified key does not exist» —
+снова XML-ошибка S3 (как у EK 11-16).</td>
+<td>🟠 Medium (UX + security info leak)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-работает">✅ Что работает</h2>
+<h3 id="интеграции">Интеграции</h3>
+<ul>
+<li><strong>Calendar (Google) подтверждён</strong> — через
+<code>Scheduled Meeting → Add to calendar</code> (а не из страницы
+Integrations).</li>
+<li><strong>Backup &amp; Restore</strong> — упомянут как что-то
+существующее в Integrations: «и Backup and Restore». Не понятно, что
+именно делает.</li>
+</ul>
+<h3 id="документы">Документы</h3>
+<ul>
+<li><strong>Document upload в чат работает</strong>.</li>
+<li><strong>После delete документ становится недоступен по
+ссылке</strong> (см. ошибку выше, но факт revoke срабатывает).</li>
+</ul>
+<h3 id="mobile">Mobile</h3>
+<ul>
+<li><strong>Join meeting по ссылке с телефона работает без полного
+логина</strong>: «So I joined the meeting without signing in on my
+phone. This part works well».</li>
+</ul>
+<hr />
+<h2 id="что-не-покрыто-большая-часть-1315">📋 Что не покрыто (большая
+часть §13–§15)</h2>
+<h3 id="безопасность">§13 Безопасность</h3>
+<ul>
+<li><strong>SSO / SAML</strong> — нужен Business/Enterprise аккаунт, нет
+доступа: «нужно ехзернный аксесс от менеджера».</li>
+<li><strong>Privacy Zones</strong> — не проверено.</li>
+</ul>
+<h3 id="поддержка">§14 Поддержка</h3>
+<ul>
+<li><strong>Live chat support</strong> — не проверили: «yeah, I think it
+also requires other account with enterprise and business tariff». Спорно
+— по сценарию live chat на <strong>всех</strong> тарифах, не только
+Business.</li>
+</ul>
+<h3 id="мобильный">§15 Мобильный</h3>
+<ul>
+<li>Открытие митинга по ссылке — да.</li>
+<li>Перевод на мобильном — нет.</li>
+<li>iOS Safari отдельно, Android Chrome отдельно — нет.</li>
+<li>Wi-Fi → 4G переключение — нет.</li>
+<li>Фоновый режим — нет.</li>
+</ul>
+<hr />
+<h2 id="приоритеты">🚦 Приоритеты</h2>
+<ol type="1">
+<li><strong>🔴 Документы доступны по прямой ссылке без логина</strong> —
+серьёзный security/privacy баг. Если документы внутрикомандные — это
+утечка. Сейчас же — ссылка работает в режиме «public, anyone with
+link».</li>
+<li><strong>🟠 Domain Management отсутствует в Integrations</strong> —
+gap между обещанным и реальным.</li>
+<li><strong>🟠 Google Drive / OneDrive отсутствуют</strong> — то же
+самое.</li>
+<li><strong>🟠 AI editor completion не находится /
+отсутствует</strong>.</li>
+<li><strong>🟠 Пустое сообщение при copy/paste ссылки</strong> —
+рендеринг сломан с обеих сторон.</li>
+<li><strong>🟠 XML-ошибка</strong> при revoke (подтверждение EK
+11-16).</li>
+<li><strong>🟡 Live chat support — уточнить тариф</strong>: оно для всех
+или только для Business+? Сейчас тестировщики не уверены.</li>
+<li><strong>🟡 Standalone Translate (/translate)</strong> — добавить
+явный вход в UI, чтобы не путали с chat feature.</li>
+</ol>
+</body>
+</html>

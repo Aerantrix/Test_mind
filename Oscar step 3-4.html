@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Oscar step 3-4 — Inter-Mind UX-отчёт</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Сводный отчёт</a><span class="sep">·</span><span style="color:var(--muted)">Сессия: Oscar step 3-4</span></nav>
+<div class="materials"><strong>📦 Материалы сессии:</strong><a href="transcripts/Oscar%20step%203-4/transcript.txt">📄 Транскрипт</a> · <a href="transcripts/Oscar%20step%203-4/transcript.srt">📝 С таймкодами (SRT)</a> · <a href="#" class="placeholder" data-needs-url="1">📹 Видео — добавить ссылку Google Drive</a></div>
+<header id="title-block-header">
+<h1 class="title">Oscar step 3-4 — Inter-Mind UX-отчёт</h1>
+</header>
+<h1
+id="ux-отчёт-oscar-step-3-профиль-и-команда-step-4-встречи">UX-отчёт:
+Oscar — Step 3 (Профиль и команда) + Step 4 (Встречи)</h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Тестировщик</strong></td>
+<td>Oscar (запись с его стороны)</td>
+</tr>
+<tr>
+<td><strong>Разделы</strong></td>
+<td>§3 Профиль и команда, §4 Встречи</td>
+</tr>
+<tr>
+<td><strong>Длительность</strong></td>
+<td>~16:34</td>
+</tr>
+<tr>
+<td><strong>Видео</strong></td>
+<td><code>Oscar step 3-4.mp4</code></td>
+</tr>
+<tr>
+<td><strong>Примечание</strong></td>
+<td>Это <strong>та же сессия</strong>, что <code>EK 3.mp4</code>,
+записанная со стороны Oscar. Cross-tester verification ниже.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="подтверждённые-находки-совпадают-с-ek-3">🔁 Подтверждённые
+находки (совпадают с EK 3)</h2>
+<ul>
+<li>🔴 <strong>Кнопка смены языка интерфейса не находится в
+авторизованной части</strong> — Oscar тоже не нашёл, согласен с EK: «I
+can’t find any button to change the language on the application».</li>
+<li>🔴 <strong>Удалённый митинг остаётся доступен по той же ссылке без
+approval</strong> — Oscar <strong>подтвердил со своей стороны</strong>:
+«I joined it without permission» после того, как EK удалил митинг.</li>
+<li>🟠 <strong>Назначение admin role не находится</strong> — Oscar
+подтвердил: «We have no button to grant admin role to Oscar».</li>
+<li>🟠 <strong>Translation language vs display language</strong> —
+путаница: «Translation language, same as interface language». Понял
+через эксперимент: «This is so I can have display language be one, then
+I can set a default translation language».</li>
+<li>🟡 <strong>Theme — Light/Dark переключатель спрятан</strong> в
+Application Preferences.</li>
+<li>🟡 <strong>Create channel требует контакты</strong> — нет очевидной
+точки старта.</li>
+</ul>
+<hr />
+<h2 id="подтверждено-как-работает">✅ Подтверждено как «работает»</h2>
+<ul>
+<li><strong>Pre-Join Setup со стороны Oscar</strong>: «The link opened,
+it shows me camera setup with the calm music on the background. So I can
+choose a mic, it actually works».</li>
+<li><strong>Calming music на фоне Pre-Join</strong> — Oscar тоже
+отметил.</li>
+<li><strong>Speaker test работает</strong>: «На спикер-тест, мою музыку
+стало очень громко».</li>
+<li><strong>Approval flow</strong> (host видит pop-up «wants to join»)
+работает корректно.</li>
+</ul>
+<hr />
+<h2 id="что-не-покрыто">📋 Что не покрыто</h2>
+<p>То же, что у EK 3: - Массовое приглашение. - Полный roles flow. -
+Удаление участника, выход из команды. - 17 языков интерфейса — не
+пробовали.</p>
+<hr />
+<h2 id="приоритеты">🚦 Приоритеты</h2>
+<p>Идентичны EK 3, теперь с подтверждением: 1. <strong>🔴 Language
+switcher в авторизованной части</strong> — оба тестировщика не нашли. 2.
+<strong>🔴 Удалённый митинг доступен</strong> — воспроизведено с обеих
+сторон. 3. <strong>🟠 Roles management</strong> — не находится.</p>
+</body>
+</html>

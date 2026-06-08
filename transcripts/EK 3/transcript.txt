@@ -1,0 +1,590 @@
+ Это этап номер три, профиль и комменты.
+ Так что мы делаем здесь, пытайся добавить твой профиль с именем «Аватар» и «Интерфейс».
+ Да, интерфейс.
+ Нет, нет, нет, нет, нет, нет, нет, нет, нет.
+ Это будет просто фотография.
+ Я думаю что аватар works.
+ Если I change my name, I'll just change, I'll just add that.
+ Seems to update very quickly in real-time.
+ «Translation language, same as interface language».
+ О, I can change that.
+ If I toggle it.
+ О, окей.
+ So this is so I can have the, like, display language be one.
+ And then I can set a default translation language if I'm in a meeting.
+ Okay, I've just set it to Russian.
+ Okay, meeting preferences.
+ Show pre-join dialogue.
+ Setup screen before joining a meeting.
+ All the buttons seem to work.
+ I think I'm really not.
+ I mean, obviously I can't see what this is doing until I join a meeting.
+ But.
+ Okay, then let's go on to the themes.
+ Okay, theme colors.
+ I believe I'm on the light theme right now.
+ What happens if I click reset?
+ Okay, it doesn't change.
+ How do I change to the dark theme?
+ I can change the colors on it.
+ Um.
+ So let's see if I change.
+ Oh, I can see it's changing the color of the applications.
+ And then.
+ There's the blue.
+ Yeah, it's changing the color of the buttons.
+ Okay.
+ That all seems to be working well.
+ Um, I'm sure.
+ How.
+ I can't seem to see where I would change to.
+ The dark thing.
+ I don't.
+ I think maybe that's something.
+ To do in.
+ Your actual browser.
+ So.
+ Perhaps.
+ The next step of changing language.
+ Or.
+ Oh, no.
+ In the application preferences.
+ When I'm.
+ Ah.
+ You can change the colors.
+ There's light theme and dark theme.
+ Ah, yeah.
+ I see.
+ Can't change.
+ Can't change.
+ Uh.
+ I don't think you can change it in.
+ The website.
+ I think you have to change maybe.
+ Your preference in the browser.
+ The browser.
+ Okay.
+ I have no idea.
+ Anyway.
+ What's the.
+ What's the.
+ Next step.
+ Okay.
+ I have no idea.
+ Anyway.
+ What's the.
+ Next step.
+ Okay.
+ I have no idea.
+ Anyway.
+ What's the.
+ Next step.
+ Okay.
+ I have no idea.
+ Anyway.
+ What's the.
+ Next step.
+ Okay.
+ I have no idea.
+ Anyway.
+ What's the.
+ Next step.
+ Okay.
+ I have no idea.
+ Anyway.
+ What's the.
+ Next step.
+ Okay.
+ I have no idea.
+ Anyway.
+ Next step.
+ Next step.
+ Is.
+ Uh.
+ Find.
+ Uh.
+ A button.
+ To change your language.
+ Or page.
+ Okay.
+ Try to change it.
+ Change it.
+ To any of the language.
+ Or homepage.
+ Maybe.
+ If you are.
+ Trying to find.
+ Uh.
+ The button.
+ To change.
+ To change.
+ Or page.
+ Maybe.
+ If you are.
+ Trying to.
+ Find.
+ Uh.
+ The button.
+ To change.
+ Uh.
+ The button.
+ To change.
+ Uh.
+ The language.
+ Uh.
+ To comment everything.
+ Yep.
+ Okay.
+ So.
+ I'm just gonna go.
+ Through each of the things.
+ One by one.
+ One by one.
+ I don't see.
+ Any.
+ Anything.
+ To change.
+ The.
+ Language of the page.
+ In meetings.
+ If I go into channels.
+ I have no chats.
+ I have no chats.
+ Or anything open.
+ Right now.
+ But.
+ I still don't see.
+ Any sort of.
+ Button.
+ To change.
+ The language.
+ Of the page.
+ Go into settings.
+ This is where.
+ I presume.
+ It would be.
+ There is.
+ Something to change.
+ The translation language.
+ However.
+ The.
+ This doesn't change.
+ The language of the page.
+ I think.
+ This just.
+ Sets.
+ A default.
+ For what you want.
+ The translated language.
+ To be.
+ In meetings.
+ So.
+ Actually.
+ I would imagine.
+ That.
+ Would.
+ Meeting preferences.
+ Instead of user.
+ Uh.
+ Show pre-joined dialogue.
+ Yeah.
+ So.
+ Settings.
+ Also.
+ Doesn't show.
+ Any way to change.
+ The language of the.
+ Website.
+ Okay.
+ Integration.
+ Calendar integration.
+ Yeah.
+ I'm.
+ Still not.
+ Finding.
+ Anywhere.
+ To find.
+ Where.
+ I would.
+ Change.
+ Language.
+ Of the website.
+ Billing.
+ Still not there.
+ I gotta.
+ Help.
+ Because.
+ I'm.
+ Struggling.
+ With.
+ Finding.
+ It.
+ How.
+ Do.
+ I.
+ Change.
+ The.
+ Language.
+ Of.
+ The.
+ Website.
+ Website.
+ Us.
+ Strings.
+ Is.
+ Selected.
+ From.
+ The.
+ Language.
+ Switcher.
+ Located.
+ In.
+ The.
+ App.
+ Header.
+ Where.
+ Is.
+ That.
+ Okay.
+ I.
+ Found.
+ The.
+ Thing.
+ For.
+ Toggle.
+ Theme.
+ Okay.
+ Silly.
+ Me.
+ Um.
+ Where.
+ Is.
+ The.
+ App.
+ Head.
+ Up.
+ The.
+ Documentation.
+ States.
+ The.
+ Language.
+ Switcher.
+ Which.
+ Controls.
+ The.
+ Website.
+ Okay.
+ So.
+ It.
+ Doesn't.
+ Know.
+ Where.
+ I.
+ Can.
+ Change.
+ This.
+ I.
+ Presume.
+ It.
+ Means.
+ In.
+ The.
+ Link.
+ Yeah.
+ I.
+ I.
+ Mean.
+ I.
+ Don't.
+ See.
+ I.
+ Know.
+ There.
+ Was.
+ An.
+ Option.
+ To.
+ Change.
+ Language.
+ On.
+ The.
+ Main.
+ Website.
+ But.
+ On.
+ This.
+ On.
+ This.
+ On.
+ Like.
+ The.
+ On.
+ The.
+ User.
+ Website.
+ I.
+ Really.
+ Don't.
+ See.
+ Anything.
+ Yeah.
+ That's.
+ A.
+ Right.
+ Okay.
+ I.
+ Also.
+ Can't.
+ Find.
+ Any.
+ Any.
+ Button.
+ To.
+ Change.
+ Language.
+ On.
+ Application.
+ Page.
+ So.
+ Let's.
+ Go.
+ To.
+ The.
+ Next.
+ Step.
+ Okay.
+ I.
+ See.
+ You.
+ Can.
+ Create.
+ Join.
+ And.
+ Schedule.
+ Meetings.
+ Create.
+ Join.
+ And.
+ Schedule.
+ Meetings.
+ I'm.
+ Not.
+ Sure.
+ Perhaps.
+ New.
+ Channel.
+ Maybe.
+ Add.
+ Contacts.
+ I.
+ Don't.
+ Have.
+ Any.
+ Contacts.
+ Try.
+ To.
+ Create.
+ Chat.
+ Any.
+ Channels.
+ And.
+ Send.
+ Me.
+ Invite.
+ Link.
+ Okay.
+ I.
+ Can't.
+ Create.
+ A.
+ Channel.
+ Without.
+ Contacts.
+ And.
+ I.
+ Can.
+ Send.
+ You.
+ A.
+ Link.
+ I.
+ Send.
+ To.
+ You.
+ My.
+ Mail.
+ Okay.
+ Okay.
+ So.
+ I.
+ Have.
+ A.
+ Meeting.
+ And.
+ Then.
+ I.
+ Email.
+ You.
+ The.
+ Meeting.
+ Link.
+ Субтитры сделал DimaTorzok
+ Субтитры сделал DimaTorzok
+ Субтитры сделал DimaTorzok
+ I was gonna say that
+ So I can choose
+ Meek
+ It's actually
+ It's actually works
+ Yep
+ I think I can see
+ This
+ On the speaker test
+ My music
+ Became very loud
+ And now I press the button to join the meeting
+ I'm waiting for approval from Oscar's side
+ Also joining the meeting
+ It's loading
+ Okay
+ Waiting for approval
+ See a pop-up in the top left
+ Evgeny Karalev
+ Wants to join
+ Deny or admit
+ I admit
+ I think he's joined
+ I think he's joined
+ I think he's joined the meeting
+ I think he's joined the meeting
+ I think he's joined the meeting
+ I think he's joined the meeting
+ I think he's joined the meeting
+ I think he's joined the meeting
+ I think he's joined the meeting
+ I think he's joined the meeting
+ I think he's joined the meeting
+ I think he's joined the meeting
+ I think he's joined the meeting
+ I think he's joined the meeting
+ I think he's joined the meeting
+ I think he's joined the meeting
+ Okay
+ I'll try to open the invite link again
+ Oscar, are you left the meeting?
+ Yeah, yeah
+ I left
+ Alright
+ I use the same link to join the meeting
+ I still can't do that
+ I'm passing all the presets
+ with the microphone and camera
+ I'm joining the meeting
+ I joined it without permission
+ Are you still here?
+ Yeah, I just
+ Yeah, I just
+ I just
+ I just
+ I just
+ I can't pass all the
+ I can't pass all the
+ I can't pass all the
+ I can't pass all the
+ I can't pass all the
+ I can't pass all the
+ I can't pass all the
+ I can't pass all the
+ All right
+ On your meeting page
+ I think you have
+ a list of a meeting
+ our recent one
+ Try to delete this link
+ And now try to open the same link
+ for a meeting
+ Click delete for everyone
+ Delete it
+ This meeting escaped from my site
+ on my meeting
+ on my meeting page
+ So I don't see any meetings
+ with the Oscar
+ So now I use the same link to join the meeting
+ Now I see camera set up and microphone
+ I also need to join the meeting
+ And now I'm waiting for approval
+ But the meeting is already deleted
+ And also no one can let me in
+ Because the meeting does not exist
+ All right
+ Let's create another meeting
+ For the last one
+ I'll create a meeting
+ I'll send a link to Oscar
+ Yep
+ I'm enjoying the meeting
+ By myself
+ Let's open it now
+ I'm in a meeting right now
+ Okay
+ I'm going on the link
+ That I've been sent
+ Loading up
+ It's a very similar
+ Process to before
+ Start with camera set up
+ The same calming music
+ In the background
+ Everything going the exact same
+ Microphone set up working
+ Speaker test
+ I can hear the music
+ Okay all set
+ Language Russian
+ Join me
+ I'm just waiting for approval
+ Seeing pop from Oscar
+ Marae wants to drown
+ I can deny
+ I'll admit
+ I'll admit
+ I'm still in now
+ Accepted
+ Pop saying pop up
+ The transcript is being recorded
+ The next part is change role
+ I will give role admin to Oscar
+ But I can't find him anymore
+ Let's check in the meeting
+ Settings
+ I'm not going to grant
+ Admin role to Oscar
+ So let's pause the step
+ Let's leave the meeting
+ And we'll finish this step
+ Okay
+ Okay
+ Another stop recording
+ I thought it was 4
+ There is a
+ There's a 4
+ Yes it was number 4
+ There's autostops
+ 3 and 4
+ Was that 3 and 4?
+ No it was a 3
+ Sorry
+ And I need to rename it
+ I think that was 3 and 4
+ Yeah
+ Yeah
+ Yeah
+ Next one
+ Try to
+ Name your video part
+ Like Oscar
+ Part
+ 1
+ Okay
+ Yep

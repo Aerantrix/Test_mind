@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>EK 5-6 — Inter-Mind UX-отчёт</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Сводный отчёт</a><span class="sep">·</span><span style="color:var(--muted)">Сессия: EK 5-6</span></nav>
+<div class="materials"><strong>📦 Материалы сессии:</strong><a href="transcripts/EK%205-6/transcript.txt">📄 Транскрипт</a> · <a href="transcripts/EK%205-6/transcript.srt">📝 С таймкодами (SRT)</a> · <a href="#" class="placeholder" data-needs-url="1">📹 Видео — добавить ссылку Google Drive</a></div>
+<header id="title-block-header">
+<h1 class="title">EK 5-6 — Inter-Mind UX-отчёт</h1>
+</header>
+<h1
+id="ux-отчёт-ek-step-5-перевод-step-6-субтитрытранскрипция">UX-отчёт: EK
+— Step 5 (Перевод) + Step 6 (Субтитры/транскрипция)</h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Тестировщик</strong></td>
+<td>EK + Oscar (вживую в встрече)</td>
+</tr>
+<tr>
+<td><strong>Разделы сценария</strong></td>
+<td>§5 Перевод, §6 Субтитры и транскрипция</td>
+</tr>
+<tr>
+<td><strong>Длительность</strong></td>
+<td>~4:25</td>
+</tr>
+<tr>
+<td><strong>Видео</strong></td>
+<td><code>EK 5-6.mp4</code></td>
+</tr>
+<tr>
+<td><strong>Примечание</strong></td>
+<td>Сессия очень короткая. Многие сценарии §5–6 не покрыты.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="не-работает-функциональные-баги">❌ Не работает (функциональные
+баги)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что произошло</th>
+<th>Серьёзность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~03:00</strong></td>
+<td><strong>«В переводе всплывают случайные фразы и тексты окна в
+изуме»</strong> — EK прямым текстом фиксирует, что в окне перевода
+<strong>появляется мусор / случайные фразы</strong>, не относящиеся к
+тому, что было сказано. Это либо галлюцинация модели перевода, либо leak
+транскрипции из другого источника. <strong>Серьёзный баг качества
+перевода</strong>, бьёт по основному ценностному предложению
+продукта.</td>
+<td>🔴 High</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="неудобно-непонятно">⚠️ Неудобно / непонятно</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что отметил</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~02:30</strong></td>
+<td>EK не сразу понял <strong>какой язык у него указан</strong> в UI: «У
+меня смеет на другой, не уверен, какой язык, но…» — то есть
+<strong>источник перевода был угадан системой неправильно или нечётко
+показан</strong>. Уточнил через <strong>«Вверху слева указан язык, с
+которого переводят»</strong> — то есть нашёл в UI, но не сразу.</td>
+</tr>
+<tr>
+<td><strong>~03:30</strong></td>
+<td>EK глухо проговорил «А, ну, немножко никакая» про что-то — не
+расшифровывается из контекста, но <strong>общая оценка не
+«отлично»</strong>. Нужно при следующей сессии проговаривать категорию
+явно.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-работает-хорошо">✅ Что работает хорошо</h2>
+<ul>
+<li><strong>Auto-detection нескольких языков</strong>: «Я вижу слово, в
+котором написано что обнаружено несколько языков». UI явно сообщает, что
+разные участники говорят на разных языках.</li>
+<li><strong>Двусторонний перевод RU ↔︎ EN работает</strong>: «Я слышу
+Оскара. Я также вижу перевод… Он меня теперь слышит, потому что я говорю
+на русском. И всё похоже правильно переводят».</li>
+<li><strong>Indicator языка-источника в верхнем левом углу</strong> —
+найден EK без подсказки.</li>
+</ul>
+<hr />
+<h2 id="что-не-покрыто-большая-часть-5-и-6">📋 Что не покрыто (большая
+часть §5 и §6)</h2>
+<ul>
+<li>Смена языка на лету.</li>
+<li><strong>Проверка перевода для редкого языка</strong> (не
+RU/EN).</li>
+<li>Смешанная речь в одной фразе (RU + EN вперемешку).</li>
+<li>Быстрая речь, шёпот.</li>
+<li>Подключение к встрече с уже идущим переводом.</li>
+<li><strong>Subtitles как отдельная кнопка</strong> — не упомянуто
+отдельно от Translation.</li>
+<li><strong>Transcription</strong> (Skip download / save) — не
+делали.</li>
+<li><strong>Состояние «вкл/выкл» переводов и транскрипции запоминается
+между встречами</strong> — не проверено.</li>
+</ul>
+<hr />
+<h2 id="приоритеты">🚦 Приоритеты</h2>
+<ol type="1">
+<li><strong>🔴 Галлюцинации в окне перевода</strong> (~03:00) —
+критично, бьёт по value proposition. Нужно воспроизвести и разобрать
+(это hallucination LLM или утечка чужого аудио / wrong channel
+routing?).</li>
+<li><strong>🟡 Indicator источника перевода</strong> — поднять
+видимость, чтобы пользователь не «не был уверен какой язык».</li>
+<li><strong>📌 Запросить у EK более длинную и детальную сессию по
+§5–6</strong> — текущая слишком короткая, основные сценарии не
+пройдены.</li>
+</ol>
+</body>
+</html>

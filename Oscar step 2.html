@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Oscar step 2 — Inter-Mind UX-отчёт</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Сводный отчёт</a><span class="sep">·</span><span style="color:var(--muted)">Сессия: Oscar step 2</span></nav>
+<div class="materials"><strong>📦 Материалы сессии:</strong><a href="transcripts/Oscar%20step%202/transcript.txt">📄 Транскрипт</a> · <a href="transcripts/Oscar%20step%202/transcript.srt">📝 С таймкодами (SRT)</a> · <a href="#" class="placeholder" data-needs-url="1">📹 Видео — добавить ссылку Google Drive</a></div>
+<header id="title-block-header">
+<h1 class="title">Oscar step 2 — Inter-Mind UX-отчёт</h1>
+</header>
+<h1 id="ux-отчёт-oscar-step-2-регистрация-и-онбординг">UX-отчёт: Oscar —
+Step 2 (Регистрация и онбординг)</h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Тестировщик</strong></td>
+<td>Oscar (запись с его стороны)</td>
+</tr>
+<tr>
+<td><strong>Раздел</strong></td>
+<td>§2 Регистрация и онбординг</td>
+</tr>
+<tr>
+<td><strong>Длительность</strong></td>
+<td>~12:11</td>
+</tr>
+<tr>
+<td><strong>Видео</strong></td>
+<td><code>Oscar step 2.mp4</code></td>
+</tr>
+<tr>
+<td><strong>Примечание</strong></td>
+<td>Сессия идёт параллельно <code>EK 2.mp4</code>. Это <strong>запись со
+стороны Oscar</strong>. Большая часть наблюдений совпадает с EK 2 →
+cross-tester verification.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="подтверждённые-находки-совпадают-с-ek-2">🔁 Подтверждённые
+находки (совпадают с EK 2)</h2>
+<ul>
+<li>🟠 <strong>На главной для уже залогиненного нет «Sign In»</strong> —
+есть только «Join Meeting» и «Open App». Oscar (как и EK) подтвердил,
+что после Log Out появляется Sign In.</li>
+<li>🟠 <strong>Изменение пароля не находится</strong> — «I’ll use the AI
+Assistant to change my password. Turns out I don’t have a password, nor
+do I need one. And it’s explained that quite clearly, very
+quickly».</li>
+<li>✅ <strong>One-time code login</strong>: «когда вы звоните, мне
+кажется, что только один-часовый код и нет паспорта». Подтверждено.</li>
+<li>✅ <strong>Delete account → recreate same email</strong>: «it does
+actually delete your account, the stuff that I added before, isn’t
+there. That does seem to be working».</li>
+</ul>
+<hr />
+<h2 id="новое-подтверждение">✅ Новое подтверждение</h2>
+<ul>
+<li><strong>Sign-up через Google с тем же email что был раньше →
+попадаешь в тот же аккаунт, не создаётся новый</strong>: «Я собираюсь в
+Google login и вижу, что я уже есть аватар. So this is the same». Это
+<strong>правильное поведение</strong> (consolidating by email).</li>
+</ul>
+<hr />
+<h2 id="что-не-покрыто-то-же-что-у-ek-2">📋 Что не покрыто (то же, что у
+EK 2)</h2>
+<ul>
+<li>Восстановление пароля — не применимо (нет паролей).</li>
+<li>Истёкшая / повторно использованная ссылка <code>/confirm</code> — не
+доведено явно (хотя в инструкции было).</li>
+<li>Microsoft SSO — не пробовали.</li>
+</ul>
+<hr />
+<h2 id="приоритеты">🚦 Приоритеты</h2>
+<p>Те же, что у EK 2 — все находки воспроизведены на стороне Oscar: 1.
+<strong>🟠 Главная для залогиненного</strong> показывает не те CTA. 2.
+<strong>🟠 Settings — нет блока про метод входа</strong>, объяснение
+спрятано в AI-ассистенте. 3. <strong>✅ Подтверждено</strong>: Google
+SSO консолидирует по email, delete действительно удаляет.</p>
+</body>
+</html>

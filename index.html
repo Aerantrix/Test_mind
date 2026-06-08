@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Inter-Mind — Сводный UX-отчёт</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><strong>Inter-Mind UX тестирование</strong><span class="sep">·</span><a href="#summary">К содержанию</a></nav>
+<header id="title-block-header">
+<h1 class="title">Inter-Mind — Сводный UX-отчёт</h1>
+</header>
+<h1 id="сводный-ux-отчёт-по-тестированию-inter-mind-alpha">Сводный
+UX-отчёт по тестированию Inter-Mind (alpha)</h1>
+<p><strong>Дата:</strong> 2026-06-08 · <strong>Тестировщики:</strong>
+Oscar, EK · <strong>Видео:</strong> 16 (≈3.5 ч аудио) ·
+<strong>Метод:</strong> OBS + Whisper large-v3-turbo + VAD</p>
+<blockquote>
+<p><strong>Как читать.</strong> В колонке «📂 Детали» — ссылка на
+детальный отчёт по конкретной сессии, где найден этот баг. В каждом
+таком отчёте есть таймкод и точная цитата тестировщика. Если бага видело
+несколько сессий — указаны все источники.</p>
+</blockquote>
+<hr />
+<h2 id="топ-баги-критические">🔴 Топ-баги (критические)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Баг</th>
+<th>Раздел</th>
+<th>📂 Детали</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Infinite loop при шаринге экрана в demo</strong></td>
+<td>§1</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a> · <a
+href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Все записи длиной 14 секунд</strong> независимо от
+реальной</td>
+<td>§10</td>
+<td><a href="Oscar%20step%209-10.html">Oscar step 9-10</a> · <a
+href="EK%209-10.html">EK 9-10</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Запись отображается у участника, а не у
+создателя</strong></td>
+<td>§10</td>
+<td><a href="Oscar%20step%209-10.html">Oscar step 9-10</a></td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Удалённый митинг доступен по той же ссылке без
+approval</strong></td>
+<td>§4</td>
+<td><a href="EK%203.html">EK 3</a> · <a
+href="Oscar%20step%203-4.html">Oscar step 3-4</a></td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Документ доступен по прямой ссылке без
+авторизации</strong></td>
+<td>§12 (security)</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>XML-ошибка S3 (<code>NoSuchKey</code>)</strong> вместо «нет
+доступа» после revoke документа</td>
+<td>§12</td>
+<td><a href="EK%2011-16.html">EK 11-16</a> · <a
+href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Кнопка смены языка интерфейса не находится</strong>
+(AI-ассистент даёт неверную подсказку)</td>
+<td>§3</td>
+<td><a href="EK%203.html">EK 3</a> · <a
+href="Oscar%20step%203-4.html">Oscar step 3-4</a></td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>«End Meeting for Everyone» работает с 3-го раза или с
+большим delay</strong></td>
+<td>§4</td>
+<td><a href="Oscar%20Step%204.html">Oscar Step 4</a></td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>5-сек лаг транскрипта</strong> + <strong>voice cloning
+подменяет голос</strong> + <strong>мусорные фразы в
+переводе</strong></td>
+<td>§5</td>
+<td><a href="Oscar%20step%205-6.html">Oscar step 5-6</a> · <a
+href="EK%205-6.html">EK 5-6</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Edge → автодетект ведёт на DE-сайт</strong> без выбора
+пользователя</td>
+<td>§0</td>
+<td><a href="EK%202.html">EK 2</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="топ-важных-medium">🟠 Топ-важных (medium)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Баг</th>
+<th>Раздел</th>
+<th>📂 Детали</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>11</td>
+<td><strong>Назначение roles / admin / kick не находится</strong></td>
+<td>§3</td>
+<td><a href="EK%203.html">EK 3</a> · <a
+href="Oscar%20step%203-4.html">Oscar step 3-4</a> · <a
+href="Oscar%20Step%204.html">Oscar Step 4</a></td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>Reset в Theme colors</strong> ничего не делает</td>
+<td>§3</td>
+<td><a href="EK%203.html">EK 3</a></td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>«Translation language» vs «Display language»</strong> —
+путаница в названиях</td>
+<td>§3</td>
+<td><a href="EK%203.html">EK 3</a> · <a
+href="Oscar%20step%203-4.html">Oscar step 3-4</a></td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>Сообщение становится blank</strong> при copy/paste ссылки (с
+обеих сторон)</td>
+<td>§8</td>
+<td><a href="EK%2011-16.html">EK 11-16</a> · <a
+href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>15</td>
+<td><strong>Лимит 1000 chars/сообщение</strong> в чате — не объяснён,
+конфликт с pricing</td>
+<td>§8</td>
+<td><a href="Oscar%20step%207-8.html">Oscar step 7-8</a></td>
+</tr>
+<tr>
+<td>16</td>
+<td><strong>Domain Management отсутствует</strong> в Integrations
+UI</td>
+<td>§11</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>17</td>
+<td><strong>Google Drive / OneDrive — недоступно</strong> в UI</td>
+<td>§11</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>18</td>
+<td><strong>AI editor completion не находится</strong></td>
+<td>§12</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>19</td>
+<td><strong>Add contact доступен только из meeting</strong> (circular
+dep)</td>
+<td>§8</td>
+<td><a href="EK%207-8.html">EK 7-8</a> · <a
+href="Oscar%20step%207-8.html">Oscar step 7-8</a></td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>Meeting summary в email — пустые</strong></td>
+<td>§10</td>
+<td><a href="Oscar%20step%209-10.html">Oscar step 9-10</a></td>
+</tr>
+<tr>
+<td>21</td>
+<td><strong>Текст-фон контраст + мелкий шрифт + off-centered
+цифры</strong> на Sovereignty (повтор на mobile)</td>
+<td>§0</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a> · <a
+href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td>22</td>
+<td><strong>Двойной пункт «Methodology»</strong> в навигации
+Sovereignty</td>
+<td>§0</td>
+<td><a href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td>23</td>
+<td><strong>Toggle expanded/collapsed/hidden у transcriptions</strong>
+не работает</td>
+<td>§7</td>
+<td><a href="EK%2011-16.html">EK 11-16</a> · <a
+href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>24</td>
+<td><strong>Сообщение пропадает у отправителя после
+перевода</strong></td>
+<td>§7</td>
+<td><a href="EK%207-8.html">EK 7-8</a></td>
+</tr>
+<tr>
+<td>25</td>
+<td><strong>Inconsistency перевода в ленте чата</strong> — разные
+пузырьки на разных языках</td>
+<td>§7</td>
+<td><a href="Oscar%20step%207-8.html">Oscar step 7-8</a></td>
+</tr>
+<tr>
+<td>26</td>
+<td><strong>Главная для залогиненного</strong> — нет очевидной точки
+входа (только Join Meeting / Open App)</td>
+<td>§2</td>
+<td><a href="EK%202.html">EK 2</a> · <a
+href="Oscar%20step%202.html">Oscar step 2</a></td>
+</tr>
+<tr>
+<td>27</td>
+<td><strong>Change password нигде не объяснён</strong> — пользователь
+ищет, не находит, идёт в AI-ассистент</td>
+<td>§2</td>
+<td><a href="EK%202.html">EK 2</a> · <a
+href="Oscar%20step%202.html">Oscar step 2</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="косметика-и-ux-трение">🟡 Косметика и UX-трение</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Замечание</th>
+<th>Раздел</th>
+<th>📂 Детали</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>28</td>
+<td>Toggle monthly/yearly на Pricing — мелкий, неочевидный</td>
+<td>§0</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a> · <a
+href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td>29</td>
+<td>«Я вижу себя с обеих сторон экрана» в demo — баг или фича?</td>
+<td>§1</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a> · <a
+href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td>30</td>
+<td>Реакция на собственный синтезированный голос («странно, но
+круто»)</td>
+<td>§1</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a> · <a
+href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td>31</td>
+<td>«Kick» отсутствует — есть только «Remove» (вопрос именования)</td>
+<td>§4</td>
+<td><a href="Oscar%20Step%204.html">Oscar Step 4</a></td>
+</tr>
+<tr>
+<td>32</td>
+<td>Light/Dark переключатель спрятан в Application Preferences</td>
+<td>§3</td>
+<td><a href="EK%203.html">EK 3</a></td>
+</tr>
+<tr>
+<td>33</td>
+<td>Странный spacing между буквами на CTA Demo</td>
+<td>§1</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a> · <a
+href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td>34</td>
+<td>После повторного запуска demo меняется язык без явного контроля</td>
+<td>§1</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a></td>
+</tr>
+<tr>
+<td>35</td>
+<td>Standalone Translate (<code>/translate</code>) не находится, путают
+с chat feature</td>
+<td>§12</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>36</td>
+<td>Inconsistent transcribing state между участниками после disable
+translation</td>
+<td>§10</td>
+<td><a href="Oscar%20step%209-10.html">Oscar step 9-10</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-работает-отлично-gem-фичи">✅ Что работает отлично
+(gem-фичи)</h2>
+<table>
+<thead>
+<tr>
+<th>Фича</th>
+<th>📂 Детали</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Delete account flow</strong> — двойное подтверждение,
+валидация email, реальная очистка ⭐</td>
+<td><a href="EK%202.html">EK 2</a> · <a
+href="Oscar%20step%202.html">Oscar step 2</a></td>
+</tr>
+<tr>
+<td><strong>One-time code login</strong> + «нет паролей» (через
+AI-ассистент)</td>
+<td><a href="EK%202.html">EK 2</a> · <a
+href="Oscar%20step%202.html">Oscar step 2</a></td>
+</tr>
+<tr>
+<td><strong>Google SSO консолидирует по email</strong></td>
+<td><a href="Oscar%20step%202.html">Oscar step 2</a></td>
+</tr>
+<tr>
+<td><strong>Calendar (Google) end-to-end</strong> через Schedule Meeting
+→ Add to calendar</td>
+<td><a href="EK%204.html">EK 4</a> · <a
+href="Oscar%20Step%204.html">Oscar Step 4</a></td>
+</tr>
+<tr>
+<td><strong>Laser pointer</strong> — оба участника могут рисовать на
+расшаренном экране</td>
+<td><a href="Oscar%20step%209-10.html">Oscar step 9-10</a></td>
+</tr>
+<tr>
+<td><strong>Pre-Join Setup</strong> с calming-music</td>
+<td><a href="EK%203.html">EK 3</a> · <a
+href="Oscar%20step%203-4.html">Oscar step 3-4</a> · <a
+href="Oscar%20Step%204.html">Oscar Step 4</a></td>
+</tr>
+<tr>
+<td><strong>Note editor в чате</strong> — создание, sharing, перевод,
+удаление с двух сторон</td>
+<td><a href="Oscar%20step%207-8.html">Oscar step 7-8</a></td>
+</tr>
+<tr>
+<td><strong>Pricing / FAQ / use-case landings</strong> — clear,
+concise</td>
+<td><a href="Oscar%20Step%200-1.html">Oscar Step 0-1</a> · <a
+href="EK%200-1.html">EK 0-1</a></td>
+</tr>
+<tr>
+<td><strong>Approval flow</strong> (host admits guest) — понятный
+pop-up</td>
+<td><a href="EK%203.html">EK 3</a></td>
+</tr>
+<tr>
+<td><strong>Edit history сообщений</strong> в чате</td>
+<td><a href="EK%2011-16.html">EK 11-16</a></td>
+</tr>
+<tr>
+<td><strong>Auto-detection нескольких языков</strong> в meeting</td>
+<td><a href="EK%205-6.html">EK 5-6</a> · <a
+href="Oscar%20step%205-6.html">Oscar step 5-6</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-не-покрыто">📋 Что не покрыто</h2>
+<table>
+<thead>
+<tr>
+<th>Раздел</th>
+<th>Что не сделано</th>
+<th>Где упомянуто</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>§3</td>
+<td>Массовые приглашения через файл; 17 языков интерфейса; полный roles
+flow</td>
+<td><a href="EK%203.html">EK 3</a> · <a
+href="Oscar%20step%203-4.html">Oscar step 3-4</a></td>
+</tr>
+<tr>
+<td>§4</td>
+<td>40-минутный лимит Basic; pin / layout / громкость; hand raise; набор
+эмодзи</td>
+<td><a href="EK%204.html">EK 4</a> · <a
+href="Oscar%20Step%204.html">Oscar Step 4</a></td>
+</tr>
+<tr>
+<td>§5–6</td>
+<td>Редкие языки; смешанная речь; шёпот; Subtitles standalone</td>
+<td><a href="EK%205-6.html">EK 5-6</a> · <a
+href="Oscar%20step%205-6.html">Oscar step 5-6</a></td>
+</tr>
+<tr>
+<td>§9</td>
+<td>Шаринг отдельного окна / вкладки со звуком; iOS/Android</td>
+<td><a href="Oscar%20step%209-10.html">Oscar step 9-10</a></td>
+</tr>
+<tr>
+<td>§10</td>
+<td>Local recording; storage limits; скачать/поделиться/удалить</td>
+<td><a href="Oscar%20step%209-10.html">Oscar step 9-10</a> · <a
+href="EK%209-10.html">EK 9-10</a></td>
+</tr>
+<tr>
+<td>§13</td>
+<td>SSO/SAML, Privacy Zones (нужен Business+)</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>§14</td>
+<td>Live chat support (уточнить тариф)</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+<tr>
+<td>§15</td>
+<td>Перевод на mobile; iOS Safari отдельно; wi-fi → 4G; фоновый
+режим</td>
+<td><a href="Oscar%20Step%2011-15.html">Oscar Step 11-15</a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="рекомендации-команде">🚦 Рекомендации команде</h2>
+<ol type="1">
+<li><strong>Срочно</strong> — топ-10 критических багов выше (особенно
+recording, document access, удалённый митинг).</li>
+<li><strong>Спринт</strong> — medium-баги (XML-ошибка, document blank,
+language switcher).</li>
+<li><strong>Тестировщикам</strong> — 3 запросные сессии: §10 (Запись),
+§13 (Безопасность, нужен Business+), §15 (Mobile полноценно).</li>
+<li><strong>В инструкции для тестировщиков</strong> — вычеркнуть
+«восстановление пароля» (паролей нет); проговорить, что для §13–14 нужен
+Business+.</li>
+</ol>
+<hr />
+<h2 id="структура-папок">📁 Структура папок</h2>
+<pre><code>~/Downloads/Oscar/
+├── &lt;видео-файлы&gt;.mp4
+├── batch.log, rerun.log               ← логи обработки
+├── *_transcripts/                     ← по одной папке на каждое видео
+│   ├── *_mic.wav, *_mic.wav.txt/srt/vtt
+│   ├── *_system.wav, *_system.wav.txt/srt/vtt
+│   ├── *.hallucinated.bak             ← плохие транскрипты до VAD
+│   └── ux-report.md                   ← детальный UX-отчёт сессии
+└── All/
+    └── summary.md                     ← этот файл</code></pre>
+<footer>Сводный отчёт. Кликайте на ссылки в колонке «Детали» — открывается полный отчёт по сессии с таймкодами и цитатами.</footer>
+</body>
+</html>

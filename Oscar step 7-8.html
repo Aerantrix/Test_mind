@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Oscar step 7-8 — Inter-Mind UX-отчёт</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Сводный отчёт</a><span class="sep">·</span><span style="color:var(--muted)">Сессия: Oscar step 7-8</span></nav>
+<div class="materials"><strong>📦 Материалы сессии:</strong><a href="transcripts/Oscar%20step%207-8/transcript.txt">📄 Транскрипт</a> · <a href="transcripts/Oscar%20step%207-8/transcript.srt">📝 С таймкодами (SRT)</a> · <a href="#" class="placeholder" data-needs-url="1">📹 Видео — добавить ссылку Google Drive</a></div>
+<header id="title-block-header">
+<h1 class="title">Oscar step 7-8 — Inter-Mind UX-отчёт</h1>
+</header>
+<h1
+id="ux-отчёт-oscar-step-7-чат-в-встрече-step-8-постоянный-чат-note-editor">UX-отчёт:
+Oscar — Step 7 (Чат в встрече) + Step 8 (Постоянный чат + Note
+editor)</h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Тестировщик</strong></td>
+<td>Oscar + EK</td>
+</tr>
+<tr>
+<td><strong>Разделы</strong></td>
+<td>§7 Чат в встрече, §8 Постоянный командный чат + Note editor</td>
+</tr>
+<tr>
+<td><strong>Длительность</strong></td>
+<td>~16:02</td>
+</tr>
+<tr>
+<td><strong>Видео</strong></td>
+<td><code>Oscar step 7-8.mp4</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="не-работает-странное">❌ Не работает / странное</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что произошло</th>
+<th>Серьёзность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~10:00</strong></td>
+<td><strong>Лимит «message too long for translate, maximum is 1000
+characters»</strong> при копировании большого текста из Wikipedia в чат.
+Это <strong>per-message</strong> ограничение, не явная характеристика
+тарифа. На pricing-странице обещаны лимиты в <strong>«10K/200K/3M
+words»</strong> — это другое (агрегированный лимит на тариф).
+Пользователь не понимает связи и видит «1000 chars max» как баг.
+Сообщение приходит в оригинале, без перевода.</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>~12:00</strong></td>
+<td><strong>«Есть небольшие баги в чате при виде перевода. В некоторых
+местах он на русском, в некотором на английском»</strong> — UI не
+консистентен: одна и та же лента показывает разные сообщения в разных
+языках без явного контроля.</td>
+<td>🟠 Medium</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-работает">✅ Что работает</h2>
+<h3 id="чат-внутри-встречи">Чат внутри встречи</h3>
+<ul>
+<li><strong>Двусторонний перевод сообщений работает</strong>: «первое
+сообщение split в два, где есть русский справа и автоматически
+переводится в английском слева».</li>
+<li><strong>«Все работает хорошо в этой части»</strong> (общая оценка
+перевода в чате).</li>
+</ul>
+<h3 id="чат-после-встречи-постоянный-чат">Чат после встречи / постоянный
+чат</h3>
+<ul>
+<li><strong>История чата сохраняется</strong>: «чат, который открывается
+во время созвона, такой же, как и во время нашего чата вне созвона,
+продолжился».</li>
+</ul>
+<h3 id="создание-канала-после-добавления-контактов">Создание канала
+после добавления контактов</h3>
+<ul>
+<li>Подтверждение нюанса из §3: канал без контактов не создаётся, но
+<strong>из встречи можно добавить участника в контакты</strong> через
+клик по профилю.</li>
+<li>После добавления: «теперь у меня есть канал с Оскаром».</li>
+</ul>
+<h3 id="note-editor">Note Editor ⭐</h3>
+<ul>
+<li><strong>Создание заметки</strong> из чата работает.</li>
+<li><strong>Заметка видна у второй стороны</strong>: «Try to find a note
+of some kind, if you see it in the chat… Да, вот она».</li>
+<li><strong>Удаление заметки</strong> распространяется на обе стороны:
+«delete the note… It has disappeared».</li>
+<li><strong>Перевод заметки на язык получателя</strong> работает.</li>
+</ul>
+<hr />
+<h2 id="неудобно-продолжение">❓ Неудобно (продолжение)</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что отметил</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~07:00</strong></td>
+<td>Чтобы создать канал, нужны контакты. Контакты добавляются только из
+meeting (через профиль). Это <strong>«немного некомфортно»</strong> —
+нужен workaround «зайди в meeting, чтобы добавить контакт». Должен быть
+прямой путь «добавить контакт по email» вне встречи.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-не-покрыто">📋 Что не покрыто</h2>
+<ul>
+<li><strong>Прикрепление файлов</strong> в чат (упоминается мельком, но
+не показано как тест).</li>
+<li><strong>Эмодзи в чате</strong>.</li>
+<li><strong>Пересылка сообщений / copy link / mention</strong>.</li>
+<li><strong>Поиск по сообщениям</strong>.</li>
+<li><strong>Создание встречи из чата</strong> (новая фича §8) — Oscar
+упомянул «button for join», но не уточнил.</li>
+<li><strong>Уведомления</strong> о новом сообщении вне фокуса.</li>
+</ul>
+<hr />
+<h2 id="приоритеты">🚦 Приоритеты</h2>
+<ol type="1">
+<li><strong>🟠 Лимит 1000 символов на сообщение</strong> + расхождение с
+обещанием pricing (10K/200K/3M words): объяснить пользователю, что эти
+числа значат, и почему сейчас стоп на 1000 chars.</li>
+<li><strong>🟠 Inconsistency перевода в ленте чата</strong> — одна
+лента, разные языки в разных пузырьках.</li>
+<li><strong>🟡 Add contact вне meeting</strong> — добавить прямой
+путь.</li>
+<li><strong>✅ Note editor — образцово работает</strong>
+end-to-end.</li>
+</ol>
+</body>
+</html>

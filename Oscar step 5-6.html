@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Oscar step 5-6 — Inter-Mind UX-отчёт</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Сводный отчёт</a><span class="sep">·</span><span style="color:var(--muted)">Сессия: Oscar step 5-6</span></nav>
+<div class="materials"><strong>📦 Материалы сессии:</strong><a href="transcripts/Oscar%20step%205-6/transcript.txt">📄 Транскрипт</a> · <a href="transcripts/Oscar%20step%205-6/transcript.srt">📝 С таймкодами (SRT)</a> · <a href="#" class="placeholder" data-needs-url="1">📹 Видео — добавить ссылку Google Drive</a></div>
+<header id="title-block-header">
+<h1 class="title">Oscar step 5-6 — Inter-Mind UX-отчёт</h1>
+</header>
+<h1
+id="ux-отчёт-oscar-step-5-перевод-step-6-субтитрытранскрипция">UX-отчёт:
+Oscar — Step 5 (Перевод) + Step 6 (Субтитры/транскрипция)</h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Тестировщик</strong></td>
+<td>Oscar</td>
+</tr>
+<tr>
+<td><strong>Разделы</strong></td>
+<td>§5 Перевод, §6 Субтитры/транскрипция</td>
+</tr>
+<tr>
+<td><strong>Длительность</strong></td>
+<td>~8:06</td>
+</tr>
+<tr>
+<td><strong>Видео</strong></td>
+<td><code>Oscar step 5-6.mp4</code></td>
+</tr>
+<tr>
+<td><strong>Примечание</strong></td>
+<td>Параллельная запись <code>EK 5-6.mp4</code>. Cross-tester
+подтверждения + новые находки.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="не-работает-функциональные-баги">❌ Не работает (функциональные
+баги)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что произошло</th>
+<th>Серьёзность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~04:30</strong></td>
+<td><strong>Задержка в транскрипте ~5 секунд</strong>: «большая длайка в
+транскрипте, я вижу, когда Оскар говорит, что текст и голос выйдут 5
+секунд назад». 5 секунд — это много, текст приходит уже не в темпе
+разговора.</td>
+<td>🔴 High</td>
+</tr>
+<tr>
+<td><strong>~03:30</strong></td>
+<td><strong>Подтверждение EK 5-6</strong>: «Разные фразы попали в
+переводке, и в тексту вверх» — мусорные / случайные фразы в окне
+перевода. Воспроизведено независимо.</td>
+<td>🔴 High</td>
+</tr>
+<tr>
+<td><strong>~04:00</strong></td>
+<td><strong>Голос перевода иногда «не твой, а чужой» — с «какой-то
+скромной фразой»</strong>: «Иногда я слышал, что не с твоей голосом, но
+с другими людьми, с какой-то скромной фразой». Voice cloning сбоит /
+подменяет голос. <strong>Новая находка</strong>, не было у EK.</td>
+<td>🔴 High</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="странное">⚠️ Странное</h2>
+<ul>
+<li><strong>«Я как-то удивляюсь, когда я слышал это, что я говорю
+русский язык»</strong> — повтор находки про реакцию на собственный
+синтезированный голос (была у обоих в §0–1).</li>
+</ul>
+<hr />
+<h2 id="что-работает">✅ Что работает</h2>
+<ul>
+<li><strong>Двусторонний перевод RU ↔︎ EN</strong> работает в целом.</li>
+<li><strong>«Это переводится очень интересно… потому что это рассказывал
+русский язык с твоей голосом»</strong> — voice cloning
+<strong>работает</strong> (когда не сбоит, см. выше).</li>
+<li><strong>Indicator языка-источника в верхнем углу</strong> — найден
+независимо: «В верхней стороне мы видим язык, из которого это
+переводится».</li>
+</ul>
+<hr />
+<h2 id="subtitles-не-доведены">❓ Subtitles не доведены</h2>
+<ul>
+<li><strong>«Subtitles button»</strong> — Oscar пытался включить.</li>
+<li><strong>Transcription button</strong> — упоминает.</li>
+<li>В итоге: <strong>«Не знаю, как проверить это, поэтому я думаю, что
+мы закончили с этой частью»</strong>. Тестировщик не понял, как
+валидировать работу Subtitles отдельно от Translation/Transcription. UI
+не объясняет, чем три кнопки отличаются.</li>
+</ul>
+<hr />
+<h2 id="что-не-покрыто">📋 Что не покрыто</h2>
+<ul>
+<li><strong>17 языков</strong> — только RU/EN.</li>
+<li><strong>Смешанная речь в одной фразе</strong> (RU + EN
+вперемешку).</li>
+<li>Быстрая речь, шёпот.</li>
+<li><strong>Subtitles standalone</strong> (не разобрались).</li>
+<li><strong>Transcription standalone</strong>, скачать транскрипт,
+проверить редкий язык в транскрипции.</li>
+<li><strong>Запоминание состояния</strong> subtitles/transcription между
+встречами.</li>
+</ul>
+<hr />
+<h2 id="приоритеты">🚦 Приоритеты</h2>
+<ol type="1">
+<li><strong>🔴 Voice cloning подменяет голос</strong> (~04:00) —
+серьёзный баг качества, новая находка.</li>
+<li><strong>🔴 5-секундный лаг транскрипта</strong> (~04:30) — критично
+для UX «синхронного перевода».</li>
+<li><strong>🔴 Hallucinations в окне перевода</strong> — подтверждено
+независимо Oscar + EK.</li>
+<li><strong>🟠 UI трёх кнопок
+Translation/Subtitles/Transcription</strong> — пользователь не понимает
+разницу. Нужны tooltips или объяснение в Help.</li>
+</ol>
+</body>
+</html>

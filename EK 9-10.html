@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>EK 9-10 — Inter-Mind UX-отчёт</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Сводный отчёт</a><span class="sep">·</span><span style="color:var(--muted)">Сессия: EK 9-10</span></nav>
+<div class="materials"><strong>📦 Материалы сессии:</strong><a href="transcripts/EK%209-10/transcript.txt">📄 Транскрипт</a> · <a href="transcripts/EK%209-10/transcript.srt">📝 С таймкодами (SRT)</a> · <a href="#" class="placeholder" data-needs-url="1">📹 Видео — добавить ссылку Google Drive</a></div>
+<header id="title-block-header">
+<h1 class="title">EK 9-10 — Inter-Mind UX-отчёт</h1>
+</header>
+<h1 id="ux-отчёт-ek-step-9-шаринг-экрана-step-10-запись">UX-отчёт: EK —
+Step 9 (Шаринг экрана) + Step 10 (Запись)</h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Тестировщик</strong></td>
+<td>EK</td>
+</tr>
+<tr>
+<td><strong>Разделы</strong></td>
+<td>§9 Шаринг экрана, §10 Запись</td>
+</tr>
+<tr>
+<td><strong>Длительность</strong></td>
+<td>~12:35</td>
+</tr>
+<tr>
+<td><strong>Видео</strong></td>
+<td><code>EK 9-10.mp4</code></td>
+</tr>
+<tr>
+<td><strong>Примечание</strong></td>
+<td>Транскрипт очень короткий — основная часть сессии была без речи
+(тестирование «руками»). Содержательного материала мало.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="не-работает">❌ Не работает</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что произошло</th>
+<th>Серьёзность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~начало</strong></td>
+<td><strong>Запись обрезалась</strong>: «It seems to be cutting off
+after a second. It says there’s 14 seconds, but it seems to be getting
+into like a fraction of a second and then stopping». EK получил файл
+длительностью <strong>«доли секунды»</strong>, хотя в UI было написано
+14 секунд. Подозрение на повреждённый файл: «I think maybe the file is
+corrupted».</td>
+<td>🔴 High</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-искал-ek">❓ Что искал EK</h2>
+<ul>
+<li>Looking for <strong>meetings</strong>: «Don’t see any
+meetings».</li>
+<li>Looking in <strong>channels</strong>: «Don’t see any in the
+channels».</li>
+<li>В <strong>Settings → Integrations</strong> что-то искал, не уточнил
+что.</li>
+<li><strong>«I think maybe created a backup»</strong> + «What happens if
+I restore?» → пытался тестировать какую-то restore-операцию (backup или
+нечто похожее).</li>
+</ul>
+<p>Возможно — искал созданную запись для проверки доступа к ней.</p>
+<hr />
+<h2 id="что-не-покрыто-почти-всё">📋 Что не покрыто (почти всё)</h2>
+<p>Из §9 Шаринг экрана: - Расшарить весь экран / отдельное окно /
+вкладку со звуком. - Лазерная указка. - Прекратить шаринг. - Шаринг на
+Safari / iOS / Android.</p>
+<p>Из §10 Запись: - Cloud recording — полный flow (старт, стоп, найти,
+скачать, поделиться, удалить). - Local recording. - Сравнение cloud vs
+local. - <strong>Лимиты team storage</strong>.</p>
+<hr />
+<h2 id="приоритеты">🚦 Приоритеты</h2>
+<ol type="1">
+<li><strong>🔴 Запись обрезается / создаёт повреждённый файл</strong>
+(~начало). Это критично — самая визитная карточка фичи «Cloud
+recording». Воспроизвести с разными длительностями.</li>
+<li><strong>📌 Запросить переснимку §9–10 у EK с полным
+проговариванием</strong> — текущая запись малоинформативна (молчаливое
+тестирование).</li>
+</ol>
+</body>
+</html>

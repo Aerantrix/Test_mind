@@ -1,0 +1,396 @@
+1
+00:00:00,100 --> 00:00:14,380
+ part number 11: "Integrations".
+
+2
+00:00:14,380 --> 00:00:20,620
+ So we open the main page, we open "Integrations",
+
+3
+00:00:20,620 --> 00:00:23,620
+ and we need "Calendar Integration",
+
+4
+00:00:23,620 --> 00:00:27,550
+ so I can choose between "Google Calendar" and "Outlook Calendar",
+
+5
+00:00:27,550 --> 00:00:35,780
+ and "Backup and Restore".
+
+6
+00:00:35,780 --> 00:00:47,450
+ Yeah, we already created this part with the calendar
+
+7
+00:00:47,450 --> 00:00:49,470
+ through "Scheduled Meeting",
+
+8
+00:00:49,470 --> 00:00:55,720
+ from the "Meeting Page", not from "Integration Page",
+
+9
+00:00:55,720 --> 00:01:04,610
+ and create your own corporate domain.
+
+10
+00:01:04,610 --> 00:01:08,820
+ there is no feature for that right now
+
+11
+00:01:08,820 --> 00:01:15,070
+ Cloud storage with Google Drive
+
+12
+00:01:15,070 --> 00:01:20,060
+ Connect Google Drive to your account through OOS
+
+13
+00:01:20,060 --> 00:01:24,600
+ there is no feature for that right now
+
+14
+00:01:24,600 --> 00:01:31,530
+ this was part number 11
+
+15
+00:01:31,530 --> 00:01:33,950
+ so we are going to part number 12
+
+16
+00:01:33,950 --> 00:01:38,390
+ Documents, Notes and AI instruments
+
+17
+00:01:38,390 --> 00:01:46,960
+ Open Translate as a separate tool
+
+18
+00:01:46,960 --> 00:01:56,300
+ Type any text, I think it's a chat feature
+
+19
+00:01:56,300 --> 00:02:08,440
+ Я открыл с Оскар, все сообщения с предыдущимисями.
+
+20
+00:02:08,440 --> 00:02:18,460
+ Попробуйте, я не знаю, копию последующего сообщения и напишите в сетях в сетях.
+
+21
+00:02:18,460 --> 00:02:26,820
+ Я думаю, это будет.
+
+22
+00:02:26,820 --> 00:02:29,940
+ Я просто нажал "пиши/translate".
+
+23
+00:02:29,940 --> 00:02:42,420
+ Я просто нажал "пиши" и нажал "пиши" в текст-эдитер.
+
+24
+00:02:42,420 --> 00:02:51,390
+ Я просто нажал "пиши" и нажал "пиши" в текст-эдитер.
+
+25
+00:02:51,390 --> 00:03:07,030
+ В chat на верхней части вы видите Гир. Попробуйте, чтобы выиграть в топ-месседии и нажать на кнопку "Show original translation", "Show edit history".
+
+26
+00:03:07,030 --> 00:03:32,650
+ В первую очередь, когда вы говорите "hello" в русском, то есть, что вы заглядываете русский на и офф, и "Show edit history".
+
+27
+00:03:32,650 --> 00:03:37,980
+ Я не знаю, что мы не делали ни в комментариях.
+
+28
+00:03:37,980 --> 00:03:44,950
+ Я буду пытаться, я буду открыть первые мессенджеры, я буду пытаться идти.
+
+29
+00:03:44,950 --> 00:03:57,020
+ О, тексты, как, "Hi", V12, или "Hi" на английском, и "Самедекст", я не знаю.
+
+30
+00:03:57,020 --> 00:04:00,030
+ Я буду пытаться идти.
+
+31
+00:04:00,030 --> 00:04:04,970
+ А, да, я вижу, что это эдит update.
+
+32
+00:04:04,970 --> 00:04:12,250
+ Да, я вижу, что сейчас я вижу, что это будет идти в истории.
+
+33
+00:04:12,250 --> 00:04:19,270
+ The original translate button shows the translation on the right side of the message.
+
+34
+00:04:21,890 --> 00:04:32,450
+ And the button transcription with the change collapsed, expanded and hidden doesn't make anything.
+
+35
+00:04:33,130 --> 00:04:34,230
+ What's on your site, Oscar?
+
+36
+00:04:35,630 --> 00:04:42,050
+ Change the transcriptions to expanded or collapsed or hidden.
+
+37
+00:04:42,210 --> 00:04:45,490
+ It doesn't seem to change anything.
+
+38
+00:04:45,490 --> 00:04:51,920
+ So, the next...
+
+39
+00:04:51,920 --> 00:04:52,320
+ Ah, yeah.
+
+40
+00:04:52,990 --> 00:04:58,020
+ I'm verifying that we're doing number 12 part.
+
+41
+00:05:01,160 --> 00:05:09,740
+ Should be button translate, we can't find it, alright.
+
+42
+00:05:11,360 --> 00:05:11,880
+ Documents.
+
+43
+00:05:17,670 --> 00:05:28,400
+ I will load any document to the chat.
+
+44
+00:05:29,360 --> 00:05:34,840
+ I see that document loaded, I'll send this document to the chat.
+
+45
+00:05:37,540 --> 00:05:41,200
+ Oscar, do you see the document and can you open it or download it?
+
+46
+00:05:42,250 --> 00:05:43,960
+ Yeah, I see the document.
+
+47
+00:05:44,600 --> 00:05:54,610
+ Text file, instructions, it's still working.
+
+48
+00:05:54,610 --> 00:05:59,220
+ Alright, try to copy link
+
+49
+00:05:59,220 --> 00:06:01,340
+ Of these documents and send to me
+
+50
+00:06:01,340 --> 00:06:13,600
+ Okay, I've just tried to
+
+51
+00:06:13,600 --> 00:06:15,560
+ I'm not sure if that's shown up on your end
+
+52
+00:06:15,560 --> 00:06:17,820
+ On my end it's just a blank message
+
+53
+00:06:17,820 --> 00:06:20,940
+ Yeah, I also see the
+
+54
+00:06:20,940 --> 00:06:23,560
+ Empty message from you, from Oscar
+
+55
+00:06:23,560 --> 00:06:33,400
+ Here's the link
+
+56
+00:06:33,400 --> 00:06:42,020
+ So you're trying to copy-paste
+
+57
+00:06:42,020 --> 00:06:43,600
+ The link in the chat, right?
+
+58
+00:06:44,180 --> 00:06:44,670
+ Yeah
+
+59
+00:06:44,670 --> 00:06:50,450
+ So it doesn't work, so I'll try on my side too
+
+60
+00:06:50,450 --> 00:06:52,520
+ I'm copying the link
+
+61
+00:06:52,520 --> 00:06:54,720
+ I pasted it, it pastes
+
+62
+00:06:54,720 --> 00:07:08,710
+ Я нажму это на письмо, чтобы отправить это в чат. И это будет открыт.
+
+63
+00:07:08,710 --> 00:07:18,420
+ Может, это не может быть, что это не может быть, что это не может быть, что это не может быть.
+
+64
+00:07:18,420 --> 00:07:25,470
+ Я попробую открыть это в другом браузере.
+
+65
+00:07:25,470 --> 00:08:01,850
+ It opens the link, the whole document is opened on a separate page, so the link works, but I'm not sure that I'm logged into my account, so I'll log it out from my account on another browser, try to open the same link, looks like I still have access to this document, Oscar can you try on your site too?
+
+66
+00:08:01,850 --> 00:08:17,500
+ Документ, когда I post the link into a separate tab.
+
+67
+00:08:21,690 --> 00:08:23,950
+ Now I'm deleting this document from our chat.
+
+68
+00:08:26,040 --> 00:08:28,320
+ Try to open this link again.
+
+69
+00:08:36,800 --> 00:08:39,560
+ So now I do get the message,
+
+70
+00:08:39,680 --> 00:08:43,260
+ this XML file does not appear to have any style information associated with it.
+
+71
+00:08:43,780 --> 00:08:49,550
+ Documentary is shown below with an error saying code, no such key.
+
+72
+00:08:50,370 --> 00:08:53,630
+ The specified key does not exist, so I do not have access to it anymore.
+
+73
+00:08:54,880 --> 00:08:58,120
+ Alright, so it works right.
+
+74
+00:08:58,900 --> 00:09:00,900
+ After deleting the document from our chat,
+
+75
+00:09:02,030 --> 00:09:04,310
+ мы не можем открыть самую ссылку,
+
+76
+00:09:04,310 --> 00:09:06,640
+ чтобы получить доступ к документу.
+
+77
+00:09:06,640 --> 00:09:08,690
+ Это экзерный линк.
+
+78
+00:09:08,690 --> 00:09:15,970
+ "AI-supporting-едитер".
+
+79
+00:09:15,970 --> 00:09:19,900
+ У нас нет редитер-файлов.
+
+80
+00:09:19,900 --> 00:09:26,600
+ "13-security".
+
+81
+00:09:26,600 --> 00:09:28,480
+ "Сет-ссо-смдов"
+
+82
+00:09:28,480 --> 00:09:30,310
+ "to join the team".
+
+83
+00:09:30,310 --> 00:09:34,530
+ Я думаю, что для этого,
+
+84
+00:09:34,530 --> 00:09:37,790
+ нужно экзерный аксесс от менеджера.
+
+85
+00:09:37,790 --> 00:09:41,600
+ "Супорт".
+
+86
+00:09:41,600 --> 00:09:45,310
+ Это номер 13-security.
+
+87
+00:09:45,310 --> 00:09:47,690
+ Мы отправляем, потому что мы не имеем access
+
+88
+00:09:47,690 --> 00:09:49,480
+ для бизнес-accountа и интерприз.
+
+89
+00:09:49,480 --> 00:09:50,790
+ Может быть, мы проверим это позже.
+
+90
+00:09:50,790 --> 00:10:00,910
+ And for support, part number 14, open live chat with support on every tariff.
+
+91
+00:10:03,520 --> 00:10:14,890
+ So, yeah, I think it also requires other account with enterprise and business tariff.
+
+92
+00:10:16,720 --> 00:10:21,850
+ Okay, number 15, with mobile phone.
+
+93
+00:10:31,830 --> 00:10:36,380
+ Okay, Oscar, can we try to open links in a phone?
+
+94
+00:10:37,490 --> 00:10:38,290
+ See what's happened.
+
+95
+00:10:47,930 --> 00:10:54,530
+ The link for the last meeting opened on my phone correctly.
+
+96
+00:10:54,530 --> 00:11:47,130
+ И я вижу, что я могу написать, что я могу написать, что я могу написать, чтобы я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я написал, что я
+
+97
+00:11:47,130 --> 00:12:47,950
+ и я думаю, что я могу понять, что я сходу, и я сходу, что я сходу, когда я сходу, я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, когда я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что я сходу, что
+
+98
+00:12:47,950 --> 00:13:36,380
+ Добавил субтитры DimaTorzok
+
+99
+00:13:36,380 --> 00:14:12,830
+ So my phone account was kicked. This part works well. So I joined the meeting without signing in on my phone. And we finished with part 15. Next will be the last part. I'll stop recording for now.
+

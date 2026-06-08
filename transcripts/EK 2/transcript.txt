@@ -1,0 +1,652 @@
+ Субтитры сделал DimaTorzok
+ Субтитры сделал DimaTorzok
+ It's automatically going to
+ Yeah, that's weird
+ Try to explain more what happens
+ I think maybe
+ I might have
+ A VPN on or something
+ For some reason it's
+ I'm just putting in
+ Intermine.com and it's going straight to
+ The German
+ Version of the website
+ Like it's
+ So, hold on, maybe let me
+ I'll stop recording and I'll just switch that
+ I'll make sure that's not
+ I don't use
+ Edge very often
+ So
+ I think maybe
+ Just switch
+ Okay
+ Let me just try it again
+ No, it seems to be
+ Okay, what is going on?
+ Sorry again
+ Try to explain more
+ Because
+ The problem will be
+ Put it from our voice
+ From transcriber
+ What we're saying
+ And what's the problem?
+ It will be easier for AI to navigate
+ Where was the problem?
+ What's the problem?
+ On what stage?
+ So, I'm
+ Going on to Microsoft Edge
+ I'm putting in
+ Intermined
+ Dotcom
+ And
+ When I press
+ Enter
+ It's forwarding me
+ To the German version
+ Of the website
+ But I think
+ That maybe
+ I might have
+ VPN on
+ Or something
+ But it was not
+ Doing this before
+ Which is
+ Or maybe
+ I tried the same
+ Theme
+ I opened
+ Microsoft Edge
+ Put it
+ Intermined
+ Dotcom
+ Pressed enter
+ And
+ German
+ Version
+ Of website
+ Opened for me
+ It did as well
+ I've just gone
+ Into the website
+ And
+ On
+ At the
+ Toolbar
+ At the top
+ There's a
+ Switch language
+ And I've just
+ Switched it to
+ English
+ And it seems
+ To have worked
+ Same on my site
+ Okay
+ Press
+ Sign in
+ Button
+ And
+ Tell me
+ What you're
+ Seeing
+ Try to
+ Register
+ On your
+ Email
+ So
+ From
+ The
+ From the
+ Main
+ Homepage
+ I'm not
+ Seeing a
+ Sign in
+ Or register
+ Button
+ There's
+ Join
+ Meeting
+ Or
+ Open
+ App
+ Perhaps
+ I would
+ Go
+ Open
+ App
+ If I
+ Had to
+ Guess
+ I think
+ Potentially
+ Because I
+ Already have
+ An
+ Account
+ Logged
+ In
+ Yeah
+ Try to
+ Log out
+ Let me
+ Log out
+ Okay
+ I see
+ So
+ Now
+ It's
+ Sign in
+ That's
+ A lot
+ Clearer
+ That was
+ Just
+ Pult
+ Okay
+ Understand
+ Any
+ Language
+ Sign in
+ To
+ Create
+ Your
+ Intermined
+ Account
+ Let me
+ Just
+ Go
+ Okay
+ I'm
+ Just
+ Putting
+ In
+ My
+ Email
+ In
+ The
+ Email
+ Form
+ There's
+ Also
+ A bunch
+ Of
+ Different
+ Options
+ That
+ Are
+ Very
+ Useful
+ Friendly
+ Like
+ Google
+ And
+ Microsoft
+ I've
+ Already
+ Used
+ Google
+ And
+ It
+ Worked
+ Perfectly
+ Fine
+ On
+ Both
+ The
+ Website
+ And
+ The
+ Phone
+ Gonna
+ Go
+ Continue
+ With
+ Email
+ Okay
+ Pop
+ Up
+ Says
+ They've
+ Sent
+ Me
+ An
+ Email
+ Do
+ You
+ Want
+ Me
+ To
+ Go
+ Into
+ My
+ Gmail
+ Or
+ Is
+ It
+ Just
+ I
+ Like
+ I
+ Have
+ The
+ Email
+ Has
+ Come
+ Through
+ I
+ Can
+ Confirm
+ It
+ With
+ Open
+ Your
+ Gmail
+ Try
+ To
+ Open
+ This
+ Email
+ And
+ Link
+ If
+ It's
+ Successful
+ Say
+ If
+ Not
+ Tell
+ Me
+ What
+ You
+ See
+ And
+ After
+ A
+ Few
+ Minutes
+ Try
+ To
+ Open
+ This
+ Link
+ Again
+ It
+ Should
+ Be
+ Expired
+ And
+ Was
+ There
+ You
+ See
+ Okay
+ I've
+ Just
+ Got
+ It
+ In
+ My
+ Email
+ Very
+ Simple
+ My
+ Code
+ With
+ Your
+ Intermined
+ Sign-in
+ Code
+ Expires
+ In
+ 10
+ Minutes
+ Or
+ Click
+ The
+ Button
+ To
+ Sign-in
+ Directly
+ I'm
+ Going
+ To
+ Click
+ The
+ Button
+ To
+ See
+ If
+ That
+ Works
+ Put
+ Put
+ In
+ My
+ Verification
+ Code
+ And
+ I'm
+ Signed
+ In
+ Okay
+ Try
+ To
+ Change
+ Password
+ For
+ Account
+ All right
+ Let's
+ Go to
+ Where
+ My
+ Account
+ Is
+ In
+ The
+ Bottom
+ Left
+ Three
+ Dots
+ Documentation
+ Dottom
+ Hmm
+ Toggle
+ Theme
+ Is
+ The
+ Okay
+ I
+ Cannot
+ Seem
+ To
+ Find
+ Maybe
+ In
+ Settings
+ Maybe
+ I'm
+ Looking
+ In
+ The
+ Wrong
+ Place
+ I
+ See
+ User
+ That's
+ My
+ Name
+ Avatar
+ Email
+ I'm
+ Not
+ Seeing
+ A
+ Password
+ Anywhere
+ I'm
+ Not
+ Exactly
+ Sure
+ Where
+ I'm
+ To
+ Change
+ Passwords
+ Yeah
+ I
+ Don't
+ See
+ Anywhere
+ Where
+ I
+ Can
+ Change
+ Password
+ If
+ I
+ Just
+ Go
+ To
+ Dedicated
+ Support
+ So
+ This
+ Seems
+ Like
+ A
+ Okay
+ Perhaps
+ I
+ Should
+ Go
+ To
+ Help
+ First
+ That
+ Seems
+ Maybe
+ A
+ Bit
+ More
+ I'll
+ Just
+ Ask
+ How
+ Do
+ I
+ Change
+ My
+ Password
+ Oh
+ Okay
+ Intermine
+ Does
+ Not
+ Use
+ Passwords
+ For
+ Email
+ Logins
+ You
+ Receive
+ A
+ One
+ Time
+ Six
+ Digit
+ Code
+ In
+ Your
+ Inbox
+ Each
+ Time
+ To
+ You
+ You
+ Signed
+ To
+ You
+ Use Google
+ Microsoft
+ Or
+ SSO
+ Your
+ Authentication is handled by these providers
+ Okay
+ So I've just used the AI assistant to help me try and change my password
+ Turns out I do not have a password nor do I need one and it's explained that quite clearly very quickly
+ Um
+ Yeah okay
+ All right
+ Try to log out and sign in and put the button to restore password or forgot the password
+ Okay
+ Uh
+ To see with
+ What should I be signing in with because when I sign in with email it doesn't require a password
+ Should I sign in with Google or with SSO
+ Yes
+ And so how you will log in next time you're so you're receiving a just one-time code for login
+ Without password
+ Yes when when you use the work email it seemed to only ask me for a one-time code and not a password
+ Yes
+ Mm-hmm okay let's pass the step
+ Uh try to delete your account if you'll find any button of it
+ Okay
+ Let's see
+ I'm just logging back in
+ Okay
+ Back my email again
+ Yeah
+ The email is very quick
+ 75126
+ Signing in
+ I'll leave
+ All right signed in
+ Go back in
+ Okay let me go to settings
+ I'll just do a quick test to make sure I see
+ Delete account
+ Permanently delete your account and all associated data
+ This action cannot be undone
+ A very clear red text
+ The
+ Use of the trash can
+ Kind of a use of a universal symbol
+ Very easy to understand
+ Very clear statement that it is permanent
+ Going to click on delete
+ Another warning pops up
+ This is good just to make sure anyone doesn't misclick on it
+ Type your email to confirm
+ Type your email to confirm
+ Try this again
+ Actually I wonder if you can copy and paste this from here
+ I don't know if that would be a big thing
+ You can
+ Gives you a big red warning
+ This will permanently delete your account and all data including meetings
+ Messages, files, team ownership and subscription
+ This cannot be undone
+ Very clear instructions
+ Click delete permanently
+ Okay
+ Taken me out
+ Seemingly deleted it
+ And then if I try to
+ Sign in with that again
+ Okay
+ Let's go to my Gmail
+ Sign in again
+ It seems like I've still been able to sign into my account
+ I'm not sure if it's created a new one
+ Or if it's
+ The same one
+ I mean it seems to be
+ I think maybe I would have to sign in
+ The same?
+ Yeah I'm not sure
+ I think maybe I would have to sign in
+ A different sign in method
+ Also I didn't check last time
+ But it doesn't allow you to
+ Click delete permanently
+ Until you've entered
+ Your email address
+ I'm just going to enter something in there
+ And then try and delete permanently
+ And see if it works
+ Okay email does not match
+ Good
+ That's all working
+ Try it again
+ Actually maybe I should
+ Okay let me create something
+ First
+ Can I create
+ Okay
+ So this will be able to tell
+ If when I delete my account
+ And log in
+ If it's creating a new account
+ Or signing back in
+ Delete account
+ Delete account
+ Okay
+ Delete permanently
+ Okay let's try signing back in
+ With the exact same thing
+ And see if my daughter
+ Is still there
+ Email
+ The code sending is very quick
+ This is very seamless
+ Okay
+ So it seems like it does
+ Actually delete your account
+ The stuff that I added before
+ Isn't there
+ So that does seem to be working
+ Okay
+ What next
+ So in the instructions
+ Maybe I should register through
+ It does say to register through
+ SSO or Google
+ If available
+ Would you like me to try
+ Registering through
+ Google
+ To see if that
+ Changes the outcome
+ Or actually
+ I'll do it to see
+ If I can
+ I think there's no reason
+ To try with Google
+ Or with separate email
+ I just
+ I tried the same thing
+ Just to log in
+ Through
+ Through my email
+ Without
+ Google SSO
+ I logged in my account
+ And I see
+ On the settings
+ That I already have
+ Avatar
+ So I logged in
+ On the same account
+ As from the Google
+ Or from email
+ By the same email ID
+ So it's the same
+ Okay okay
+ I was just gonna check
+ Yeah
+ When I try to sign in
+ With Google
+ I don't think it
+ Like I still have no option
+ To change a password
+ Because we didn't get to that
+ Okay
+ I'm deleting my account again
+ Alright
+ I think
+ We're all good with that
+ Do we want to move on
+ To step three
+ Or
+ Yeah let's save
+ Our recording
+ Yeah
+ Продолжение следует...

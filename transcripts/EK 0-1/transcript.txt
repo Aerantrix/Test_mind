@@ -1,0 +1,263 @@
+ Я просто сделаю быстрый тест, чтобы проверить это работает.
+ -Все работает? -Перфект.
+ -Старт recording.
+ -Старт первый степь, мы создали...
+ Я не могу остановиться.
+ Это...
+ Смотрите, я садил это.
+ -Старт-сценарий?
+ -Да, это интермин-менуал тест-сценарий.
+ So, what we are doing here, it's like a real oppositor going to the website, his price list.
+ So, we are going to the page, Intermine Pricing.
+ To pricing.
+ And for 30 seconds, you need to understand what happens there.
+ Is it, do you understand what's, what's showed there?
+ Get onto pricing.
+ Yeah, this seems pretty standard, easy to understand.
+ You have very clearly sectored pricing plans
+ The text is very bold, clear, very easy to understand
+ The only thing is maybe the monthly to yearly being a toggle or a switch
+ Is maybe slightly smaller, unclear, I don't know
+ Just scrolling down
+ The features, how it explains how each plan affects what you'll have access to
+ quite clear, I like the use
+ of the tick symbols
+ of your FAQ, free trial
+ work, business include a 14
+ day free trial, hard to start
+ nothing is charged until the trial ends
+ I like the little
+ drop down menus, they're very easy to navigate
+ I think the options that you've chosen are very
+ relevant
+ the answers
+ are good, concise
+ before you pick a plan
+ I like this as well
+ It allows people to decide for themselves
+ And see which part of the service they'd use the most
+ Taking a look at use cases
+ Use cases built around multilingual collaboration
+ Exhibitions and conferences
+ Multilingual global town halls
+ I would say very easy to navigate
+ Very clear and concise
+ All the symbols are quite aesthetically pleasing
+ perfect
+ now we are going to the main page
+ you need to understand
+ what's happening there
+ how much time
+ it will take you to find
+ the demo button
+ without
+ registration
+ oh you already done
+ the FAQ
+ and read some
+ landing parts
+ with the case and reviews
+ and your comments
+ sorry, so where do I
+ where am I going now
+ give me a second, yeah, now you're going
+ to the intermine.com without
+ slash and into the main page, can you
+ just remove the last part in the
+ browser, just leave intermine.com
+ intermine.com, okay
+ yeah, and
+ the same thing, describe what you're seeing
+ just scrolling the page
+ very clear slogan, straight away
+ stop running meetings in someone
+ else's language, intermine
+ translates voice chat and share docs
+ live so each person speaks and reads
+ their own on a sovereign EU
+ engine that you can audit
+ yeah
+ I have a very simple clear description
+ of what service provides
+ what it does
+ then I mean the live
+ demo is a very clear
+ button there's the contrast between the
+ light blue and the dark background
+ to make it easier to find
+ and there's the benchmarks as well
+ your data lives
+ translation quality
+ Okay, I see there's a blog here
+ That's interesting
+ Is there
+ Certain parts you want me to go through first
+ Or just kind of how I would go through
+ The website
+ Alright
+ Okay, I'll try with my part what I'm seeing
+ I'm on the main page
+ Intramine.com
+ I'm seeing that
+ Slogan is very clear
+ I see the first
+ First links
+ Сверенитет, Ресурс, Методологи, Релиз, Методологи,
+ Архитектура.
+ There's double methodology.
+ I see that
+ some of the text
+ is almost
+ the same color as the background.
+ So it's a bit hard to read.
+ And some of the text is extremely small.
+ Yeah.
+ I don't see.
+ I see that on the sovereignty page
+ some of the numbers
+ are a bit
+ not in the center of the circle.
+ Угу.
+ Да, я вижу.
+ "Why interwined?".
+ Я scrolled немного, чуть-чуть.
+ Это видно очень clearly.
+ Давайте посмотрим, как это работает.
+ "Translate Workshats".
+ "This page works".
+ "Real-time translation end-to-end".
+ Все здесь видно очень clearly.
+ "Page opens успешно".
+ Видите, я scroll down.
+ "Everything's perfect".
+ "Everything's pretty clear".
+ Следующий.
+ "Collaborative meeting workspace".
+ "Page opens".
+ Everything looks clear, no bugs.
+ Okay, next one.
+ Everything security page opened.
+ Yeah, everything looks clear in this part.
+ So, I'm strolling down the main page.
+ And I see that everything is fine here.
+ Okay, what's next?
+ Demo.
+ Let's try a demo.
+ I just click on the try a live demo?
+ Yeah, you can just check the demo by yourself for a few minutes.
+ What you see, how it works.
+ So let's try and undermine demo. Page opens successfully. All the standard formatting is correct. There's the video slash animation, how it works. That's all working. Okay, I'm just going to click on start demo.
+ I do notice that on the description where it says
+ you'll be asked to allow camera and microphone access,
+ I think there's a space between the...
+ The spacing between the letters on some of the demo mode
+ is a bit strange, but that's just a bit nitpicking.
+ So I'll just click on Start Demo.
+ Is that good?
+ Yep.
+ Okay, requesting permissions.
+ The pop-up shows up.
+ Use your microphones, use your cameras.
+ I'll allow.
+ Setting up the demo.
+ Speak on the left.
+ Hear translation on the right.
+ Everything seems to be working well.
+ It's just loading.
+ There you go.
+ You can see me.
+ My camera's working.
+ Multiple languages detected.
+ Participants speak different languages.
+ I see myself on both sides of the screen.
+ Let me just see.
+ So I think, of course I don't speak Dutch.
+ But I do see that it's translating it.
+ And I can hear it in my voice, which is very strange.
+ It's kind of cool.
+ Just check out some of the settings
+ So you can turn off the camera
+ Microphone mutes
+ So if I speak now, is it still going to go?
+ Okay, the mute worked
+ Show participants, works perfectly
+ How do I close this?
+ How do I close the participants tab?
+ The button disappears
+ Ah, close participants
+ So that was pretty easy to navigate
+ Open chat, language detected
+ So this is a full transcript
+ Of everything I'm saying
+ In English
+ and so I imagine if I
+ try that on the other side as well
+ it's going to give a transcript of
+ I'm sure if there is supposed to be a transcript of
+ what I'm saying in Dutch here
+ maybe that's just the
+ yeah I think that's just the chat
+ but the chat over here has a transcript
+ okay let's try the share screen
+ might be a little bit of
+ inception
+ just the entire screen, also share
+ system audio, yeah I think that
+ seems to be working but this is creating
+ like an infinite loop
+ Смотрите инфинтинфинт луп?
+ Pardon? Sorry, I can't hear you.
+ Ты говоришь, что это инфинтинфинт луп?
+ А, с видео?
+ А, да, когда вы сэкраните,
+ вы сэкраните изображение.
+ Это не проблема.
+ Есть ли еще...
+ Эмоте?
+ Реопен демо.
+ После изменения.
+ А, как я изменяю демо?
+ Я запрещал демо самостоятельно.
+ There should be a button on new languages, uh...
+ I can disable translation, uh...
+ And Russian.
+ So which...
+ Oh, I guess both in this.
+ So, disable translation.
+ Yeah, then I can just hear myself in English.
+ Settings.
+ Translation language.
+ So, maybe I'll do...
+ Is there any language you want me to...
+ Try to change it to Russian, maybe, okay.
+ Then let me turn to label translation.
+ Hello, testing.
+ I cannot speak Russian, but I think maybe I'm mute.
+ Ah, let's check language translation in the meeting room.
+ I think that's better.
+ Сейчас это будет трудно понимать.
+ Да, и демо?
+ Да, и демо, и демо.
+ И демо, и демо.
+ Демо, и демо, и демо.
+ Да, и демо, и демо.
+ Все выглядит практически так же.
+ Присоединяем английский язык.
+ Все выглядит практически так же.
+ Все выглядит так же.
+ Я не думаю, что ничего не изменилось.
+ Я не знаю, что это рандомат.
+ Я думаю.
+ Демо.
+ Добавил субтитры DimaTorzok
+ И я вижу, что мы все равно имеем в том, что мы все равно имеем в том, что мы все равно имеем в том, что мы все равно имеем в том, что мы все равно имеем в том, что мы все равно имеем в том, что мы все равно имеем в том, что мы все равно имеем в том, что мы все равно не можем.
+ И я начну с новой программой.
+ Да, я просто перенам с новой программой.
+ Я просто перенам с новой программой.
+ Я просто перенам с новой программой.
+ Я просто перенам с новой программой.
+ Я буду делать 5 минут минут, потому что я думаю, что я не буду говорить.
+ Я буду говорить о моем комнате.
+ Да, я буду делать 5 минут.
+ Я буду делать 5 минут.
+ Я буду делать 5 минут.

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Oscar Step 4 — Inter-Mind UX-отчёт</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Сводный отчёт</a><span class="sep">·</span><span style="color:var(--muted)">Сессия: Oscar Step 4</span></nav>
+<div class="materials"><strong>📦 Материалы сессии:</strong><a href="transcripts/Oscar%20Step%204/transcript.txt">📄 Транскрипт</a> · <a href="transcripts/Oscar%20Step%204/transcript.srt">📝 С таймкодами (SRT)</a> · <a href="#" class="placeholder" data-needs-url="1">📹 Видео — добавить ссылку Google Drive</a></div>
+<header id="title-block-header">
+<h1 class="title">Oscar Step 4 — Inter-Mind UX-отчёт</h1>
+</header>
+<h1 id="ux-отчёт-oscar-step-4-встречи-переснимка">UX-отчёт: Oscar — Step
+4 (Встречи, переснимка)</h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Тестировщик</strong></td>
+<td>Oscar</td>
+</tr>
+<tr>
+<td><strong>Раздел</strong></td>
+<td>§4 Встречи (повторный прогон, более детальный)</td>
+</tr>
+<tr>
+<td><strong>Длительность</strong></td>
+<td>~11:14</td>
+</tr>
+<tr>
+<td><strong>Видео</strong></td>
+<td><code>Oscar Step 4.mp4</code></td>
+</tr>
+<tr>
+<td><strong>Примечание</strong></td>
+<td>Это <strong>второй заход</strong> на §4 после короткой
+<code>EK 4.mp4</code>. Здесь больше деталей.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="не-работает">❌ Не работает</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что произошло</th>
+<th>Серьёзность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~05:00</strong></td>
+<td><strong>«End Meeting for Everyone» не срабатывает с первого
+раза</strong>: «that doesn’t work, it works for the third time or with a
+big delay». Критичная операция (завершить митинг для всех) требует трёх
+нажатий или ловит большой delay.</td>
+<td>🔴 High</td>
+</tr>
+<tr>
+<td><strong>~07:00</strong></td>
+<td><strong>Назначение roles не находится</strong> (подтверждение из EK
+3 / Oscar 3-4): «Я не вижу ни бутон, чтобы его дать ему роли».</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>~07:30</strong></td>
+<td><strong>Кнопки «Kick» нет</strong> — у пользователя есть только
+<strong>«Remove»</strong>. Oscar отметил, что «Я не могу кик Оскар… Нет,
+нет бутон». Решил через Remove — работает. Это вопрос
+<strong>именования</strong>: люди ожидают «Kick» в контексте встреч (как
+в Zoom/Discord).</td>
+<td>🟡 Low (naming)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-работает">✅ Что работает</h2>
+<h3 id="schedule-meeting-calendar-integration">Schedule Meeting +
+Calendar Integration ⭐</h3>
+<ul>
+<li><strong>«When I pressed on Schedule Meeting Add to Calendar, my
+Google Calendar opens. I have a meeting with Evgeny. I have a link for
+the meeting.»</strong></li>
+<li>Полный flow: schedule → add to calendar → событие в Google Calendar
+с правильной ссылкой → можно зайти из календаря в митинг.</li>
+<li>⭐ §11 Интеграции — Calendar work end-to-end.</li>
+</ul>
+<h3 id="создание-приглашение">Создание / приглашение</h3>
+<ul>
+<li><strong>Pop-up «Don’t forget to invite your friends for your
+guests»</strong> — есть.</li>
+<li><strong>Copy link button</strong> — есть.</li>
+<li><strong>Создание нового митинг-линка — ~5 секунд</strong>.</li>
+</ul>
+<h3 id="pre-join-setup">Pre-Join Setup</h3>
+<ul>
+<li>«Subtitles, microphone, speaker, video quality» — все настройки
+видны на pre-join.</li>
+<li>«Yeah, we already made this part, it works well» —
+подтверждение.</li>
+</ul>
+<h3 id="remove-participant">Remove participant</h3>
+<ul>
+<li>Работает: «I’ll try to remove Oscar from a meeting. That works.
+Oscar removed, left our meeting».</li>
+</ul>
+<h3 id="реакции">Реакции</h3>
+<ul>
+<li><strong>«Я вижу эмоции. Я вижу Oscar’s реакции»</strong> — реакции
+другого участника видны.</li>
+</ul>
+<hr />
+<h2 id="что-не-покрыто">📋 Что не покрыто</h2>
+<ul>
+<li><strong>40-минутный лимит Basic</strong> — снова отложили: «We don’t
+need to sit 40 minutes for that».</li>
+<li><strong>Pin участника, переключение раскладки (grid / speaker view),
+громкость</strong>.</li>
+<li><strong>Hand raise</strong>.</li>
+<li><strong>Проверка набора эмодзи</strong> (6 заявленных).</li>
+<li><strong>Принудительный mute как организатор</strong>.</li>
+</ul>
+<hr />
+<h2 id="приоритеты">🚦 Приоритеты</h2>
+<ol type="1">
+<li><strong>🔴 «End Meeting for Everyone» с третьего раза / с
+delay</strong> — критичный UX, чинить.</li>
+<li><strong>🟠 Roles management</strong> — повтор находки.</li>
+<li><strong>🟡 Переименовать или добавить алиас «Kick»</strong> к Remove
+(~07:30).</li>
+<li><strong>✅ Calendar integration → Google Calendar — full path
+подтверждён</strong> (Schedule → Add to calendar → event with link →
+join from calendar).</li>
+</ol>
+</body>
+</html>

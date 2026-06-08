@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>EK 2 — Inter-Mind UX-отчёт</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Сводный отчёт</a><span class="sep">·</span><span style="color:var(--muted)">Сессия: EK 2</span></nav>
+<div class="materials"><strong>📦 Материалы сессии:</strong><a href="transcripts/EK%202/transcript.txt">📄 Транскрипт</a> · <a href="transcripts/EK%202/transcript.srt">📝 С таймкодами (SRT)</a> · <a href="#" class="placeholder" data-needs-url="1">📹 Видео — добавить ссылку Google Drive</a></div>
+<header id="title-block-header">
+<h1 class="title">EK 2 — Inter-Mind UX-отчёт</h1>
+</header>
+<h1 id="ux-отчёт-ek-step-2-регистрация-и-онбординг">UX-отчёт: EK — Step
+2 (Регистрация и онбординг)</h1>
+<table>
+<tbody>
+<tr>
+<td><strong>Тестировщик</strong></td>
+<td>EK</td>
+</tr>
+<tr>
+<td><strong>Раздел сценария</strong></td>
+<td>§2 Регистрация и онбординг</td>
+</tr>
+<tr>
+<td><strong>Длительность</strong></td>
+<td>~16:24</td>
+</tr>
+<tr>
+<td><strong>Видео</strong></td>
+<td><code>EK 2.mp4</code></td>
+</tr>
+<tr>
+<td><strong>Транскрипт</strong></td>
+<td><code>EK 2_mic.wav.txt</code> (затранскрибировано чисто)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="не-работает-функциональные-баги">❌ Не работает (функциональные
+баги)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что произошло</th>
+<th>Серьёзность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>00:00–02:30</strong></td>
+<td>Заход на <code>intermind.com</code> из <strong>Microsoft
+Edge</strong> автоматически открывает <strong>немецкую</strong> версию
+сайта, хотя у пользователя английский. Воспроизвелось два раза подряд.
+EK заподозрил VPN, проверил — нет. Решилось вручную через переключатель
+языка в шапке. → автодетект локали в Edge ломается (вероятно,
+accept-language / системные настройки браузера, а не геолокация).</td>
+<td>🟠 Medium</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="неудобно">⚠️ Неудобно</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что отметил</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~04:30</strong></td>
+<td>На главной залогиненного пользователя <strong>нет «Sign in /
+Register»</strong> — есть только «Join Meeting» и «Open App». Если зашёл
+повторно — непонятно, куда жать, чтобы попасть в нужный flow. После
+logout кнопка появилась: «Now it’s Sign in. That’s a lot clearer».</td>
+</tr>
+<tr>
+<td><strong>~08:00–10:00</strong></td>
+<td>EK искал «change password» в Settings → не нашёл. Полез в Help →
+AI-ассистент объяснил, что <strong>паролей нет</strong>, логин по
+одноразовому коду. UI настроек сам этого не объясняет — там пусто.
+Пользователь логично ищет «изменить пароль», не находит, тратит
+время.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="непонятно">❓ Непонятно</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что не понял</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>~02:30</strong></td>
+<td>Куда исчезает «Sign in» с главной — поначалу EK не догадался, что
+причина в уже залогиненной сессии. Понял только после logout.</td>
+</tr>
+<tr>
+<td><strong>~10:30</strong></td>
+<td>После delete + повторного login на тот же email: EK не уверен — это
+<strong>новый аккаунт или восстановление старого</strong>. Пришлось
+делать второй прогон с пометками, чтобы убедиться, что аккаунт
+действительно был удалён, а не «приостановлен».</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-работает-хорошо">✅ Что работает хорошо</h2>
+<h3 id="регистрация-через-email-one-time-code">Регистрация через email +
+one-time code</h3>
+<ul>
+<li>Email-код приходит <strong>«very quick»</strong>.</li>
+<li>«My code with your intermind sign-in code expires in 10 minutes or
+click the button to sign-in directly» — формулировка письма
+понятная.</li>
+<li>Кнопка «sign-in directly» работает — не надо вводить код
+руками.</li>
+</ul>
+<h3 id="sso">SSO</h3>
+<ul>
+<li>Google login: «worked perfectly fine on both website and phone»
+(использовал раньше).</li>
+<li>На UI явно показаны Google / Microsoft / SSO как опции.</li>
+</ul>
+<h3 id="help-ai-assistant">Help / AI assistant</h3>
+<ul>
+<li>Когда EK не понял, что паролей нет, <strong>AI-ассистент в Help
+ответил быстро и ясно</strong>: «Intermind does not use passwords for
+email logins. You receive a one-time six-digit code…». Это спасло
+сценарий.</li>
+</ul>
+<h3 id="delete-account-образцовый-flow">Delete account — образцовый flow
+⭐</h3>
+<p>EK подробно хвалит каждый шаг: - <strong>«Very clear red
+text»</strong>, использование иконки корзины — «universal symbol, very
+easy to understand». - Чёткое заявление о необратимости: <strong>«very
+clear statement that it is permanent»</strong>. - <strong>Двойное
+подтверждение</strong> — второй pop-up с предупреждением (важно против
+мискликов). - <strong>Валидация email при подтверждении</strong>: при
+неверном email — «email does not match» (EK проверил специально). -
+<strong>Большой красный warning</strong> перед финальным delete: «This
+will permanently delete your account and all data including meetings,
+messages, files, team ownership and subscription. This cannot be
+undone». - <strong>Реальная проверка после удаления</strong>: EK создал
+данные → удалил → залогинился обратно тем же email → «the stuff that I
+added before isn’t there. So that does seem to be working». Удаление
+действительно сносит данные.</p>
+<h3 id="логин-повторно-тем-же-email-после-delete">Логин повторно тем же
+email после delete</h3>
+<ul>
+<li>Аккаунт <strong>успешно пересоздаётся</strong> одним и тем же email
+— это правильное поведение.</li>
+<li>Что было до удаления — не возвращается (правильно).</li>
+</ul>
+<hr />
+<h2 id="что-не-покрыто">📋 Что не покрыто</h2>
+<ul>
+<li><strong>Восстановление пароля через «Forgot password»</strong> —
+пункт сценария §2; EK его не делал, потому что паролей нет. Можно
+вычеркнуть пункт из инструкции.</li>
+<li><strong>Истёкшая / невалидная ссылка</strong> на странице
+<code>/confirm</code> — частично проверено (кликнул на ссылку из
+письма), но повторного перехода (на «использованную ссылку») и сценария
+«открыть через час» не было.</li>
+<li><strong>Регистрация через Microsoft SSO</strong> — не пробовал
+(использовал Google и email).</li>
+<li><strong>Невозможность зарегистрироваться с уже использованным
+email</strong> — частично затронуто, но без явного «попытался заново и
+получил ошибку».</li>
+</ul>
+<hr />
+<h2 id="приоритеты">🚦 Приоритеты</h2>
+<ol type="1">
+<li><strong>🟠 Auto-detect языка в Edge ведёт на DE-локаль</strong>
+(00:00). Чинить либо логику определения, либо показывать баннер «We
+detected DE — switch to EN?» вместо принудительного редиректа.</li>
+<li><strong>🟠 Settings → нет блока «Sign-in method»</strong> (~08:00).
+Добавить явный текст «You sign in with one-time codes — passwords are
+not used» прямо в настройках, не прятать в Help.</li>
+<li><strong>🟡 Главная для залогиненного — нет очевидной точки
+входа</strong> (~04:30). Когда пользователь уже вошёл, главная не должна
+выглядеть как landing.</li>
+<li><strong>🟡 Update инструкции для тестировщика</strong>: вычеркнуть
+«восстановление пароля» из §2 сценариев, поскольку паролей в продукте
+нет — заменить на «повторный one-time login».</li>
+</ol>
+<hr />
+<h2 id="что-особенно-хорошо">🎉 Что особенно хорошо</h2>
+<p><strong>Delete account — лучшая часть Inter-Mind по словам
+EK.</strong> Это редкость: обычно delete-flow проектируют небрежно.
+Здесь он выглядит чётко проработанным — двойное подтверждение,
+валидация, явные предупреждения, реальная очистка данных.</p>
+</body>
+</html>

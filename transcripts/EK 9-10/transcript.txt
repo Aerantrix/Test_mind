@@ -1,0 +1,14 @@
+ Субтитры делал DimaTorzok
+ Субтитры сделал DimaTorzok
+ And it seems to be cutting off after a second.
+ It says there's 14 seconds, but yeah, it seems to be getting into like a fraction of a second and then stopping.
+ So I think maybe the file is corrupted or I'm not sure.
+ Don't see any meetings.
+ I don't see any in the channels.
+ Settings.
+ See any integrations.
+ I think maybe created a backup.
+ Seems to have one chat.
+ Messages.
+ What happens if I restore?
+ Okay, that's just...

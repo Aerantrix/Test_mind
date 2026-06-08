@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Oscar Step 0-1 — Inter-Mind UX-отчёт</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Сводный отчёт</a><span class="sep">·</span><span style="color:var(--muted)">Сессия: Oscar Step 0-1</span></nav>
+<div class="materials"><strong>📦 Материалы сессии:</strong><a href="transcripts/Oscar%20Step%200-1/transcript.txt">📄 Транскрипт</a> · <a href="transcripts/Oscar%20Step%200-1/transcript.srt">📝 С таймкодами (SRT)</a> · <a href="#" class="placeholder" data-needs-url="1">📹 Видео — добавить ссылку Google Drive</a></div>
+<header id="title-block-header">
+<h1 class="title">Oscar Step 0-1 — Inter-Mind UX-отчёт</h1>
+</header>
+<h1 id="ux-отчёт-oscar-step-0-лендинг-и-step-1-demo">UX-отчёт: Oscar —
+Step 0 (Лендинг) и Step 1 (Demo)</h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Тестировщик</strong></td>
+<td>Oscar</td>
+</tr>
+<tr>
+<td><strong>Дата сессии</strong></td>
+<td>2026-06-08</td>
+</tr>
+<tr>
+<td><strong>Длительность</strong></td>
+<td>20:34</td>
+</tr>
+<tr>
+<td><strong>Видео</strong></td>
+<td><code>Oscar Step 0-1.mp4</code></td>
+</tr>
+<tr>
+<td><strong>Транскрипты</strong></td>
+<td><code>Oscar Step 0-1_mic.wav.{txt,srt,vtt}</code> +
+<code>_system.wav.{txt,srt,vtt}</code></td>
+</tr>
+<tr>
+<td><strong>Покрытые разделы</strong></td>
+<td>§0 Лендинг, §1 Demo-комната (по <a
+href="../inter-mind-test-scenarios.md">сценариям</a>)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Дисклеймер по записи.</strong> В исходном видео обе
+аудио-дорожки оказались идентичными — <code>Mic</code> и
+<code>System</code> не были разнесены в OBS (Шаг 3 инструкции). На
+анализ это не повлияло: материал полный, но разделить «кто что сказал»
+нельзя. Все реплики ниже атрибутированы по контексту.</p>
+<p><strong>Дисклеймер по транскрипту.</strong> С ~11:24 Whisper
+переключился на голландский, потому что Oscar активировал перевод на
+голландский в demo-комнате, и в кадр пошёл двойной аудио-поток
+(английский оригинал + голландский перевод). Это нормально, голландские
+реплики дублируют англоязычные.</p>
+</blockquote>
+<hr />
+<h2 id="не-работает-функциональные-баги">❌ Не работает (функциональные
+баги)</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что произошло</th>
+<th>Серьёзность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>14:00–14:07</strong></td>
+<td><strong>«What is creating an infinite loop?»</strong> — при попытке
+расшарить экран в demo-комнате возникает бесконечный визуальный цикл
+(вероятно, расшарили окно, в котором сама встреча). Oscar немедленно
+остановил шаринг. Это <strong>критичный UX-баг</strong>: в Zoom/Meet в
+этом случае показывается предупреждение или используется
+анти-зеркало.</td>
+<td>🔴 High</td>
+</tr>
+<tr>
+<td><strong>07:38–07:52</strong></td>
+<td>На главной (intermind.com) <strong>часть текста почти сливается с
+фоном</strong> — «some of the text is almost the same colour as the
+background, so it’s a bit hard to read». Контрастность ниже WCAG.
+Воспроизводится и в desktop, и в mobile.</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>08:01–08:10</strong></td>
+<td>На странице <strong>Sovereignty</strong> «some of the numbers are
+not in the center of the circle» — цифры внутри круговых элементов сбиты
+с центра. Воспроизводится и на iPhone (19:48–20:03).</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>13:09–13:34</strong></td>
+<td>Транскрипция в demo: <strong>«полная транскрипция того, что я говорю
+на английском»</strong> видна, но <strong>«не уверен, должна ли быть
+транскрипция того, что я говорю по-голландски — там пусто»</strong>.
+Либо транскрипция второго языка не показывается, либо UI не объясняет,
+что и где должно отображаться.</td>
+<td>🟠 Medium</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="неудобно">⚠️ Неудобно</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что отметил</th>
+<th>Тип</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>02:38–02:58</strong></td>
+<td>Переключатель <strong>monthly / yearly</strong> на странице Pricing
+«is maybe slightly smaller, unclear». Toggle мелкий, не считывается с
+первого взгляда.</td>
+<td>Микро-UX</td>
+</tr>
+<tr>
+<td><strong>07:52–08:01</strong></td>
+<td>На странице Sovereignty <strong>«some of the text is extremely
+small»</strong> — нечитаемый размер шрифта. На мобильном (19:48–20:03) —
+то же самое: «text is a bit small».</td>
+<td>Типографика</td>
+</tr>
+<tr>
+<td><strong>18:42–19:00</strong></td>
+<td>На iPhone после <strong>логина через Google</strong> пользователь
+попадает на «meetings page» и <strong>не понимает, где он</strong>
+относительно лендинга: «I’m not on the actual forum page of the website
+where I can try the demo». Прыжок в авторизованную часть без явного
+указателя «вы вошли как X, вот ваш дом».</td>
+<td>Навигация после логина</td>
+</tr>
+<tr>
+<td><strong>18:46–19:27</strong></td>
+<td>Из этого же места <strong>не очевиден путь обратно к demo</strong> —
+Oscar в итоге руками набрал <code>intermind.com</code> в адресной
+строке.</td>
+<td>Навигация</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="непонятно">❓ Непонятно</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Таймкод</th>
+<th>Что не понял</th>
+<th>Контекст</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>10:21–10:33</strong></td>
+<td>На экране Demo «space between letters on some of the demo mode is a
+bit strange». Сам пометил как «nitpicking», но воспринял как
+<strong>визуальный шум, который отвлекает на старте</strong>.</td>
+<td>Типография demo-CTA</td>
+</tr>
+<tr>
+<td><strong>11:18</strong></td>
+<td>В demo «<strong>I see myself on both sides of the screen</strong>» —
+Oscar видит собственное видео и слева, и справа. Не понял, это
+специально (предпросмотр + симулированный собеседник) или баг. UI это не
+объясняет.</td>
+<td>Self-view duplicated</td>
+</tr>
+<tr>
+<td><strong>11:34–11:46</strong></td>
+<td>Слушая собственный перевод обратно в наушниках: «I can hear it in my
+own voice — that is very strange… actually that’s pretty cool». Сначала
+<strong>дискомфорт от своего синтезированного голоса</strong>, потом
+интерес. Стоит показать пользователю заранее, что он услышит.</td>
+<td>Onboarding ожиданий</td>
+</tr>
+<tr>
+<td><strong>16:48–17:14</strong></td>
+<td>После выхода из demo и <strong>повторного входа</strong>
+транскрипция начала идти на немецком (хотя только что был голландский).
+«Has the language changed?» — <strong>непонятно, почему сменился
+язык</strong>, помнит ли продукт настройку, что выбирает по
+умолчанию.</td>
+<td>Demo: state persistence</td>
+</tr>
+<tr>
+<td><strong>15:00–15:50</strong></td>
+<td>При попытке протестировать перевод на русский Oscar не смог: «I
+cannot speak Russian». <strong>В одиночку перевод не
+тестируется</strong> — нужна реальная конференция. Решил отложить на
+следующий шаг.</td>
+<td>Ограничение demo: одиночное использование</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-работает-хорошо-позитивные-сигналы">✅ Что работает хорошо
+(позитивные сигналы)</h2>
+<p>Важная часть отчёта — подтверждение, что happy path не сломан.</p>
+<h3 id="pricing">Pricing</h3>
+<ul>
+<li><strong>«Pricing plans clearly sected»</strong> — структура планов
+считывается.</li>
+<li><strong>«Text is bold, clear, very easy to
+understand»</strong>.</li>
+<li><strong>«Features… how each plan affects what you’ll have access to
+— quite clear, I like the use of tick symbols»</strong>.</li>
+</ul>
+<h3 id="faq">FAQ</h3>
+<ul>
+<li><strong>«Drop-down menus very easy to navigate»</strong>.</li>
+<li><strong>«Questions you’ve chosen are very relevant»</strong>.</li>
+<li><strong>«Answers are good, concise»</strong>.</li>
+<li><strong>«Before you pick a plan» — allows people to decide for
+themselves</strong>.</li>
+</ul>
+<h3 id="use-cases">Use cases</h3>
+<ul>
+<li><strong>«Easy to navigate»</strong>, <strong>«clear and
+concise»</strong>, <strong>«symbols aesthetically
+pleasing»</strong>.</li>
+</ul>
+<h3 id="landing-intermind.com">Landing (intermind.com)</h3>
+<ul>
+<li><strong>«Very clear slogan straight away»</strong> («Stop running
+meetings in someone else’s language»).</li>
+<li><strong>«Very simple, clear description of what the service
+provides»</strong>.</li>
+<li><strong>«Live demo — very clear button, contrast between light blue
+and dark background makes it easy to find»</strong>.</li>
+<li>Все feature-страницы (real-time translation, collaborative
+workspace, privacy &amp; security) — <strong>«opens successfully, no
+bugs»</strong>.</li>
+</ul>
+<h3 id="demo-счастливый-путь">Demo (счастливый путь)</h3>
+<ul>
+<li>Permissions popup отрабатывает чисто.</li>
+<li>Перевод на голландский <strong>работает</strong>.</li>
+<li>Mute — работает.</li>
+<li><strong>«Was vrij eenvoudig te navigeren»</strong> — было довольно
+просто навигировать.</li>
+<li>Повторный заход в demo — <strong>«everything seems pretty much
+exactly the same, it’s loading up again»</strong>.</li>
+</ul>
+<h3 id="mobile-iphone-safari">Mobile (iPhone, Safari)</h3>
+<ul>
+<li>Лендинг <strong>«properly formatted for iPhone»</strong> — адаптив
+отрабатывает.</li>
+<li>Google-логин <strong>работает</strong>.</li>
+<li>Тот же UI, что на desktop.</li>
+</ul>
+<hr />
+<h2
+id="что-нужно-дополнительно-проверить-выпало-или-нельзя-в-одиночку">📋
+Что нужно дополнительно проверить (выпало или нельзя в одиночку)</h2>
+<ul>
+<li><strong>Перевод RU ↔︎ EN</strong> в реальной встрече с двумя людьми
+(Oscar сам отметил: «we’ll check translation in the meeting room when
+we’ll be together»).</li>
+<li><strong>Демо с мобильного по-настоящему</strong> — Oscar упомянул,
+что попробует с iPhone, но в этой записи мобильного demo нет.</li>
+<li><strong>TTL demo-комнаты через час</strong> (§1 сценариев) — не
+проверено.</li>
+<li><strong>«Несколько demo подряд»</strong> — частично проверено (2
+запуска, разное языковое поведение), но не доведено до «продукт просит
+зарегистрироваться».</li>
+<li><strong>Pre-Join Setup screen</strong> перед входом в demo — Oscar
+его не упомянул, скорее всего проскочил мимо.</li>
+</ul>
+<hr />
+<h2 id="приоритеты-на-следующий-шаг">🚦 Приоритеты на следующий шаг</h2>
+<ol type="1">
+<li><strong>🔴 Починить infinite loop при шаринге экрана в demo</strong>
+(14:00) — самое серьёзное из найденного.</li>
+<li><strong>🟠 Аудит контрастности и размера шрифта</strong> на странице
+Sovereignty (desktop + mobile, 07:38–08:10 и 19:48).</li>
+<li><strong>🟠 Цифры в кругах «off-centred»</strong> — на Sovereignty
+(07:52, 19:53).</li>
+<li><strong>🟠 Транскрипция второго языка</strong> в demo — либо
+показывать, либо явно объяснить, что и где (13:09).</li>
+<li><strong>🟡 Переключатель monthly/yearly</strong> — увеличить,
+добавить визуальный акцент (02:38).</li>
+<li><strong>🟡 Onboarding ожиданий в demo</strong> — что увидишь «self
+on both sides», что услышишь свой голос в переводе (11:18, 11:34).</li>
+<li><strong>🟡 Поведение после логина с мобильного</strong> — куда
+ведёт, как вернуться (18:42).</li>
+</ol>
+<hr />
+<h2 id="заметка-о-методологии-записи-для-следующих-сессий">📝 Заметка о
+методологии записи (для следующих сессий)</h2>
+<p>Перед стартом OBS-записи <strong>проверь Шаг 3 в инструкции
+тестировщика</strong>: - ⚙ возле <code>Mic</code> → «Расширенные
+свойства аудио» → только дорожка <strong>1</strong> - ⚙ возле
+<code>System</code> → «Расширенные свойства аудио» → только дорожка
+<strong>2</strong></p>
+<p>Сейчас обе дорожки слиплись — на анализ контента это не повлияло, но
+в будущих сессиях не получится отделить «что говорил тестировщик» от
+«что было слышно в самом приложении».</p>
+<p>Я доделаю проверку идентичности дорожек прямо в
+<code>process-session.sh</code>, чтобы скрипт ругался сразу, а не после
+транскрипции.</p>
+</body>
+</html>

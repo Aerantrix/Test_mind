@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>EK 4 — Inter-Mind UX-отчёт</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<nav class="topbar"><a href="index.html">← Сводный отчёт</a><span class="sep">·</span><span style="color:var(--muted)">Сессия: EK 4</span></nav>
+<div class="materials"><strong>📦 Материалы сессии:</strong><a href="transcripts/EK%204/transcript.txt">📄 Транскрипт</a> · <a href="transcripts/EK%204/transcript.srt">📝 С таймкодами (SRT)</a> · <a href="#" class="placeholder" data-needs-url="1">📹 Видео — добавить ссылку Google Drive</a></div>
+<header id="title-block-header">
+<h1 class="title">EK 4 — Inter-Mind UX-отчёт</h1>
+</header>
+<h1 id="ux-отчёт-ek-step-4-встречи">UX-отчёт: EK — Step 4 (Встречи)</h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr>
+<td><strong>Тестировщик</strong></td>
+<td>EK + Oscar</td>
+</tr>
+<tr>
+<td><strong>Раздел</strong></td>
+<td>§4 Встречи</td>
+</tr>
+<tr>
+<td><strong>Длительность</strong></td>
+<td>~11:07</td>
+</tr>
+<tr>
+<td><strong>Видео</strong></td>
+<td><code>EK 4.mp4</code></td>
+</tr>
+<tr>
+<td><strong>Примечание по транскрипту</strong></td>
+<td>Whisper частично зациклился (видимо, тихие участки или фоновый шум).
+Полезного содержания немного, но есть подтверждения работы фич.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="что-подтверждено-как-работает">✅ Что подтверждено как
+«работает»</h2>
+<ul>
+<li><strong>Создание встречи</strong> — «как мы уже сделали в предыдущем
+степе, это работает perfect».</li>
+<li><strong>Schedule meeting → Add to calendar → Google Calendar
+opens</strong> — Calendar integration <strong>сработала</strong>: «Когда
+я нажму Scheduled meeting, Add to calendar, у меня Google Calendar
+opens». ⭐ (это пункт §10 сценариев — Calendar integration).</li>
+<li><strong>Pre-Join Setup</strong> (конфигурация микрофона/камеры) —
+«работает хорошо».</li>
+<li><strong>Скорость создания митинг-ссылки</strong> — «занимает около 5
+секунд». Нормально.</li>
+</ul>
+<hr />
+<h2 id="решения-тестировщика">⚠️ Решения тестировщика</h2>
+<ul>
+<li><strong>40-минутный лимит на Basic не проверяли</strong>: «не нужно
+сидеть 40 минут для этого, я думаю, что это было бы не идея». Этот пункт
+§4 остался не покрытым.</li>
+</ul>
+<hr />
+<h2 id="где-транскрипт-не-дал-понимания">❓ Где транскрипт не дал
+понимания</h2>
+<p>После ~5 минуты Whisper уходит в loop’ы («Я не знаю, что это было»,
+«я смотрю на менеджмент»). Эти ~5 минут видео содержательно непонятны
+без переслушивания исходника. По-видимому, там тестировали что-то
+технически и звук был тихий или в паузах.</p>
+<hr />
+<h2 id="что-не-покрыто">📋 Что не покрыто</h2>
+<ul>
+<li><strong>Pin участника</strong>, переключение раскладки grid /
+speaker view.</li>
+<li><strong>Громкость отдельного участника</strong>.</li>
+<li><strong>Назначение co-host / кик / принудительный
+mute</strong>.</li>
+<li><strong>Hand raise</strong>.</li>
+<li><strong>Реакции (6 эмодзи)</strong> — проверка набора.</li>
+<li><strong>40-минутный лимит Basic</strong> (явно отложили).</li>
+</ul>
+<hr />
+<h2 id="приоритеты">🚦 Приоритеты</h2>
+<p>Из этой сессии — приоритетов мало, но: 1. <strong>Calendar
+integration подтверждена</strong> на стороне EK с Google Calendar —
+параграф §10 уже частично закрыт. 2. <strong>Запросить переснимку §4 у
+обоих тестировщиков с проговариванием каждого подсценария</strong> —
+текущая запись имеет много пробелов.</p>
+</body>
+</html>
